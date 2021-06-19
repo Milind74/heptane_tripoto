@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: helvetica,arial,sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 0;
+            padding: 0;
+            background-image: url(https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/Rajasthan_.jpg);
+                
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 900px;
+}
+/* #form{
+    width:20%;
+       height:550px;
+       border: 1px solid rgba(145,151,163,.2);
+       box-shadow: 0 5px 10px 0 #dddddd80;
+       font-family: helvetica,arial,sans-serif;
+       margin: 0;
+       padding-left:7px;
+ 
+       background:white ;
+ }*/
+ /* #verify{
+   display: grid;
+  width:450px;
+  height:800px;
+  border: 1px solid rgba(145,151,163,.2);
+  box-shadow: 0 5px 10px 0 #dddddd80;
+  font-family: helvetica,arial,sans-serif;
+  margin: 0;
+  margin-left:1000px;
+  margin-left: 40px;
+       
+} */
+ .cost{
+   display: grid;
+   grid-template-columns: 50% 50%;
+ }
+ #form>button{
+   width:220px;  
+   background: #2f9bdb;;
+   color: white;
+   border-radius: 4px;
+   box-sizing: border-box;
+   border:1px solid black;
+   height: 30px;
+   margin-left: 40px;
+   padding: 5%;
+   text-align: center;
+   font-size: 20px;
+
+ }
+ #form>p{
+     font-size:xx-small;
+
+ }
+ #div{
+    border: 1px solid black;
+    margin: 0 250px;
+    width: 65%;
+    margin-left:250px;
+ }
+ #comment{
+     width: 700px;
+     height: 100px;
+     margin-left:70px;
+     margin-top: 20px;
+ }
+ #btn1{
+
+     background-color: #2f9bdb;
+     color: white;
+     margin-left:700px;
+     border: none;
+     cursor: pointer;
+    
+ }
+ 
+
+
+
+input{
+  width: 300px;
+  height: 20px;
+}
+
+         #form{
+       width:20%;
+       height:750px;
+       border: 1px solid rgba(145,151,163,.2);
+       box-shadow: 0 5px 10px 0 #dddddd80;
+       font-family: helvetica,arial,sans-serif;
+       margin: 0;
+       padding-left:7px;
+       margin-left:1200px;
+       background:white ;
+       border: 1px solid rgba(145,151,163,.2);
+  box-shadow: 0 5px 10px 0 #dddddd80;
+
+       
+      }
+      #form>button{
+        width:180px;  
+        background: blue;
+        color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border:1px solid black;
+        height: 50px;
+        margin-top: 50px;
+      }
+      #form>p{
+          font-size:xx-small;
+      }
+      .blog{
+          margin: 20px auto;
+          width: 80%;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+        </div>
+        <!-- <div class="form">
+            <H3>Rajasthan Tour Packages</H3><br><br>
+            <input type="text" placeholder="email"><br><br>
+            <input type="text" placeholder="Full Name"><br><br>
+            <input type="text" placeholder="Contact Number"><br><br>
+            <label for="">Deprature Date</label><br><br>
+            <input type="date" id="myDate" placeholder="Deprature Date"><br><br>
+            <input type="text" placeholder="Deprature City"><br><br>
+            <input type="text" placeholder="Destinations"><br><br>
+            <input type="text" placeholder="Budget Per Person"><br><br>
+           
+            <label for="">Flight Book or not?</label><br><br>
+            <input type="radio" value="yes"> <label for="">YES</label>
+            <input type="radio" value="No">NO<br><br>
+            <button onclick="call()">Request Call Back</button><br><br>
+            <p>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
+        </div>
+    </div> -->
+<div id=verify>
+    <form id="form">
+      <H3>Want to book similar trip</H3><br><br>
+      <input id="email" type="text" placeholder="email"><br><br>
+      <input id="name" type="text" placeholder="Full Name"><br><br>
+      <input id="contact" type="text" placeholder="Contact Number"><br><br>
+      <label  for="">Deprature Date</label><br><br>
+      <input  type="date" id="myDate" placeholder="Deprature Date"><br><br>
+      <input id="city" type="text" placeholder="Deprature City"><br><br>
+      <input id="des" type="text" placeholder="Destinations"><br><br>
+      <input id="dur" type="text" placeholder="Duration"><br><br>
+      <input id="quant" type="text" placeholder="Quantity"><br><br>
+    
+      <input type="text" placeholder="Budget Per Person"><br><br>
+      <select name="" id="star">
+          <option value="5 star">5 star</option>
+          <option value="5 star">4 star</option>
+          <option value="5 star">3 star</option>
+          <option value="5 star">2 star</option>
+          <option value="5 star">Don't need Hotel</option>
+      </select><br><br>
+    <div class="cost">
+      <h2>cost</h2>
+      <h2>9,600</h2>
+    </div>
+      
+    
+          <input style="width: 10px; height:10px" type="radio" value="yes"> <label for="">YES</label>
+          <input  style="width: 10px; height:10px" type="radio" value="No">NO<br><br>
+          <!-- <input style=" text-align:center;width:250px;" type="submit"name="चेक-आउट"> -->
+          <p>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
+        <!-- <button style=" margin-left: 2%; width: 250px;height: 30px; color: white; background-color: #2f9bdb; text-align: center;" onclick="showlocations()"> Request Callback</button> -->
+        <button onclick="showlocations()">Check Out</button>
+    </div> 
+    
+    
+    </form>
+    </div>
+        <div class="blog">
+            <h1>Rajasthan Highlights</h1>
+            <p>All trips to Rajasthan must begin with a visit to its bustling capital. An apt introduction to the vibrant state, Jaipur or the ‘pink city’ is as charming as it is welcoming. Home to majestic forts, grand hotels and small bazaars – Jaipur is gradually becoming a cosmopolitan with the traditional charms of an old town. It’s an ideal weekend destination from the capital city of Delhi and is a perfect start for those who are on a tour of Rajasthan. Rajasthan tour packages include a trip to all of Jaipur’s marvels including Amber Palace, Hawa Mahal, Jantar Mantar, Chokhi Dhani, Nahargarh Fort and Jaigarh Fort. While the 16th century Amber Palace is gorgeous by day, its beauty is even more breathtaking as the sun sets. If your schedule allows, you must include the light and sound show at Amber in your Rajasthan tour packages. Jaipur is also an ideal shopping destination with its lively bazaars including Johari Bazaar for jewellery, Chandpole Bazaar for handicrafts and Hawa Mahal market for small knick-knacks. If, on the other hand, delicious food is what makes your vacation memorable, Jaipur is going to be your favourite place in Rajasthan. Besides the incredibly delicious pyaaz kachori, you must also try laal maas and handi chicken in one of the local restaurants. <br>
+
+ 
+
+                Pushkar is another destination which is gradually finding its place in Rajasthan tour packages. Primarily popular as a holy place for Hindus, it is now loved by travellers from across the world for its enthralling bazaars, picturesque ghats, backpacker hostels and an old world charm. Travellers from across the world visit Pushkar during the popular Pushkar Fair which is typically held in December. If you plan to visit Pushkar during the festival, it’s best to book Rajasthan tour packages well in advance since accommodation in the small town tends to get expensive. Located about 15km away from Pushkar is the popular city of Ajmer which is a huge part of Rajasthan tour packages. Known world over for the revered Khwaja Gharib Nawaz or Ajmer Sharif Dargah, Ajmer makes for a great day trip if you are on your way to Pushkar or Jodhpur.<br>
+                
+                 
+                
+                Of course, all Rajasthan tour packages are incomplete without a visit to the Blue City of Jodhpur. Fondly known as the ‘Gateway to Thar’, Jodhpur is most popular for blue-hued houses and the magnificent Mehrangarh Fort. Counted among the largest forts in India, Mehrangarh was built in the year 1459. The fort has served as a backdrop in many Hollywood and Bollywood movies and this is a big reason why it has become a must visit in all Rajasthan tour packages. Jodhpur is also home to the stunning Umaid Bhawan Palace, which has been restored into a hotel and museum besides serving as the residence of the royal family. Head here for a tour of the museum which offers a peek into the bygone era through a rich collection of photographs, paintings and artefacts.<br>
+                
+                 
+                
+                The Golden City of Jaisalmer is an awe-inspiring destination and a huge draw for tourists who are looking to book Rajasthan tour packages. Offering a journey through picturesque sand dunes, majestic forts and rustic villages, Jaisalmer has all that is needed to satisfy your travel appetite.<br>
+                
+                 
+                
+                One of the most sought-after destinations in Rajasthan tour packages, the city is located in the heart of Thar Desert and in proximity to the Pakistan border. The first glimpse of Jaisalmer is of the spellbinding Jaisalmer Fort which stands tall as a proud symbol for the city. Home to a number of museums and small, forgotten havelis, the city is a treasure for history enthusiasts. If you are travelling with little ones, Akal Wood Fossil Park is a must visit. Taking you back in time to 180 million years ago, the park has interesting exhibits including 25 petrified tree trunks, petrophyllum, equisetitis and ptyllophyllum species of the early Jurassic period. However, what attracts travellers most is camping amidst dreamy sand dunes. A huge part of all Rajasthan tour packages, camping in Jaisalmer gives travellers a chance to disconnect from the chaos and take in the peace and beauty of awe-inspiring sand dunes. You can book customised Rajasthan tour packages focussed on camping which will also include enthralling cultural shows, traditional dances, a lavish feast of local cuisine and of course the bumpy but unmissable camel safari.<br>
+                
+                 
+                
+                Rajasthan is a fine example of natural abundance, man-made marvels, culture and tradition. Of the numerous must-visit cities in Rajasthan, Udaipur is loved by all travellers and receives special attention in Rajasthan tour packages, owing to its unforgettable views. Referred to as the City of Lakes, Udaipur has it all – lakes, mountains and majestic palaces. From boating in Lake Pichola, shopping in local markets, sipping coffee at artsy, boho cafes to marvelling at the architecture of the City Palace, a visit to Udaipur will make it clear as to why the city is a favourite with travellers. Although boating, shopping and palace tours are a must in Udaipur, one should definitely include the Dharohar Dance Show at Bagore Ki Haweli in Rajasthan tour packages. The cultural show offers a glimpse of Rajasthan’s unmatched talent and also gives one a glimpse into the state’s rich heritage and culture.</p>
+        <h1>Rajasthan Travel Blogs</h1>
+        <p>Rajasthan is one of the few destinations in the world which stays with travellers, long after the journey is over. Whether it’s the heartwarming hospitality, fascinating monuments or the state’s insatiable energy – travellers can’t get enough of this beauty. There are numerous places to see in the state and a plethora of unmissable experiences. To help you plan your trip better, we have first-hand experiences from a few Tripoto travellers. <br>
+
+ 
+
+            “Rajasthan, the land of Maharajas, infinite lakes and towering palaces, is all that and more! Travellers who have spent years exploring the fantastic expanses of Rajasthan will tell you that it's a land of unpredictability and holds a mind-blowing surprise around every corner.” – Sreshti Verma<br>
+            
+             
+            
+            “Rajasthan is one of the most visited states in India and it should be, Because when a traveler think about India and things come to his / her mind you will find everything here in Rajasthan.” – Nomadic Foot<br>
+            
+             
+            
+            “Beguiled by the enigma that the city besets you with, Udaipur is every traveller's delight. The city of Lakes, or the Venice of the East, is known for its history, culture, scenic locations and the Rajput-era palaces.” – Jatin Goswami</p>
+    
+    <h1>Rajasthan Weather and Best Time to Visit</h1>
+    <p>Rajasthan’s weather patterns can be broadly divided into summer and winter. The state experiences extremely hot summers in the months of April, May and June and cool winters, especially in the months of December and January. While the state can be visited throughout the year, it’s recommended to visit during winter when sightseeing is far more pleasant and you can fully enjoy all the activities included in Rajasthan tour packages. <br>
+
+ 
+
+        Winter is particularly harsh in Jaisalmer owing to its geographical features. However, days here are quite pleasant and travellers can enjoy the warm winter sun while admiring the beautiful forts and palaces. If you’d like to book Rajasthan tour packages for winter, we recommend planning your trip a few weeks in advance to get the best discounts.</p>
+    <h1>Rajasthan for Family and Couples</h1>   
+    <p>One of the most visited places in India, Rajasthan is an ideal destination for a family vacation. Giving children ample opportunity to learn about India’s rich past, the state is a fine example of modernity and old world charm. Rajasthan also promises an action-packed vacation with a plethora of activities. Among things to try, camel safaris, wildlife safaris, museum hopping and shopping are a must.
+
+ 
+
+        The cultural heritage of Rajasthan can be seen in its monuments, havelis and forts. This spellbinding backdrop is an ideal setting for couples to enjoy the beauty of nature as well as to explore India's past. If you and your partner enjoy lively, vibrant destinations – book Rajasthan tour packages without another thought.
+        
+         
+        
+        Rajasthan tour packages which are customised for couples include a tour of Udaipur's dreamy lakes, Jaisalmer's raw landscapes and also offer one an opportunity to reside in erstwhile royal palaces. Ensure that you book Rajasthan packages during winter to make the most of your trip.
+        
+         </p>
+         <h1>Rajasthan Local Cuisine</h1>
+         <p>An integral part of Rajasthan’s rich culture is its delectable cuisine. Spicy and flavoursome, Rajasthani cuisine is a great mix of vegetarian and non-vegetarian ingredients. Since Rajasthan is situated in an arid region, the food comprises of dishes that can be shelved for a long time and requires minimum water or fresh vegetables. A few examples are bajra ki roti, lehsun ki chutney and mogar ki puri.
+
+ 
+
+            Rajasthan’s spicy laal maas is also popular across the country. It’s a tender mutton curry cooked in a thick, creamy tomato base. Vegetarians must try dal bati churma and ker sangri. Dal bati is made of crunchy batis which are dipped in ghee and eaten had with sweet churma.</p>
+    <h1>Frequently Asked Questions About Rajasthan Tour Packages</h1>
+    <h4>Which are the best places in Rajasthan?</h4>
+    <p>The best places to visit in Rajasthan are Amber Fort in Jaipur, Mehrangarh Fort in Jodhpur, Jaisalmer Fort in Jaisalmer and Shekhawati region. The monuments in the Shekhawati region are a big part of Rajasthan tour packages. </p>
+     <h4>How much do budget Rajasthan tour packages cost?</h4>
+     <p>Depending on the number of places one covers and the days of the trip, Rajasthan tour packages can cost anywhere between Rs.20,000 to Rs.30,000.</p>   
+
+     <h4>Which are the best tourist attractions in Rajasthan?</h4>
+     <p>The best tourist attractions which are a part of Rajasthan tour packages are Chittorgarh Fort, Ranthambore National Park, Brahma Temple, Barmer Fort and Udaipur City Palace. 
+
+    </p>
+    <h4>Where can I experience Rajasthan camel safari?</h4>
+    <p>The best places to experience camel safaris in Rajasthan are Jaisalmer, Bikaner, Pushkar and Jodhpur. One can book Rajasthan tour packages which include camel safaris, cultural and dance shows.</p>
+    <h4>How much does a Rajasthan honeymoon package cost?</h4>
+    <p>Rajasthan tour packages can cost couples anywhere between Rs.35,000 to Rs.55,000 depending on the experiences and activities chosen. Luxurious Rajasthan tour packages are slightly more expensive since they include 5-star accommodations and AC transportation along with personalised Rajasthan tours</p>
+    <h4>When should I plan my Rajasthan trip?</h4>
+    <p>Winter is the best time to visit Rajasthan. Travellers can plan their trip between the months of September and February to experience the best of this royal land. </p>
+    <h4>What activities should I include in Rajasthan packages?</h4>
+    <p>The most popular activities in Rajasthan tour packages are camel safari, a visit to artist clusters in nearby villages, wildlife safaris (especially at Ranthambore National Park), camping at Jaisalmer and hot air balloon rides in Jaipur.</p>
+<h4>Are Rajasthan holiday packages the best way to experience Rajasthan?</h4>
+<p>If you are a planner and enjoy the nitty-gritty of organising a trip, you can map out a Rajasthan itinerary based on your interests and budgets. However, if the hassle of planning a trip is not for you, we highly recommend Rajasthan tour packages that can be customised according to your preferences. Rajasthan tour packages also give one an opportunity to enjoy the trip without worrying about transport, accommodation and places to visit.</p>
+<h4>Which markets should I include in Rajasthan packages?</h4>
+<p>Shopping in Rajasthan is a great way to learn more about the place and locals. Since the state is a keeper of abundant talent, there is much to learn about art, craft and the artistic community. The best markets which are included in Rajasthan tour packages are Johari Bazaar, Clock Tower Market, Bada Bazaar, Hathi Pol Bazaar and Sadar Bazaar.</p>
+<h4>
+    Which are the best places to visit in Rajasthan in three days?</h4>
+    <p>If you are planning a short trip to Rajasthan, there are quite a few cities that you can cover. Rajasthan tour packages for three days include Sariska National Park in Alwar, Amber Fort and Chowki Dhani in Jaipur, Junagadh Fort and Karni Mata Temple in Bikaner and Ajmer Sharif Dargah in Ajmer.</p>
+<h4>Frequent search terms leading to this page:-</h4>
+<p>rajasthan tour package for couple, top rajasthan tour package with price, rajasthan honeymoon packages, rajasthan packages, rajasthan vacation packages, rajasthan trip packages, rajasthan travel packages, rajasthan tour package for family, rajasthan tour package for couple with price, rajasthan customised packages, budget rajasthan tour packages, rajasthan honeymoon packages, rajasthan tour itinerary</p>
+</div>
+<script>
+    var form = document.getElementById('form')
+        form.addEventListener('submit', addproduct)
+        function addproduct(e) {
+        e.preventDefault()
+        var product = {
+            name: form.name.value,
+            email: form.email.value,
+            contact:form.contact.value,
+            city:form.city.value,
+            des:form.des.value,
+            dur:form.dur.value,
+            quant:form.quant.value,
+    
+        }
+    
+    
+        console.log(product)
+        let arr;
+        var products = JSON.parse(localStorage.getItem('products'))
+        arr = localStorage.getItem("product");
+        console.log(arr)
+        if (arr == null) {
+          arr = [];//first time visitor
+        } 
+            else {//if it is in storage it will be in json so we convert to object
+    
+            arr = JSON.parse(arr);//array format conversion
+                    } 
+    
+            arr.push(product);
+            localStorage.setItem('product',JSON.stringify( arr))
+            console.log(arr)
+    
+        }
+    
+        function showlocations(){
+         
+          location.assign('show.html')
+    
+        }
+</script>
+</body>
+
+</html>

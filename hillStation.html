@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+      .container{
+     width: 100%;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+    
+     
+      }
+      .container>h1,.p{
+     margin-left:230px;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     margin-bottom:20px;
+     margin-top: 20px;
+
+     
+      }
+      .TrendingTrips{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+     
+     
+      
+      }
+      .TravelGuides{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:200px;
+        margin:0 auto;
+       
+      }
+      .DiscoverNow{
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:350px;
+        margin:0 auto;
+        margin-bottom: 10px;
+
+        
+     }
+     .DiscoverNow2{
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:150px;
+        margin:0 auto;
+        margin-bottom: 10px;
+
+        
+     }
+     .blog{
+      width: 70%;
+        height:auto;
+        margin:0 auto;
+        margin-bottom: 10px;
+        font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+
+     }
+      .img>img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .button{
+        display: flex;
+        width: 320px;
+      }
+      .discription{
+        width: 320px;
+      }
+      .discription>h4{
+       
+        margin: 0;
+      }
+      .button>button{
+       margin-left:200px;
+       height:20px;
+       margin-top: 5px;
+     }
+     .button>h5{
+       margin-top: 5px;
+     }
+      .discription>p{
+        font-size: smaller;
+        margin-top: 0;
+      }
+      .img1>img{
+        width: 250px;
+        height:180px;
+        margin-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
+      .img2>img{
+        width: 180px;
+        height:250px;
+        margin-top: 5px;
+        border-radius:5px;
+        margin-bottom: 10px;
+
+      }
+      .img2{
+          border:1px solid black;
+          height: 150px;
+          width: 120px;
+          margin-left:25px;
+      }
+      .img3{
+         
+          height: 100px;
+          width: 250px;
+          margin-left:25px;
+      }
+      .img3>img{
+        width: 240px;
+        height:100px;
+        margin-top: 5px;
+        border-radius:5px;
+        margin-bottom: 10px;
+
+      }
+    .slick-arrow{
+        color: black;
+        font-size:0px;
+        margin: 0;
+        padding: 0;
+      }
+   
+    .slick-next {
+    right:0px;
+  
+    }
+    .slick-prev {
+    left: -45px;
+}
+
+
+    .slick-next, .slick-prev {
+      line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    }
+    .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(177, 171, 171);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+      /* <!-------------------------------------- fooooooooooooterrrrrrr style ---------------------------------------------------> */
+
+      *{
+            margin: 0;
+            padding: 0;
+        }
+        .footerFirst{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            width: 98%;
+            gap: 10px;
+         
+        }
+        .footerFirst>div{
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 1%;
+            height: 350px;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerSecond{
+            width: 98%;
+            height: 50px;
+            margin:0 auto;
+            text-align: center;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerFirst>div>a{
+           text-decoration: none;
+           color: black;
+           font-size:smaller;
+        }
+        .footerSecond>p{
+            margin-top: 10px;
+            font-size: smaller;
+        }
+        #logo{
+            width: 180px;
+            font-size: smaller;
+            margin-left:25px;
+        }
+        .GooglePlaystore{
+       margin-left: 5px;
+            margin-top:15px;
+        }
+        .social-icon{
+            margin-top: 5px;
+        }
+        .social-icon>a>img{
+            height: 25px;
+        }.img1{
+            margin-top: 10px;
+           
+        }
+        strong{
+            color: blue;
+            margin-top:10px;
+        }
+        .heading{
+            display: flex;
+            margin-top: 10px;
+        }
+        .heading>img{
+            height: 30px;
+            margin-top:1px;
+        }
+        .heading1{
+            display: flex;
+            margin-top: 10px;
+        }
+        .heading1>button{
+            margin-left:34px;
+            border: none;
+            border: 1px solid rgb(67, 255, 255);
+            height:25px;
+            width: 100px;
+            background-color: white;
+        }
+        .line{
+            width:90%;
+            margin-top: 10px;
+        }
+        .twitter,.twitter1,.twitter2{
+            display: flex;
+            margin: 10px 25px;
+            gap:20px;
+        }
+        .twitter>div>img{
+            height: 50px;
+            border-radius:50%;
+        }
+        .twitter>div>span{
+            font-size: smaller;
+        }
+        .twitter1>div>img{
+            height: 20px;
+            border-radius:50%;
+        }
+        .twitter1>div>span{
+            font-size: smaller;
+        }
+        .twitter2>div>button{
+         height: 30px;
+         width: 70px;
+         color: blue;
+         background: white;
+         border: 1px solid blue;
+         border-radius: 2px;
+        }
+        .twitter2>div>.msg{
+            background: blue;
+            color: white;
+            margin-left:40px;
+        }
+       
+    </style>
+</head>
+<body>
+<div class="container">
+ <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+ <h1>Hill Stations</h1>
+ <p class="p">Answer the call of the hills by getting a heavy dose of wanderlust on the best of mountain escapes, mountain resorts, treks and offbeat <br> destinations. Here is all you need to help you plan your next perfect vacation to the hills.</p>
+ <h1>Once-in-a-lifetime Deals</h1>
+  <!-------------------------------------- Discover now-------------------------------------------------------------------------->
+  <div class="DiscoverNow">
+    <div class="img1"> 
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1429685/Image/1579604429_shimla_manali_1.jpg" alt="">
+      <strong>Package</strong><br><br>
+      <span>Around Shimla and Manali</span><br>
+      <div class="heading">
+      <img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt="loading">
+    <span>shimla</span>
+    </div>
+   <div class="heading1">
+   <span>₹12,000/person</span>
+  <button><a style="text-decoration: none;color: black;" href="getQutos.html"> Get Quotes</a> </button>
+  </div>
+  <div class="line">
+  <hr>
+  </div>
+  </div>
+    
+
+  <div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1429685/Image/1579174388_5_2.jpg" alt="">
+    <strong>Package</strong><br><br>
+    <span>Romantic Maldives Getways</span><br>
+    <div class="heading">
+    <img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt="loading">
+  <span>Maldives</span>
+  </div>
+ <div class="heading1">
+ <span>₹60,000/person</span>
+<button>Get Quotes</button>
+</div>
+<div class="line">
+<hr>
+</div>
+</div>
+   
+<div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1429685/Image/1582203647_mega_1.jpg" alt="">
+    <strong>Package</strong><br><br>
+    <span>Meghalaya (Overland)</span><br>
+    <div class="heading">
+    <img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt="loading">
+  <span>shimla</span>
+  </div>
+ <div class="heading1">
+ <span>₹19,635/person</span>
+<button>Get Quotes</button>
+</div>
+<div class="line">
+<hr>
+</div>
+</div>
+<div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1429685/Image/1582203677_naga_1.jpg" alt="">
+    <strong>Package</strong><br><br>
+    <span>Nagaland</span><br>
+    <div class="heading">
+    <img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt="loading">
+  <span>shimla</span>
+  </div>
+ <div class="heading1">
+ <span>₹12,000/person</span>
+<button>Get Quotes</button>
+</div>
+<div class="line">
+<hr>
+</div>
+</div>
+<div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1429685/Image/1582203721_ass_1.jpg" alt="">
+    <strong>Package</strong><br><br>
+    <span>Asam</span><br>
+    <div class="heading">
+    <img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt="loading">
+  <span>shimla</span>
+  </div>
+ <div class="heading1">
+ <span>₹12,000/person</span>
+<button>Get Quotes</button>
+</div>
+<div class="line">
+<hr>
+</div>
+</div>
+<div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1791424/Image/1623674878_kashmir_3.jpg" alt="">
+    <strong>Package</strong><br><br>
+    <span>Kashmeer Getways</span><br>
+    <div class="heading">
+    <img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt="loading">
+  <span>shimla</span>
+  </div>
+ <div class="heading1">
+ <span>₹12,000/person</span>
+<button>Get Quotes</button>
+</div>
+<div class="line">
+<hr>
+</div>
+</div>
+    
+  </div>
+  <h1>Expert</h1>
+  <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+
+  <div class="TravelGuides">
+    
+    <div class="img2">
+
+         <div class="twitter">
+         <div><img src="https://cdn1.tripoto.com/media/filter/mss/img/172710/UserPhoto/1559882848_dsc_0104.jpg" alt="loading"></div>
+         <div><strong>Amrita</strong> <br>
+        <span>1.1k Followers <span>6.6k credit</span></span></div>
+      </div>
+      <div class="twitter1">
+          <div class="location"><img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt=""></div>
+          <div><span>Kolkata,West Bangal India</span></div>
+      </div>
+      <div class="twitter2">
+        <div><button><a style="text-decoration: none;color: blue;" href="profile.html">Follow </a> </button></div>
+        <div><button class="msg"> <a style="text-decoration: none;color: white;" href="profile.html">Message</a> 
+        
+        </button></div>
+    </div>
+     
+    </div>
+    
+
+
+    <div class="img2">
+
+        <div class="twitter">
+        <div><img src="https://cdn1.tripoto.com/media/filter/mss/img/20987/UserPhoto/img_20140615_214207.jpg" alt="loading"></div>
+        <div><strong>Nancy Nance</strong> <br>
+       <span>2.1k Followers <span>3.6k credit</span></span></div>
+     </div>
+     <div class="twitter1">
+         <div class="location"><img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt=""></div>
+         <div><span>Kolkata,West Bangal India</span></div>
+     </div>
+     <div class="twitter2">
+       <div><button>Follow</button></div>
+       <div><button class="msg">Message</button></div>
+   </div>
+    
+   </div>
+    
+
+
+   <div class="img2">
+
+    <div class="twitter">
+    <div><img src="https://cdn1.tripoto.com/media/filter/mss/img/10735/UserPhoto/1536065482_13123410_10153389600726012_7161253938271959964_o.jpg" alt="loading"></div>
+    <div><strong>Neha Bhise</strong> <br>
+   <span>1.1k Followers <span>6.6k credit</span></span></div>
+ </div>
+ <div class="twitter1">
+     <div class="location"><img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt=""></div>
+     <div><span>Kolkata,West Bangal India</span></div>
+ </div>
+ <div class="twitter2">
+   <div><button>Follow</button></div>
+   <div><button class="msg">Message</button></div>
+</div>
+
+</div>
+    
+
+
+<div class="img2">
+
+    <div class="twitter">
+    <div><img src="https://cdn1.tripoto.com/media/filter/mss/img/168981/UserPhoto/1518020185_1518020177942.jpg" alt="loading"></div>
+    <div><strong>Anil Kumar</strong> <br>
+   <span>3.1k Followers <span>7.6k credit</span></span></div>
+ </div>
+ <div class="twitter1">
+     <div class="location"><img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt=""></div>
+     <div><span>Kolkata,West Bangal India</span></div>
+ </div>
+ <div class="twitter2">
+   <div><button>Follow</button></div>
+   <div id="msg"><button class="msg">Message</button></div>
+</div>
+
+</div>
+    
+
+
+<div class="img2">
+
+    <div class="twitter">
+    <div><img src="https://cdn1.tripoto.com/media/filter/mss/img/109540/UserPhoto/1617938359_1617938355947.jpg" alt="loading"></div>
+    <div><strong>Radhika Narashimha</strong> <br>
+   <span>1.1k Followers <span>6.6k credit</span></span></div>
+ </div>
+ <div class="twitter1">
+     <div class="location"><img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt=""></div>
+     <div><span>Chennai</span></div>
+ </div>
+ <div class="twitter2">
+   <div><button>Follow</button></div>
+   <div><button class="msg">Message</button></div>
+</div>
+
+</div>
+    
+
+
+<div class="img2">
+
+    <div class="twitter">
+    <div><img src="https://cdn1.tripoto.com/media/filter/mss/img/128752/UserPhoto/1448451780_12194944_10207906139151128_1740736819170717904_o.jpg" alt="loading"></div>
+    <div><strong>Shresti Verma</strong> <br>
+   <span>1.1k Followers <span>6.6k credit</span></span></div>
+ </div>
+ <div class="twitter1">
+     <div class="location"><img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt=""></div>
+     <div><span>New Delhi</span></div>
+ </div>
+ <div class="twitter2">
+   <div><button>Follow</button></div>
+   <div><button class="msg">Message</button></div>
+</div>
+
+</div>
+<div class="img2">
+
+    <div class="twitter">
+    <div><img src="https://cdn1.tripoto.com/media/filter/mss/img/172710/UserPhoto/1559882848_dsc_0104.jpg" alt="loading"></div>
+    <div><strong>Amrita</strong> <br>
+   <span>1.1k Followers <span>6.6k credit</span></span></div>
+ </div>
+ <div class="twitter1">
+     <div class="location"><img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt=""></div>
+     <div><span>Kolkata,West Bangal India</span></div>
+ </div>
+ <div class="twitter2">
+   <div><button>Follow</button></div>
+   <div><button class="msg">Message</button></div>
+</div>
+
+</div>
+    
+
+
+
+
+  </div>
+
+
+     <!-------------------------------------- Discover now-------------------------------------------------------------------------->
+     <div class="DiscoverNow2">
+       <div class="img3">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128872_hill1.png" alt="">
+         <h2>Hill Station</h2>
+       </div>
+       <div class="img3">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128796_beach5.png" alt="">
+         <h2>Beaches</h2>
+       </div>
+       <div class="img3">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587154281_tourist_attraction_4.png" alt="">
+         <h2>Tourist Attractions</h2>
+       </div>
+       <div class="img3">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155459_weekend_getaways.png" alt="">
+         <h2>Weekends Getways</h2>
+       </div>
+      
+         <div class="img3">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155577_adventure_activities.png" alt="">
+           <h2>Adventure Activities</h2>
+         </div>
+         <div class="img3">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155306_road_trip.png" alt="">
+           <h2>Road Trips</h2>
+         </div>
+         <div class="img3">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125064_trekking_route_3.png" alt="">
+           <h2>Trekking Routes</h2>
+         </div>
+         <div class="img3">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125598_family_vacation.png" alt="">
+           <h2>Family Vacations</h2>
+         </div>
+          
+       
+     </div>
+
+
+    
+    </div>
+    <div class="blog">
+    <p>A hot cup of tea while admiring a gorgeous sunset in the midst of lush mountains is what a perfect holiday is made of. If you enjoy being in the midst of nature and don't leave any chance to get away from the drudgery of cities then this travel guide is for you.</p>
+  <p>Hill stations promise quiet days, surreal views, starlit nights, delicious food and a tryst with nature but most importantly a vacation in a hill station takes you away from concrete buildings and gives you a chance to experience the joys of simple living.</p>  
+<p>At the same time, if you are an adventure lover, you'll enjoy travelling to the hill stations in India even more. Trekking, hiking, mountain biking, river rafting and rock climbing are some of the activities that all hill stations offer. But even for those who don't enjoy adventure, a walk through long winding roads amidst pine trees cures everything.</p> 
+<h4>All You Need To Know About Hill Stations</h4><br>
+<p> 
+
+  To plan a stress-free vacation, the one thing that makes all the difference is the best time to go. If you plan your vacation to hill stations during monsoon, be prepared for delays, landslides, relentless rain and spoilt plans. The best time to head to hill stations is either during summer or winter. 
+  
+   
+  
+  The most important thing to remember when planning a trip to hill stations in India is respecting the mountains and the local culture. Every town has its own set of rules and as a responsible traveller, you must respect these norms and guidelines. 
+  
+   
+  
+  Travelling responsibly also encompasses respect for the environment. Ensure your trip is as eco-friendly as possible, especially if you are exploring lesser-known hill stations in the world.
+  
+   
+  
+  Here are a few guidelines to keep in mind when planning a trip to hill stations in India</p>
+  <li>Don't drive if you aren't familiar with hill roads and the technique of hill driving</li>
+  <li>Always take warm clothes irrespective of the season you are travelling in</li>
+  <li>Carry your own water bottle so you don't have to keep buying one-time use bottles</li>
+  <li>Shop from the local markets so you can encourage the local economy</li>
+  <li>Always listen to locals, especially with respect to trekking routes, weather forecast and local flora and fauna</li>
+ <br> <h4>What to Pack for Your Trip to Hill Stations?</h4><br>
+  <p>Believe it or not, but packing is one of the most important things to take care of when planning a trip to hill stations. The amenities available in hill stations in India may differ from what you are used to in the city. This holds true especially if you are travelling to remote areas. From medicines, basic first aid, snacks to torches, chargers and warm clothes – make sure your packing list is comprehensive.</p>
+  <li>
+    Warm clothes</li>
+    <li>Umbrella</li>
+    <li>Waterproof jacket</li>
+    <li>Trekking shoes</li>
+    <li>Sunscreen</li>
+    <li>Sunglasses</li>
+    <li>Basic medicines</li>
+    <li>Three to four pair of socks</li>
+    <li>Woollen cap</li>
+    <li>Gloves</li>
+    <li>Snacks for emergency</li>
+    <li>Reusable water bottle</li>
+    <li>Torch</li>
+    <br>
+   <br> <h4>Best Hill Stations in India</h4><br>
+    <p>You are in for a treat if you are planning a trip to some of the best hill stations in India. Offering breathtaking beauty, warm culture and a glimpse into the way of life in small towns, a journey to the hill stations in India can be life-changing. For those who are looking for a break from the daily routine and the hustle-bustle of urban cities, there can’t be a better refuge than the hill stations in India. </p>
+<h4>Darjeeling</h4><br>
+<p>Darjeeling in West Bengal is counted among the most beautiful hill stations in India. The hill station was fairly unknown earlier, but today it witnesses a large number of tourists. As is the case with all hill stations in India, most tourists head here during summer or winter. 
+
+ 
+
+  Darjeeling is most popular for tea gardens and the Darjeeling Himalaya Railway. Fondly known as toy train, your trip to Darjeeling will be incomplete if you don’t hop aboard this beauty. Offering you surreal views of the surrounding mountains, lush fields and verdant tea gardens, you’ll be in awe throughout the three-hour journey. 
+  
+   
+  
+  Darjeeling is also known for Batasia Loop which is a loop around the Himalayan Railway track and is home to a vibrant garden. Tiger Hill, on the other hand, is the ideal spot if you want to admire picturesque sunrises in the mountains. It’s best to reach here early in the morning if you want to experience the mesmerising beauty of sunsets. Among other tourist attractions in Darjeeling, we recommend visiting Padmaja Naidu Himalayan zoological park, monasteries, rock garden and Himalayan Mountaineering Institute. 
+  
+  Cost: A trip to this hill station can cost you anywhere between Rs.20,000 to Rs.50,000</p>
+ <br> <h4>Ooty</h4><br>
+  <p>The erstwhile summer capital of Madras, Ooty is a picture-perfect postcard town. One of the best hill stations in India, it’s an ideal retreat for writers, photographers and nature lovers. Gradually the town has become popular for its welcoming homestays which are located in the outskirts of the main area. The centre of the town which is home to markets and restaurants is slightly crowded and if you truly want to experience the comfort of hill stations, we recommend staying in one of the homestays. 
+
+ 
+
+    Ooty is a treat for the eyes with verdant gardens, vibrant parks and umpteen viewpoints. For a tour around the area, you must take a ride on the World Heritage toy train which is one of the most exciting things to do in Ooty. Another draw for travellers who are looking to explore hill stations in India is the scrumptious local cuisine which is served here. Using local and fresh ingredients, the food is delicious and we promise it’ll be one of the reasons you’ll come back to Ooty. 
+    
+     
+    
+    There are umpteen trekking trails around the area and you can book short trekking tours to explore the region. Don’t forget to add Dolphin’s Nose, Kalhatti Falls, Emerald Lake and Rose Gardens in your itinerary.
+    
+    Cost: A trip to the hill station of Ooty can cost you anywhere between Rs.30,000 to Rs.55,000.</p>
+   <br> <h4>Shimla</h4><br>
+    <p>Shimla is undoubtedly one of the most popular and visited hill stations in India. Vacations are still planned around this beautiful hill station which was a summer retreat for the British. While the hilly hamlet is crowded throughout the year, the best time to visit is during summer and winter. 
+
+ 
+
+      In summer, the hill station witnesses a huge crowd from across the country and is brimming with excitement. Owing to the popularity of the hill station, a number of cafes and restaurants now call Shimla home. Offering world cuisines and an ambience you can’t enough off, these cafes have become a huge attraction for visitors. 
+      
+       
+      
+      We recommend planning for your Shimla trip in early summer or late winter when the crowds are less and you can enjoy the old-world charm of this gorgeous town. You can also book tours for places around Shimla to experience untouched beauty and also to enjoy a few picnics. Chail, Naldehra, Mashobra and Kasauli are some of the most popular day-trips from Shimla.
+      
+       
+      
+      For your Shimla itinerary, you can include a visit to Summer Hill, Jakhu temple. Mall, Christ Church, lakkar bazaar and lower bazaar.
+      
+      Cost: If you want to explore one of the most popular hill stations in India we recommend keeping aside between Rs.15,000 to Rs.60,000.</p>
+<br> <h4>Dharamshala</h4><br>
+ <p>One of the most beautiful hill stations in India, Dharamshala is nestled in Himachal Pradesh and is known for its charming monasteries, breathtaking views and warm local culture. Primarily a Tibetan settlement, Dharamshala has gradually become one of the most popular hill stations in India. 
+
+ 
+
+  Despite the crowds, the town manages to retain its simple way of life and offers a break from city life. Mcleodganj which is about 2km from Dharamshala is one of the most popular places in town and most travellers choose to book their accommodations here. Mcleodganj is also known for its many cafes which serve an array of cuisines including Tibetan, Chinese, Indian, Italian and Continental. 
+  
+   
+  
+  It’s in fact a delight for food lovers so ensure you keep aside a few hours in your itinerary to explore the many cafes here. Mcleodganj is also very well known for the Triund trek. Triund is an eight km trek so if you want to add some adventure to your itinerary, remember to keep a day aside for this experience. 
+  
+   
+  
+  Bhagsu Falls, Namgyal Monastery, Tsuglagkhang Complex, Library of Tibetan Works and Archives and War Memorial are some of the places which should definitely be included in an itinerary for Dharamshala.
+  
+  Cost: A vacation to Dharamshala is ideal for budget travellers. A trip here will cost travellers anywhere between Rs.10,000 to Rs.40,000.</p>
+ <br> <h4>Shillong</h4><br>
+  <p>Shillong is the capital of Meghalaya and is known for its mesmerising beauty, popular music events and of course the delicious cuisine. Popularly known as the ‘Scotland of the East’, Shillong is perhaps one of the only hill stations in India which should be visited during monsoon. 
+
+ 
+
+    Monsoon in Shillong is marked by lush fields, gurgling ponds and waterfalls and it truly is an experience you won’t forget. Elephant Falls, Shillong peak and Umiam Lake are some of the most beautiful places to visit in Shillong and should definitely be a part of your itinerary.
+    
+     
+    
+    For those who seek adventure on their trips, kayaking and water skiing are a must-try. Laitlum Canyon which is translated to ‘end of the hills’ is also another tourist site in this gorgeous hill station which is ideal for trekkers. We recommend booking trekking tours before you head here so you can enjoy the beauty without losing your way. 
+    
+     
+    
+    Mawsynram which is one of the wettest places in the world should also definitely be a part of your Shillong itinerary. Promising lush greenery and fresh air, we promise this will be one of the most memorable experiences of your trip. 
+    
+    Cost: A trip to Shillong can cost travellers anywhere between Rs.30,000 to Rs.55,000.</p>
+   <br> <h4>Binsar</h4><br>
+    <p>Everyone wants a break from everyday life and there isn’t a better option than hill stations in India for a break. But this also means crowds where you least expect it. However, Binsar, a small town in Uttarakhand promises you all the peace and calm you can hope for. With lush meadows, endless thick forests and a wildlife sanctuary which is a must-visit – Binsar is one of the most mesmerising off-beat hill stations in India.
+
+ 
+
+      The sanctuary is one of the most popular tourist attractions in Binsar and is at an altitude of 2500 meters. Head here to explore the local flora and fauna while you brush up on your photography skills. You must also include zero-point in your tour of the Binsar Wildlife Sanctuary. The topmost point of the sanctuary, one needs to embark on a short 2-km trek to reach Zero Point. We recommend booking a tour guide if you want to truly enjoy uninterrupted views of Nanda Devi and Kedarnath.
+      
+       
+      
+      Another reason why travellers are drawn to Binsar is because of Kasar Devi temple and Bineshwar Mahadev Temple. Besides being popular religious sites, both the temple also offer breathtaking views.
+      
+       
+      
+      There are a few guesthouses and local homestays which are the ideal place to stay. Not only do these resorts promise warm hospitality, but it’s also the best way to experience the local culture. 
+      
+      Cost: A trip to Binsar will cost you anywhere between Rs. 20,000 to Rs. 35,000.</p>
+      <br>
+     <br> <h4> 
+
+        Pahalgam</h4><br>
+        <p>What do you do when you want both – the comfort of the mountains and the serenity of water? You head to Pahalgam. One of the most beautiful hill stations in India, Pahalgam in Kashmir is an ideal hill station.
+
+ 
+
+          Complete with picture-perfect lush green mountains, gushing rivers and striking meadows, Pahalgam is one of those places which you never want to leave. The best way to enjoy the beauty and warm hospitality that Pahalgam offers is by booking a stay in one of the many resorts in the area. Owing to the popularity of the hill station, there are umpteen homestays which are opening their doors for guests. 
+          
+           
+          
+          Visited by travellers from across the world, there are umpteen places to see which will keep you busy in Pahalgam. Among the best places to visit in the area, we recommend Aru Valley, Betaab Valley and Pahalgam golf course. If you want to explore the higher regions, you can head out for the Tulian lake trek which offers spellbinding views of the area. 
+          
+           
+          
+          Located 12km from Pahalgam, Aru Valley is the most popular place to visit in the state. One of the most mesmerising mini hill stations in India, it is popular for Tarsar Lake, Kolahoi glacier and the plethora of scenic meadows which make your trip far more memorable. If you have a few days in your schedule, you can also include a two-day stay in Aru Valley in one of the local homestays. 
+          
+           
+          
+          If you happen to visit during winter, you can swish down snow-covered peaks to experience the thrill of skiing.
+          
+          Cost: A trip to one of the most spellbinding hill stations in India will cost you anywhere between Rs.30,000 to Rs.50,000.
+          
+           </p>
+          <br> <h4>Best Hill Stations in the World</h4><br>
+          <br> <h4>Cameron Highlands, Kuala Lumpur</h4><br>
+           <p>Cameron Highlands in Kuala Lumpur is one of the most visited and famous hill resort in Malaysia. At its highest point, Cameron Highlands reach a height of 2,000 meters. The highlands experience cool climate, with temperatures between 22° and 25° Celsius during the day and between 15° and 22° Celsius in the night. 
+
+ 
+
+            Cameron Highlands is a 4-hour drive from Kuala Lumpur. The hill resort is perfectly perched on the plateau above the river valley and offers a number of activities for travellers. From trekking, hiking, jungle camping to cycling and exploring tea estates – you will have a very busy itinerary. 
+            
+             
+            
+            The highland was discovered in 1885 and the Britishers introduced tea gardens to this hill. Since then, Cameron Highlands has gone on to become Malaysia's biggest tea exporter. 
+            
+             
+            
+            Since it was established by the British, there are a number of colonial cottages which you can include in your itinerary if you are a history lover. If you are in love with organic and fresh farm produce, Cameron Highlands is home to one of the best farms in Malaysia. There are a number of strawberry plantations, tea estates and cactus farms here that can mesmerise any visitor. There are a number of 4 and 3 star hotels here that are perfect for your stay.
+            
+            Cost: A trip to Cameron Highlands can cost you anywhere between Rs.1,00,000 to Rs.4,00,000 if you are travelling from India. </p>
+           <br> <h4>Paro, Bhutan</h4><br>
+            <p>A world famous hill station, Paro in Bhutan is ideal for nature lovers and photographers. Extending from the confluence of Paro Chhu to Mount Jomolhari, Paro is one of the widest valleys in Bhutan. The valley is marked by rice fields and a beautiful river flowing through the valley. 
+
+ 
+
+              Natural beauty is one of the biggest attractions in Paro but what stands out are the elegant traditionally styled houses and the flat valley bottom. The centre of the town is marked by a large prayer wheel and a small amphitheatre. During the evenings, the whole town comes together in the centre of the town and it almost feels as though the whole city is celebrating. The amphitheatre is also where several events are held across the year and are a must include in your itinerary. 
+              
+               
+              
+              Paro is also a huge attraction for travellers owing to the 155 temples and monasteries in the hill station. Dating back to the 14th century, some of the monasteries are a delight for history lovers to explore. 
+              
+               
+              
+              Among the most popular sites, Taktsang Monastery and Tiger’s Nest are two of the biggest reasons for travellers to spend a few days in Paro. The hill station is also home to Ta Dzong which is a national museum with an enthralling tour of Bhutan’s history and culture. Travellers must also include a visit to Drugyel Dzong which is also known as the Fortress of the Victorious Bhutanese. Constructed in 1646, it’s an enthralling and grand structure.
+              Cost: A trip to the hill station of Paro will cost travellers anywhere between Rs.60,000 to Rs.1,50,000.
+              
+               </p>
+              <br> <h4>Zurich, Switzerland</h4><br>
+               <p>Zurich is one of the most beautiful hill stations in the world. A world famous hill station for luxury travellers, it offers travellers a mix of natural beauty, adventure, sprawling resorts and action-packed holidays. The best part about exploring Zurich is that one doesn’t need to hire taxis or private cars, you can simply walk to popular tourist sites listed on your itinerary. 
+
+ 
+
+                Among the best places to see Zurich, one should definitely include a visit to Lake Zurich. One can either hire a boat to explore the lake or choose one of the many boat tours which are organised for visitors. For the more adventurous, cycling is a preferred way to explore the area. One of the most popular activities here is to dive into one of the many small swimming pools built in the lake.
+                
+                 
+                
+                If adventure is not on your mind, you can explore this beautiful city through the enthralling Museum of Art. The collection in the museum is from the 1200s to the 2000s and is a treat of history lovers and art enthusiasts. Among the most notable works in the museum, you should definitely take a look at the collection by Alberto Giacometti.
+                
+                 
+                
+                Don’t forget to include a visit to Niederdorf, also known as Old Town, located along the eastern bank of the River Limmat. Giving you a glimpse of the lively city, it is where you can explore the vibe and culture of the city. A beautiful mix of traditional and modern, you can easily spend a day here.
+                
+                Cost: A trip to Zurich from India can cost you anywhere between Rs.4,50,000 to Rs.6,00,000.</p>
+               <br> <h4>FAQs</h4><br>
+               <br> <h4>Which are the best hill stations in India?</h4><br>
+                <p>The best hill stations in India are Manali, Kasauli, Shimla, Almora, Gulmarg, Ranikhet, Coorg, Ooty, Mount Abu, Lonavala, Matheran, Saputara, Kodaikanal, Dalhousie and Shillong. 
+
+                </p>
+               <br> <h4>Which is the nearest hill station to Delhi?</h4><br>
+                <p>Delhi is located in proximity to some of the best hill stations in India. One can easily plan a weekend trip from the city to Shimla, Manali, Nainital, Bhimtal, Mussoorie and Lansdowne.</p>
+               <br> <h4>
+                  Which are the best hill stations in North India?</h4><br>
+                  <p>The best hill stations in North India are Shimla, Kasauli, Manali, Kasol, Dharamshala, Mussoorie, Naukuchital, Almora, Kausani and Dalhousie. </p>
+                 <br> <h4>Which are the best hill stations in South India?</h4><br>
+                  <p>Kerala is one of the major attractions in South India for travellers but there are also several hill stations which are ideal for mountain lovers. Some of the best hill stations in India which are in the south are Ooty, Idukki, Devikulum, Araku Valley, Kotagiri, Chikmagalur, Yelagiri, Ananthagiri and Wayanad.</p>
+                 <br> <h4>Which are the top hill stations in India for adventure enthusiasts?</h4><br>
+                  <p>The top hill stations in India for adventure enthusiasts are Rishikesh, Manali, Gulmarg, Bir, Khajjiar, Varkala and Sanasar.</p>
+                 <br> <h4>Which are the top hill stations in India for nature lovers?</h4><br>
+                  <p>The most famous hill stations in India for nature lovers are Munnar, Yercaud, Kausani, Lansdowne, Auli, Kurseong, Gangtok, Chail and Sangla Valley.</p>
+                 <br> <h4>How much will a trip to hill stations in India cost me?</h4><br>
+                  <p>A vacation to hill stations in India can cost travellers anywhere between Rs.5000 to Rs.40,000 depending on the number of people and the duration of the trip. There are umpteen hill stations in India where you can enjoy a budget as well as a luxurious holiday depending on your preferences. </p>
+                 <br> <h4>Three tips to remember when planning a trip to hill stations.</h4><br>
+                  <p>The three most important tips to remember when visiting hill stations are
+
+                    Don’t plan your trip around the monsoons
+                    Use public transport wherever possible and avoid driving unless you are a skilled driver and know your way around the hills
+                    Respect the environment and ensure that you always listen to what the locals suggest</p>
+                   <br> <h4>
+                      Name some world famous hill stations. </h4><br>
+                      <p>Some world famous hill stations are Zurich in Switzerland, Riobamba in Ecuador, Whistler in Canada, Breckenridge in Colorado. While some of the most famous hill stations in India are Manali, Dharamshala and Nainital.</p>
+                     <br> <h4>Share the best hill stations in India for trekking</h4><br>
+                      <p>The best hill stations in India for adventure enthusiasts are Manali, Naukuchiatal, Sangla Valley, Mcleodganj, Chopta, Araku Valley and Ladakh.
+
+                      </p>
+    </div>
+    <!-------------------------------------- fooooooooooooterrrrrrr --------------------------------------------------->
+    <div id="footer">
+      <hr>
+      <div class="footerFirst">
+       <div id="logo">
+           <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+           <p>The Global Travel Community</p><br>
+           <hr>
+           <div class="social-icon">
+             <a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" alt="loading"></a>
+             <a href=""><img src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png" alt=""></a>
+             <a href=""><img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+             <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU" alt=""></a>
+             <a href=""><img src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png" alt=""></a>
+             <a href=""><img src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+          </div>
+          <div class="GooglePlaystore">
+              <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+          </div>
+       </div>
+       <div>
+           <p>About Tripoto</p><br>
+           <a href="#">How It Works</a><br><br>
+           <a href="#">FAQ's</a><br><br>
+           <a href="#">Privacy Policy</a><br><br>
+           <a href="#">Terms & Conditions</a><br><br>
+           <a href="#">Careers</a><br><br>
+           <a href="#">Contact Us</a><br><br>
+       </div>
+       <div>
+          <p>Products</p><br>
+          <a href="#">Tour Packages</a><br><br>
+          <a href="#">Travel Guides</a><br><br>
+          <a href="#">Trips & ltineraries</a><br><br>
+          <a href="#">Weekend Getways</a><br><br>
+          <a href="#">Place to Visit</a><br><br>
+          <a href="#">Other Travel Categories</a><br><br>
+          <a href="#">Tripto Fourm</a><br><br>
+          <a href="#">Honeymoon Packages</a><br><br>
+       </div>
+       <div>
+          <p>Important Travel Links</p><br>
+          <a href="#">Goa Tourism</a><br><br>
+          <a href="#">Dubai Tourism</a><br><br>
+          <a href="#">Singapore Tourism</a><br><br>
+          <a href="#">Kerala Tourism</a><br><br>
+          <a href="#">Manali Tourism</a><br><br>
+          <a href="#">Bali Tourism</a><br><br>
+          <a href="#">Sri Lanka Tourism</a><br><br>
+          <a href="#">Honeymoon Destinations inindia</a><br><br>
+       </div>
+       <div>
+          <p>Partner Programs</p><br>
+          <a href="#">Buy Travel Leads</a><br><br>
+          <a href="#">Partner With Us</a><br><br>
+          <a href="#">Earn Credits</a><br><br>
+          <a href="#">Get paid to Travel</a><br><br>
+          <a href="#">Import Blog To ltinerary</a><br><br>
+          <a href="#">Tripto Ai</a><br><br>
+       </div>
+      </div>
+      <div class="footerSecond">
+          <hr>
+          <p>© All rights reserved.</p>
+          
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  $('.TrendingTrips').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+$('.DiscoverNow').slick({
+  slidesToShow: 4,
+  slidesToScroll:1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+});
+$('.DiscoverNow2').slick({
+  slidesToShow: 4,
+  slidesToScroll:1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+});
+
+$('.TravelGuides').slick({
+  slidesToShow: 4,
+  slidesToScroll:1,
+  autoplay: true,
+  autoplaySpeed: 6000,
+});
+
+  </script>
+</body>
+</html>

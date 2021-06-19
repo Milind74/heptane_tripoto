@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .blogContainer{
+            width: 100%;
+        }
+        .container_blog{
+         display:flex;
+         margin: 0 250px;
+         width: 80%;
+         gap: 1%;
+        }
+        .blog{
+         width:70%;
+         font-size:larger;
+        
+        }
+        .blog>img{
+            width:100%; 
+        }
+      .form{
+       width:20%;
+       height:580px;
+       border: 1px solid rgba(145,151,163,.2);
+       box-shadow: 0 5px 10px 0 #dddddd80;
+       font-family: helvetica,arial,sans-serif;
+       margin: 0;
+       padding-left:7px;
+
+       
+      }
+      .form>button{
+        width:180px;  
+        background: blue;
+        color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border:1px solid black;
+        height: 30px;
+      }
+      .form>p{
+          font-size:xx-small;
+      }
+      #div{
+         border: 1px solid black;
+         margin: 0 250px;
+         width: 55%;
+         margin-left:250px;
+      }
+      #comment{
+          width: 700px;
+          height: 100px;
+          margin-left:70px;
+          margin-top: 20px;
+      }
+      #btn1{
+    
+          background-color: blue;
+          color: white;
+          margin-left:700px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .container{
+     width: 100%;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     background-color: #fafafa;
+    
+     
+      }
+      .container>h1{
+     margin-left:230px;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     margin-bottom:20px;
+     margin-top: 20px;
+
+     
+      }
+      .TrendingTrips{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+     
+     
+      
+      }
+      .TravelGuides{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:280px;
+        margin:0 auto;
+       
+      }
+      .DiscoverNow{
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:220px;
+        margin:0 auto;
+        
+     }
+      .img>img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .button{
+        display: flex;
+        width: 320px;
+      }
+      .discription{
+        width: 320px;
+      }
+      .discription>h4{
+       
+        margin: 0;
+      }
+      .button>button{
+       margin-left:200px;
+       height:20px;
+       margin-top: 5px;
+     }
+     .button>h5{
+       margin-top: 5px;
+     }
+      .discription>p{
+        font-size: smaller;
+        margin-top: 0;
+      }
+      .img1>img{
+        width: 250px;
+        height:170px;
+        margin-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .img2>img{
+        width: 180px;
+        height:250px;
+        margin-top: 5px;
+        border-radius:5px;
+
+      }
+    .slick-arrow{
+        color: black;
+        font-size:0px;
+        margin: 0;
+        padding: 0;
+      }
+   
+    .slick-next {
+    right:0px;
+  
+    }
+    .slick-prev {
+    left: -45px;
+}
+
+
+    .slick-next, .slick-prev {
+      line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    }
+    .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(177, 171, 171);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+    font-family:helvetica,arial,sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footerFirst{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            width: 98%;
+            gap: 10px;
+         
+        }
+        .footerFirst>div{
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 1%;
+            height: 350px;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerSecond{
+            width: 98%;
+            margin:0 auto;
+            text-align: center;
+            font-family:helvetica,arial,sans-serif;
+            height: 100px;
+        }
+        .footerFirst>div>a{
+           text-decoration: none;
+           color: black;
+           font-size:smaller;
+        }
+        .footerSecond>p{
+            margin-top: 10px;
+            font-size: smaller;
+        }
+        #logo{
+            width: 180px;
+            font-size: smaller;
+            margin-left:25px;
+        }
+        .GooglePlaystore{
+       margin-left: 5px;
+            margin-top:15px;
+        }
+        .social-icon{
+            margin-top: 5px;
+        }
+        .social-icon>a>img{
+            height: 25px;
+        }
+        .author{
+        display: grid;
+        grid-template-columns: repeat(6,auto);
+        width:100%;
+        height:50px;
+        background-color:rgb(217, 243, 255);
+        margin-bottom: 10px;
+        margin: 10 auto;
+        }
+        .author>div>img{
+            border-radius:50%;
+            height: 35px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .name{
+            margin-top:10px;
+            margin-left:-90px;
+        }
+        .no{
+            margin-top:10px;  
+        }
+        .views{
+            margin-top:10px;  
+            text-align: right;
+        }
+        .facebook{
+            text-align: right;
+            margin-right: -90px;
+            
+
+            
+        }
+        .facebook>img{
+            height: 20px;
+        }
+        .heart{
+            text-align: right;
+            margin-right: -140px;
+        }
+        .no{
+            text-align: right;
+            margin-right: -190px;
+        }
+        .swis{
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            
+        }
+        .swis>img{
+            width:48%;
+            margin-left: 1%;
+        }
+        #btn1{
+        width: 75px;
+        height: 30px;
+        }
+        #countComment{
+          margin-top: 10px;
+          margin-left: 20px;
+        }
+        #div>p{
+          margin-left:20px;
+          margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blogContainer">
+        <div class="container_blog">
+        <div class="blog">
+           <h1>Gorgeous Cottages In Nainital That Will Leave You Awestruck</h1>
+           <!------------------------------------------- author div--------------------------- -->
+           <div class="author">
+               <div><img src="https://static2.tripoto.com/media/filter/mss/img/518407/UserPhoto/1575472484_1575472483089.jpg" alt="loading"> </div>
+               <div class="name">by Priya Pareek</div>
+              
+                <div class="no">
+                   <p>16</p>
+                </div>
+                   <div class="heart">
+                   <img src="https://img.icons8.com/plasticine/2x/like--v3.png" alt="loading">
+                </div>
+                   <div class="facebook">
+                   <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png" alt="loading">
+                </div>
+                   <div class="views">
+                   232K views
+               </div>
+            </div> 
+              <!------------------------------------------- author div closeed--------------------------- -->
+              <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530982324_the_writers_bungalow_and_its_dining_verandah_0_details_page_1.jpg" alt="loading">
+              <p>Known for its incredible landscapes, lush green surroundings, scenic views and majestic mountains, Nainital is one of India’s most favorite hill stations. The beautiful lakes, forests and mountains create an idyllic vacation setting as you plan to while away your weekend in nature’s lap.
+
+                The hill town not only offers nature’s beauty at its best but some really amazing properties which serve as home away from home. While there is no dearth of resorts and hotels in Nainital, cottages has their own unique charm and beauty. Staying in a cottage adds more fun to your trip. If you admire properties that are designed to reflect old world charm while offering best of amenities then here is a list of the best cottages that you can choose from.</p>
+                <h1>Swiss Cottage</h1>
+                <div class="swis">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530976592_image_11.jpg" alt="loading">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530976632_120179672.jpg" alt="loading">
+
+                </div>
+                <h1>Colonel's Cottage</h1>
+                <div class="swis">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530977733_145504077.jpg" alt="loading">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530977812_145510232.jpg" alt="loading">
+
+                </div>
+                <h1>Stone Heights</h1>
+                <div class="swis">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530979476_121294205.jpg" alt="loading">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530979510_150151615.jpg" alt="loading">
+
+                </div>
+                <h1>The Hammock Bhimtal-Pura Stays</h1>
+                <div class="swis">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530980068_81729950.jpg" alt="loading">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530980097_99372024.jpg" alt="loading">
+
+                </div>
+                <h1>Taredal Cottage</h1>
+                <div class="swis">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530980536_140882867.jpg" alt="loading">
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530980573_144290468.jpg" alt="loading">
+
+                </div>
+                <h1>Naini Cottage-Nainital</h1>
+                <img src="https://static2.tripoto.com/media/filter/nl/img/518407/TripDocument/1530981394_cottage.jpg" alt="loading">
+                <p>Set amid lush green surroundings overlooking majestic mountains in Nainital, Swiss Cottage is a combination of an old world charm with all luxuries. Booking your accommodation here gives you a chance to enjoy ultimate beauty, wilderness and quiet of the Himalayas. The cottage boasts of a quaint little English tea room for a perfect start to your morning.
+
+                    What's special: Elegant accommodation amid peaceful surrounding
+                    
+                    Cost: ₹5,600 per night
+                    
+                    Located on the Mall Road, one of the more happening places in Nainital, the Colonel's Cottage is a home-like lodging place. The accommodation offers you a chance to de-stress yourself as you laze around in the cool, mountain breeze. The cottage flaunts views of the mountains, a pretty garden dotted with colorful flowers and homely feeling.
+                    
+                    What’s special: Mountain views
+                    
+                    Cost: ₹2,500 per night
+                    
+                    Another beautiful cottage in the hill town, Hutton Cottage is where you can enjoy the sounds of nature from the surrounding oak forest. While retaining the old world charm, the cottage offers all facilities for a convenient stay.
+                    
+                    What’s special: The nearby oak forest brings nature closer to you
+                    
+                    Cost: ₹7,200 per night
+                    
+                    Stone Heights is a beautiful cottage perfect for budget travelers. The cottage is nestled in an oak forest which adds to the beauty of its surroundings. Whether you are travelling with family or your beloved, Stone Heights promises a memorable stay.
+                    
+                    What’s special: Surrounded by oak forest
+                    
+                    Cost: Starts ₹5,000 per night
+                    
+                    Beautiful independent cottages with lush grounds, the Hammock is features 15 cottages fitted with all felicities you could need. Each cottage is has its own private sit out unit overlooking the gorgeous lawn. Brimming with serenity, it's a quaint holiday stay.
+                    
+                    What’s special: Independent cottages with private sit-outs
+                    
+                    Cost: ₹6,600 per night
+                    
+                    The tranquility of Taradale Cottage and views of green valley lures travelers from across the nation. Built in British style architecture, the property features a small English garden. This quaint attic has six well-equipped rooms with modern comforts. The interiors are tastefully designed with colonial furniture, wooden ceilings and fireplaces.
+                    
+                    What’s special: Scenic views
+                    
+                    Cost: ₹6,000 per night
+                    
+                    For a homely stay book your accommodation at the Naini Cottage. Designed with utmost simplicity, the cottage has almost all the required felicities and moreover it's a home away from home.
+                    
+                    What's special: Homely living
+                    
+                    Cost: ₹8,000 per night
+                    
+                    Have you ever been to Nainital? Share your experience with Tripoto community here.
+                    
+                    Meanwhile, watch some amazing travel videos on Tripoto's YouTube channel.
+                    
+                    Frequent Searches Leading To This Page:-
+                    Nainital Package 4N/5D, Nainital Tour Package For Couple, Nainital Tour Package From Delhi By Car, Nainital Family Package, Group Tour Packages To Nainital, Nainital Tour Plan 7 Days</p>
+        </div>
+        <div class="form">
+            <H3>Want to book a similar trip?</H3><br><br>
+            <input type="text" placeholder="email"><br><br>
+            <input type="text" placeholder="Full Name"><br><br>
+            <input type="text" placeholder="Contact Number"><br><br>
+            <label for="">Deprature Date</label><br><br>
+            <input type="date" id="myDate" placeholder="Deprature Date"><br><br>
+            <input type="text" placeholder="Deprature City"><br><br>
+            <input type="text" placeholder="Destinations"><br><br>
+            <input type="text" placeholder="Budget Per Person"><br><br>
+            <select name="" id="">
+                <option value="5 star">5 star</option>
+                <option value="5 star">4 star</option>
+                <option value="5 star">3 star</option>
+                <option value="5 star">2 star</option>
+                <option value="5 star">Don't need Hotel</option>
+            </select><br><br>
+            <label for="">Flight Book or not?</label><br><br>
+            <input type="radio" value="yes"> <label for="">YES</label>
+            <input type="radio" value="No">NO<br><br>
+            <button onclick="call()">Request Call Back</button><br><br>
+            <p>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
+        </div>
+    </div>
+    <!------------------------------- comment like ----------------------------------------------- -->
+    <div id="div">
+        <div id="countComment">Comment:0</div>
+        <input type="text" id="comment" ><br> <br>
+        <button  id="btn1" onclick="comment()">POST</button><br> <br>
+
+    </div>
+      <!------------------------------- comment like close ----------------------------------------------- -->
+    
+</div>
+
+<!-- -------------------------------------------------container boxes ---------------------------------------------------->
+<div class="container">
+    <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+    <h1>Trending Trips</h1>
+    <div class="TrendingTrips">
+    
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1327729/TripDocument/1550815603_1485867480_1485857503_dsc_0361.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>भीड़-भाड़ से दूर और नज़ारों से भरपूर है भारत का सबसे ऊँचे रेलवे स्टेशन 'घूम'!</h4>
+        <p>क्या आपको छुट्टियाँ बिताने के लिए किसी शांत और सुन्दर जगह की तलाश है? अगर आपने दार्जिलिंग अपनी छु...</p>
+        <hr>
+      </div>
+   
+      <div>
+   
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1993513/TripDocument/1606728419_1606728417485.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>देश के कुछ ऐसे शानदार इंडियन आर्किटेक्चरल स्ट्रक्चर्स जिन पर पूरी दुनिया को है गर्व</h4>
+        <p>पूरी दुनिया में इंडिया के आर्किटेक्चरल मार्वेल्स की तूती यूं ही नहीं बोलती। इसके पीछे इंडियन इंजी...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://cdn1.tripoto.com/200.2/img/featured-trips/featured-trip-1_135_86.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>5 best things to do in Rishikesh | Secret Location</h4>
+        <p> Every now and then I get this query from my friends that what could be the top places that ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/794607/TripDocument/1571663083_1280px_ridge_shimla.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Love Travelling in Winter? These 8 Destinations Look Gorgeous This Time of the Year</h4>
+        <p>Has it ever occurred to you that a place you just visited didn't look as mind-blowing as it did i...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/816121/TripDocument/1605104789_food_goa.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>सराहन: हिमाचल का वो खूबसूरत गाँव जहाँ आकर वक्त भी थम जाता है!</h4>
+        <p>हर किसी का मन करता है कि वो कहीं शांत-सी जगह पर कुछ दिन गुज़ारे। जहाँ मन बावरा होकर कहीं भी चलने ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1350024/TripDocument/1568915609_sarahan.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Gorgeous Cottages In Nainital That Will Leave You Awestruck</h4>
+        <p>Known for its incredible landscapes, lush green surroundings, scenic views and majestic mountains...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/522191/TripDocument/1550152270_bijoy_sagar_lake.png" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>There's Another Udaipur In India And We Bet You Didn't Know About It</h4>
+        <p>We all have read and heard about the beautiful city of Udaipur in Rajasthan, but we bet that you ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/518407/TripDocument/1530982324_the_writers_bungalow_and_its_dining_verandah_0_details_page_1.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Bookmark these 5 Restaurants in North Goa for a great view and lip-smacking food</h4>
+        <p>With Goa now open to tourists and the tourist season just around the corner, I am sure many of yo...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1235940/TripDocument/1545823931_mrk.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>दिल्ली की 15 सस्ती व मज़ेदार चीज़ें जिनके बारे मे आपको कोई नही बता पाएगा</h4>
+        <p>श्रेय : मार्क ऑन फ्लिकरदिल्ली ऐसे ऐसे तॉहफ़ों से भरा है कि आप का मान झूम उठेगा | रोज़मर्रा की उबा...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     
+     
+   </div>
+   <h1>Discover Now</h1>
+     <!-------------------------------------- Discover now-------------------------------------------------------------------------->
+     <div class="DiscoverNow">
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128872_hill1.png" alt="">
+         <h2>Hill Station</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128796_beach5.png" alt="">
+         <h2>Beaches</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587154281_tourist_attraction_4.png" alt="">
+         <h2>Tourist Attractions</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155459_weekend_getaways.png" alt="">
+         <h2>Weekends Getways</h2>
+       </div>
+      
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155577_adventure_activities.png" alt="">
+           <h2>Adventure Activities</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155306_road_trip.png" alt="">
+           <h2>Road Trips</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125064_trekking_route_3.png" alt="">
+           <h2>Trekking Routes</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125598_family_vacation.png" alt="">
+           <h2>Family Vacations</h2>
+         </div>
+       
+     </div>
+     <h1>Explore Travel Guides</h1>
+     <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+   
+     <div class="TravelGuides">
+       
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216649_andaman.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732339_1_10.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732387_3_7.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732417_2_10.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732456_dubai.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt="loading">
+       </div>
+       
+     </div>
+   </div>
+      <!-------------------------------------- fooooooooooooterrrrrrr --------------------------------------------------->
+      <div id="footer">
+        <hr>
+        <div class="footerFirst">
+         <div id="logo">
+             <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+             <p>The Global Travel Community</p><br>
+             <hr>
+             <div class="social-icon">
+               <a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" alt="loading"></a>
+               <a href=""><img src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png" alt=""></a>
+               <a href=""><img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+               <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU" alt=""></a>
+               <a href=""><img src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png" alt=""></a>
+               <a href=""><img src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+            </div>
+            <div class="GooglePlaystore">
+                <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+            </div>
+         </div>
+         <div>
+             <p>About Tripoto</p><br>
+             <a href="#">How It Works</a><br><br>
+             <a href="#">FAQ's</a><br><br>
+             <a href="#">Privacy Policy</a><br><br>
+             <a href="#">Terms & Conditions</a><br><br>
+             <a href="#">Careers</a><br><br>
+             <a href="#">Contact Us</a><br><br>
+         </div>
+         <div>
+            <p>Products</p><br>
+            <a href="#">Tour Packages</a><br><br>
+            <a href="#">Travel Guides</a><br><br>
+            <a href="#">Trips & ltineraries</a><br><br>
+            <a href="#">Weekend Getways</a><br><br>
+            <a href="#">Place to Visit</a><br><br>
+            <a href="#">Other Travel Categories</a><br><br>
+            <a href="#">Tripto Fourm</a><br><br>
+            <a href="#">Honeymoon Packages</a><br><br>
+         </div>
+         <div>
+            <p>Important Travel Links</p><br>
+            <a href="#">Goa Tourism</a><br><br>
+            <a href="#">Dubai Tourism</a><br><br>
+            <a href="#">Singapore Tourism</a><br><br>
+            <a href="#">Kerala Tourism</a><br><br>
+            <a href="#">Manali Tourism</a><br><br>
+            <a href="#">Bali Tourism</a><br><br>
+            <a href="#">Sri Lanka Tourism</a><br><br>
+            <a href="#">Honeymoon Destinations inindia</a><br><br>
+         </div>
+         <div>
+            <p>Partner Programs</p><br>
+            <a href="#">Buy Travel Leads</a><br><br>
+            <a href="#">Partner With Us</a><br><br>
+            <a href="#">Earn Credits</a><br><br>
+            <a href="#">Get paid to Travel</a><br><br>
+            <a href="#">Import Blog To ltinerary</a><br><br>
+            <a href="#">Tripto Ai</a><br><br>
+         </div>
+        </div>
+        <div class="footerSecond">
+            <hr>
+            <p>© All rights reserved.</p>
+        
+        </div>
+    </div>
+<script>
+
+function call() {
+document.getElementById("myDate").value = "2014-02-09";
+alert("Request Submitted,We will call you soon")
+}
+// <!------------------------------- comment like ----------------------------------------------- -->
+var comment1=1;
+function comment(){
+   var div=document.getElementById("div");
+   var input=document.getElementById("comment").value;
+   var p=document.createElement("p");
+   p.innerHTML=`USER   <img height="25px" src="https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png" alt="loading"> ${input}`;
+   div.appendChild(p)
+   var count=document.getElementById("countComment");
+    count.innerHTML=`COMMENT: ${comment1++}`
+   
+}
+// <!------------------------------- comment like close----------------------------------------------- -->
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.TrendingTrips').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+  
+  $('.DiscoverNow').slick({
+    slidesToShow: 4,
+    slidesToScroll:1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+  });
+  
+  $('.TravelGuides').slick({
+    slidesToShow: 5,
+    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  });
+    </script>
+</body>
+</html>

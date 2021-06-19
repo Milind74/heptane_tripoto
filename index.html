@@ -731,14 +731,6 @@ body{
       </div>
       <input style="color: white; font-weight: bolder;" type="button" value="LOG IN" id="button">
      <div id="signup">
-
-
-
-
-
-
-
-
          <p style="text-align: center;">Don't have an account? 
           <a href="#" style="color: blue;" onclick="signup()">Sign Up</a>
       </p>
@@ -763,7 +755,6 @@ body{
 <div id="signin">
   <div id="close" onclick="closesignup()">
       <img src="https://logodix.com/logo/1077363.png">
-
   </div>
   <div id="facebook">
       <div id="fbimage">
@@ -2076,7 +2067,6 @@ check.append(img)
 function signup(){
 document.getElementById('login').style.display='none'
 document.getElementById('signin').style.display='block'
-
 }
 function loginAgain(){
 document.getElementById('login').style.display='block'
@@ -2084,8 +2074,6 @@ document.getElementById('signin').style.display='none'
 }
 function closesignup(){
 document.getElementById('signin').style.display='none'
-
-
 }
 document.getElementById('button1').addEventListener('click',validate)
 var arr1=JSON.parse(localStorage.getItem('detail'))||[]
@@ -2101,7 +2089,6 @@ function validate(){
       email:email,
       password:password
   }
-  alert("Account Created Please Login")
   arr1.push(obj)
   localStorage.setItem('detail',JSON.stringify(arr1))
 }

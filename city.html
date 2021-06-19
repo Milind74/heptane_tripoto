@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+           #nav{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            top: 0;
+            left: 0;
+            background-color: cornflowerblue;
+            position: fixed;
+        }
+        #nav>div:nth-child(1){
+            width: 13%;
+            height: 10vh;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+        #nav>div:nth-child(3){
+            width: 35%;
+            height: 10vh;
+            margin-right: 30px;
+        }
+        #link{
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bolder;
+            color: white;
+        }
+        #navsearch{
+            width: 30%;
+            height: 2vw;
+            border-radius: 5px;
+            background-color: white;
+            padding: 7px;
+            margin-top: 12px;
+        }
+        #navsearch{
+            width: 30%;
+            height: 2vw;
+            border-radius: 5px;
+            background-color: white;
+            padding: 7px;
+            margin-top: 12px;
+        }
+        #newinput{
+            line-height: 1vh;
+            border: none;
+            outline: none;
+            width: 90%;
+        }
+        .fa-search{
+            color: black;
+        }
+        img{
+            width: 100%;
+            height: 70%;
+        }
+        #travel{
+            width: 82%;
+            height: 30vh;
+            margin: auto;
+            margin-top: 90px;
+        }
+        #explore{
+            width: 82%;
+            height: 50vh;
+            margin: auto;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 35% 35% 35%;
+        }
+        #explore2{
+            width: 82%;
+            height: 45vh;
+            margin: auto;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 35% 35% 35%;
+        }
+        #explore1{
+            width: 82%;
+            height: 10vh;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #topattraction{
+            width: 82%;
+            height: 10vh;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #travel>button:nth-of-type(odd){
+            margin-left: 500px;
+            border: none;
+            background-color: white;
+            color: blue;
+        }
+        #travel>button:nth-of-type(even){
+           height: 5vh;
+           margin-top: 20px;
+           border: none;
+           background-color: rgb(148, 73, 219);
+           color: white;
+           border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <div >
+            <img id="img" src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg">
+        </div>
+        <div id="navsearch">
+            <input id="newinput" type="text" value="" placeholder="Search for itineraise, destination, hotels or activities" value="hii">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div id="link">
+            <a href="#">Inspirations▼</a>
+            <a href="#">Forum</a>
+            <a href="#">Holidays</a>
+            <a href="#">Publish Trip▼</a>
+            <a href="#" onclick="login()" id="remove">Sign in</a>
+        </div>
+    </nav>
+    <div id="travel">
+        <h1 style="font-weight: bolder; font-size: 40px; line-height: 2px;">Rajasthan Tourism and Travel Guide</h1>
+        <p style="font-size: 16.9px;">What captivates travellers about Rajasthan? We believe it’s the element of surprise. Rajasthan is one of the few places in the world where no two experiences are the same. Where on one trip you could be enjoying tea in a royal palace, on another you could be traversing the thick jungles of Ranthambore. But, what remains same is the vibrant culture and the heartwarming hospitality of the locals. Located in western India, Rajasthan tourism promises memorable experiences</p>
+        <button>Show more</button><br>
+        <button>Get Customised Packages</button>
+    </div>
+    <div id="explore1">
+        <h1 style="font-weight: bolder; font-size: 40px; line-height: 2px;">Explore Packages</h1>
+  </div>
+    <div id="explore">
+          <!-- <h1 style="font-weight: bolder; font-size: 40px; line-height: 2px;">Explore Packages</h1> -->
+    </div>
+    <div id="topattraction">
+        <h1 style="font-weight: bolder; font-size: 40px; line-height: 2px;">Top Attractions</h1>
+    </div>
+    <div id="explore2">
+
+    </div>
+</body>
+</html>
+<script>
+    var packages=[
+        {
+            image:"https://cdn1.tripoto.com/media/filter/tst/img/1791424/Image/1615874302_4.jpg",
+            package:"PACKAGE",
+            about:"Love And Adventure In Rajsthan-Soulmate Special",
+            city:"Udaipur",
+            stay:"6D-5N",
+            cost:"29,070 INR/Person"
+        },
+        {
+            image:"https://cdn1.tripoto.com/media/filter/tst/img/2025553/Image/1614240749_1_1.jpg",
+            package:"PACKAGE",
+            about:"GLIMPSES OF RAJSTHAN",
+            city:"Jaipur",
+            stay:"6D-5N",
+            cost:"29,070 INR/Person"
+        },
+        {
+            image:"https://cdn1.tripoto.com/media/filter/tst/img/2025553/Image/1614240836_2.jpg",
+            package:"PACKAGE",
+            about:"GLORY OF RAJASTHAN",
+            city:"Jaipur",
+            stay:"6D-5N",
+            cost:"29,070 INR/Person"
+        }
+    ]
+    var topattractions=[
+        {
+            image:"https://cdn1.tripoto.com/media/filter/tst/img/840131/Image/1580220218_amber_palace_amer.jpg",
+            quotes:"Amber Place,Amer"
+        },
+        {
+            image:"https://cdn1.tripoto.com/media/filter/tst/img/840131/Image/1580220426_ranthambore_national_park.jpg",
+            quotes:"Ranthambore National Park"
+        },
+        {
+            image:"https://cdn1.tripoto.com/media/filter/tst/img/840131/Image/1580220442_mehrangarh_fort_and_museum_jodhpur.jpg",
+            quotes:"MehranGarh Fort And Museum, Jodhpur"
+        }
+    ]
+     var parent=document.getElementById('explore')
+    packages.forEach(Element=>{
+        var div=document.createElement('div')
+        // div.style.display="grid"
+        // div.style.gridTemplateColumns="30% 30% 30%"
+        var div2=document.createElement('div')
+        div2.style.width="30%"
+        div2.style.width="50vh"
+        var img=document.createElement('img')
+        img.src=`${Element.image}`
+        img.style.width="100%"
+        img.style.height="20vh"
+        var h6=document.createElement('h6')
+        h6.innerHTML=`${Element.package}`
+        var h3=document.createElement('h3')
+        h3.innerHTML=`${Element.about}`
+        var div3=document.createElement('div')
+          div3.innerHTML=`<h4>${Element.city}<button style="margin-left: 200px; border-radius: 5px; background-color: green; border: none; color: white;">${Element.stay}</button></h4>`
+        var div4 =document.createElement('div')
+         div4.innerHTML=`<h4>${Element.cost}<button style="margin-left: 120px; border-radius: 5px; background-color: wheat; border: none;" onclick="myfunction()">Get Quotes</button></h4>`
+        div2.append(img,h6,h3,div3,div4)
+        div.append(div2)
+        parent.append(div)
+    })
+    var explore2=document.getElementById("explore2")
+    topattractions.forEach(Element=>{
+        var divine=document.createElement('div')
+        divine.style.width="85%"
+        divine.style.height="34vh"
+        var imgine=document.createElement('img')
+        imgine.style.width="100%"
+        imgine.style.height='30vh'
+        imgine.src=`${Element.image}`
+        var h3_about=document.createElement('h3')
+        h3_about.innerText=`${Element.quotes}`
+        divine.append(imgine,h3_about)
+        explore2.append(divine)
+    })
+    function myfunction(){
+        window.location.href="rajasthan.html"
+    }
+</script>

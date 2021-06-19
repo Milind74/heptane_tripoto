@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .blogContainer{
+            width: 100%;
+        }
+        .container_blog{
+         display:flex;
+         margin: 0 250px;
+         width: 80%;
+         gap: 1%;
+        }
+        .blog{
+         width:70%;
+         font-size:larger;
+         margin-bottom: 50px;
+        
+        }
+        .blog>img{
+            width:100%; 
+        }
+      .form{
+       width:20%;
+       height:580px;
+       border: 1px solid rgba(145,151,163,.2);
+       box-shadow: 0 5px 10px 0 #dddddd80;
+       font-family: helvetica,arial,sans-serif;
+       margin: 0;
+       padding-left:7px;
+
+       
+      }
+      .form>button{
+        width:180px;  
+        background: blue;
+        color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border:1px solid black;
+        height: 30px;
+      }
+      .form>p{
+          font-size:xx-small;
+      }
+      #div{
+         border: 1px solid black;
+         margin: 0 250px;
+         width: 55%;
+         margin-left:250px;
+      }
+      #comment{
+          width: 700px;
+          height: 100px;
+          margin-left:70px;
+          margin-top: 20px;
+      }
+      #btn1{
+    
+          background-color: blue;
+          color: white;
+          margin-left:700px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .container{
+     width: 100%;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     background-color: #fafafa;
+    
+     
+      }
+      .container>h1{
+     margin-left:230px;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     margin-bottom:20px;
+     margin-top: 20px;
+
+     
+      }
+      .TrendingTrips{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+     
+     
+      
+      }
+      .TravelGuides{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:280px;
+        margin:0 auto;
+       
+      }
+      .DiscoverNow{
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:220px;
+        margin:0 auto;
+        
+     }
+      .img>img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .button{
+        display: flex;
+        width: 320px;
+      }
+      .discription{
+        width: 320px;
+      }
+      .discription>h4{
+       
+        margin: 0;
+      }
+      .button>button{
+       margin-left:200px;
+       height:20px;
+       margin-top: 5px;
+     }
+     .button>h5{
+       margin-top: 5px;
+     }
+      .discription>p{
+        font-size: smaller;
+        margin-top: 0;
+      }
+      .img1>img{
+        width: 250px;
+        height:170px;
+        margin-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .img2>img{
+        width: 180px;
+        height:250px;
+        margin-top: 5px;
+        border-radius:5px;
+
+      }
+    .slick-arrow{
+        color: black;
+        font-size:0px;
+        margin: 0;
+        padding: 0;
+      }
+   
+    .slick-next {
+    right:0px;
+  
+    }
+    .slick-prev {
+    left: -45px;
+}
+
+
+    .slick-next, .slick-prev {
+      line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    }
+    .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(177, 171, 171);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+            margin: 0;
+            padding: 0;
+            font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+        }
+        .footerFirst{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            width: 98%;
+            gap: 10px;
+         
+        }
+        .footerFirst>div{
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 1%;
+            height: 350px;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerSecond{
+            width: 98%;
+            margin:0 auto;
+            text-align: center;
+            font-family:helvetica,arial,sans-serif;
+            height: 100px;
+        }
+        .footerFirst>div>a{
+           text-decoration: none;
+           color: black;
+           font-size:smaller;
+        }
+        .footerSecond>p{
+            margin-top: 10px;
+            font-size: smaller;
+        }
+        #logo{
+            width: 180px;
+            font-size: smaller;
+            margin-left:25px;
+        }
+        .GooglePlaystore{
+       margin-left: 5px;
+            margin-top:15px;
+        }
+        .social-icon{
+            margin-top: 5px;
+        }
+        .social-icon>a>img{
+            height: 25px;
+        }
+        .highlight{
+            display: flex;
+           
+        }
+        .highlight>h1{
+            margin-left:580px;
+        }
+        .icon{
+          display: flex;
+          gap: 20px;
+          margin-bottom: 50px;
+        }
+        .icon>main>img{
+          height: 20px;
+        }
+        .highlight>button{
+          background-color: #359391;
+          height: 20px;
+          width: 120px;
+          color: white;
+          border: none;
+          margin-top: 5px;
+        }
+        #p2{
+          margin-bottom: 20px;
+        }
+        .holiday{
+          display: flex;
+        }
+        .holiday>img{
+          height: 20px;
+        }
+        .holiday>p{
+          font-size: smaller;
+        }
+        .day1{
+          border: 1px solid black;
+       height: auto;
+          margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blogContainer">
+        <div class="container_blog">
+        
+        <div class="blog">
+          <hr>
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/1429685/Image/1579604429_shimla_manali_1.jpg" alt="loading">
+        <h1>Around Shimla and Manali</h1>
+        <hr>
+        <div class="holiday">
+          <img src="https://cdn1.tripoto.com/media/filter/mss/img/1548150/UserPhoto/1557152587_holiday_yaari_logo.jpg" alt="loading">
+          <p>Holiday Yaari</p>
+        </div>
+     <div class="highlight">       
+        <button>6 Days .5 Night</button>
+        <h1>12,000</h1>/ person
+    </div>
+       <div>
+         <p>Location</p>
+         <p>Shimla</p>
+         <h2>Highlight</h2>
+        </div>
+         <div class="icon">
+           <main><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425505_meals.png" alt="loading">meals</main>
+           
+           <main><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425506_cab.png" alt="loading">Cab</main>
+           
+           <main><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425508_sightseeing.png" alt="loading">Sightseeing</main>
+           <main><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425508_hotel.png" alt="loading">Hotel</main>
+        
+
+        
+       </div>
+        <hr>
+        <h1>Overview</h1>
+        <p id="p2">Shimla is the most stunning and breathtaking valleys of Himalayas. Once Shimla was the go-to getaway paradise of British East India Company during the summer. The valley is set among the towering snow-capped Shivalik Mountains. Manali is another hotspot for tourists who get enthralled by the natural beauty with the mighty Himalayas in the backdrop. You can always enjoy the feeling of floating on the clouds. Check out this detailed itinerary below for more information.</p>
+        <hr>
+        <h1>Itinerary</h1>
+        <div class="day1">
+          <details>
+            <summary>Day 1</summary>
+            <p><li>Once you reach Delhi, meet our representative</li>
+              <li>Enjoy an assisted transfer to your first destination Shimla, by road</li>
+              <li>Fondly referred to as the 'Queen of Hills', Shimla is a very popular hill town in Himachal Pradesh</li>
+              <li>As you reach, check-in at the hotel</li>
+            <li>After settling into the rooms, the day is at your discretion</li>
+          <li>Spend the day doing the activities of your interest</li>
+        <li>Enjoy dinner and overnight stay at the hotel</li></p>
+          </details>
+        </div>
+        <div class="day1">
+          <details>
+            <summary>Day 2</summary>
+            <p><li>Once you reach Delhi, meet our representative</li>
+              <li>Enjoy an assisted transfer to your first destination Shimla, by road</li>
+              <li>Fondly referred to as the 'Queen of Hills', Shimla is a very popular hill town in Himachal Pradesh</li>
+              <li>As you reach, check-in at the hotel</li>
+            <li>After settling into the rooms, the day is at your discretion</li>
+          <li>Spend the day doing the activities of your interest</li>
+        <li>Enjoy dinner and overnight stay at the hotel</li></p>
+          </details>
+        </div>
+        <div class="day1">
+          <details>
+            <summary>Day 3</summary>
+            <p><li>Once you reach Delhi, meet our representative</li>
+              <li>Enjoy an assisted transfer to your first destination Shimla, by road</li>
+              <li>Fondly referred to as the 'Queen of Hills', Shimla is a very popular hill town in Himachal Pradesh</li>
+              <li>As you reach, check-in at the hotel</li>
+            <li>After settling into the rooms, the day is at your discretion</li>
+          <li>Spend the day doing the activities of your interest</li>
+        <li>Enjoy dinner and overnight stay at the hotel</li></p>
+          </details>
+        </div>
+        <div class="day1">
+          <details>
+            <summary>Day 4</summary>
+            <p><li>Once you reach Delhi, meet our representative</li>
+              <li>Enjoy an assisted transfer to your first destination Shimla, by road</li>
+              <li>Fondly referred to as the 'Queen of Hills', Shimla is a very popular hill town in Himachal Pradesh</li>
+              <li>As you reach, check-in at the hotel</li>
+            <li>After settling into the rooms, the day is at your discretion</li>
+          <li>Spend the day doing the activities of your interest</li>
+        <li>Enjoy dinner and overnight stay at the hotel</li></p>
+          </details>
+        </div>
+        <div class="day1">
+          <details>
+            <summary>Day 5</summary>
+            <p><li>Once you reach Delhi, meet our representative</li>
+              <li>Enjoy an assisted transfer to your first destination Shimla, by road</li>
+              <li>Fondly referred to as the 'Queen of Hills', Shimla is a very popular hill town in Himachal Pradesh</li>
+              <li>As you reach, check-in at the hotel</li>
+            <li>After settling into the rooms, the day is at your discretion</li>
+          <li>Spend the day doing the activities of your interest</li>
+        <li>Enjoy dinner and overnight stay at the hotel</li></p>
+          </details>
+        </div>
+        <div class="day1">
+          <details>
+            <summary>Day 6</summary>
+            <p><li>Once you reach Delhi, meet our representative</li>
+              <li>Enjoy an assisted transfer to your first destination Shimla, by road</li>
+              <li>Fondly referred to as the 'Queen of Hills', Shimla is a very popular hill town in Himachal Pradesh</li>
+              <li>As you reach, check-in at the hotel</li>
+            <li>After settling into the rooms, the day is at your discretion</li>
+          <li>Spend the day doing the activities of your interest</li>
+        <li>Enjoy dinner and overnight stay at the hotel</li></p>
+          </details>
+        </div>
+        <br>
+        <hr><br><br>
+        <h2>Hotel Details</h2>
+        <li>Golf Link (3-star) in Shimla, or similar</li>
+        <li>Rajput Royal Cottage (3-star) in Manali, or similar</li><br>
+        <hr><br><br>
+        <h2>Inclusions</h2>
+        <li>Two-way transfer from the railway station/airport</li>
+        <li>Accommodations</li>
+        <li>Meals: 05 breakfast and 05 dinners at all places</li>
+        <li>Welcome drinks on arrival (non-alcoholic)</li>
+        <li>Additional requirement will be at an extra cost</li>
+        <li>Wi-fi connectivity on a complimentary basis</li>
+        <li>All applicable government taxes</li><br>
+        <hr><br><br>
+        <h2>Exclusions</h2>
+        <li>Any airfare, train fare, an overland journey which is not mentioned in the itinerary</li>
+        <li>Guide/entry fees, boating, elephant riding/horse riding etc. during sightseeing</li>
+        <li>Any personal nature items like laundry, bar bills, table bills, camera fee, tips or any other item</li>
+        <li>Room heater at the hotel</li>
+        <li>Any medical/rescue evacuation due to mishaps</li>
+        <li>Optional activities mentioned in the itinerary</li>
+        <li>Any camera, video cam fee</li>
+        <li>5 % GST</li><br>
+        <hr><br><br>
+        <details>
+          <summary>Cancellation Policy</summary>
+          <p> If the cancellation is done 30-15 days before departure: 75% of your package cost is refundable
+
+          If the cancellation is done 14 to 07 days before departure: 50% of your token amount is refundable
+          
+          If the cancellation is done 07 days before departure: 100% retention</p>
+        </details>
+      </div>
+
+      
+        <div class="form">
+            <H3>Want to book a similar trip?</H3><br><br>
+            <input type="text" placeholder="email" required><br><br>
+            <input type="text" placeholder="Full Name" required><br><br>
+            <input type="text" placeholder="Contact Number" required><br><br>
+            <label for="">Deprature Date</label><br><br>
+            <input type="date" id="myDate" placeholder="Deprature Date" required><br><br>
+            <input type="text" placeholder="Deprature City" required><br><br>
+            <input type="text" placeholder="Destinations" required><br><br>
+            <input type="text" placeholder="Budget Per Person" required><br><br>
+            <select name="" id="" required>
+                <option value="5 star">5 star</option>
+                <option value="5 star">4 star</option>
+                <option value="5 star">3 star</option>
+                <option value="5 star">2 star</option>
+                <option value="5 star">Don't need Hotel</option>
+            </select><br><br>
+            <label for="">Flight Book or not?</label><br><br>
+            <input type="radio" value="yes"> <label for="">YES</label>
+            <input type="radio" value="No">NO<br><br>
+            <button onclick="call()">Request Call Back</button><br><br>
+            <p>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
+        </div>
+    </div>
+<!-- -------------------------------------------------container boxes ---------------------------------------------------->
+
+      <!-------------------------------------- fooooooooooooterrrrrrr --------------------------------------------------->
+      <div id="footer">
+        <hr>
+        <div class="footerFirst">
+         <div id="logo">
+             <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+             <p>The Global Travel Community</p><br>
+             <hr>
+             <div class="social-icon">
+               <a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" alt="loading"></a>
+               <a href=""><img src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png" alt=""></a>
+               <a href=""><img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+               <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU" alt=""></a>
+               <a href=""><img src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png" alt=""></a>
+               <a href=""><img src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+            </div>
+            <div class="GooglePlaystore">
+                <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+            </div>
+         </div>
+         <div>
+             <p>About Tripoto</p><br>
+             <a href="#">How It Works</a><br><br>
+             <a href="#">FAQ's</a><br><br>
+             <a href="#">Privacy Policy</a><br><br>
+             <a href="#">Terms & Conditions</a><br><br>
+             <a href="#">Careers</a><br><br>
+             <a href="#">Contact Us</a><br><br>
+         </div>
+         <div>
+            <p>Products</p><br>
+            <a href="#">Tour Packages</a><br><br>
+            <a href="#">Travel Guides</a><br><br>
+            <a href="#">Trips & ltineraries</a><br><br>
+            <a href="#">Weekend Getways</a><br><br>
+            <a href="#">Place to Visit</a><br><br>
+            <a href="#">Other Travel Categories</a><br><br>
+            <a href="#">Tripto Fourm</a><br><br>
+            <a href="#">Honeymoon Packages</a><br><br>
+         </div>
+         <div>
+            <p>Important Travel Links</p><br>
+            <a href="#">Goa Tourism</a><br><br>
+            <a href="#">Dubai Tourism</a><br><br>
+            <a href="#">Singapore Tourism</a><br><br>
+            <a href="#">Kerala Tourism</a><br><br>
+            <a href="#">Manali Tourism</a><br><br>
+            <a href="#">Bali Tourism</a><br><br>
+            <a href="#">Sri Lanka Tourism</a><br><br>
+            <a href="#">Honeymoon Destinations inindia</a><br><br>
+         </div>
+         <div>
+            <p>Partner Programs</p><br>
+            <a href="#">Buy Travel Leads</a><br><br>
+            <a href="#">Partner With Us</a><br><br>
+            <a href="#">Earn Credits</a><br><br>
+            <a href="#">Get paid to Travel</a><br><br>
+            <a href="#">Import Blog To ltinerary</a><br><br>
+            <a href="#">Tripto Ai</a><br><br>
+         </div>
+        </div>
+        <div class="footerSecond">
+            <hr>
+            <p>© All rights reserved.</p>
+        </div>
+    </div>
+<script>
+
+function call() {
+document.getElementById("myDate").value = "2014-02-09";
+alert("Request Submitted,We will call you soon")
+}
+var comment1=1;
+function comment(){
+   var div=document.getElementById("div");
+   var input=document.getElementById("comment").value;
+   var p=document.createElement("p");
+   p.innerHTML=`${input} ${comment1} `;
+   div.appendChild(p)
+   comment1++;
+}
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.TrendingTrips').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+  
+  $('.DiscoverNow').slick({
+    slidesToShow: 4,
+    slidesToScroll:1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+  });
+  
+  $('.TravelGuides').slick({
+    slidesToShow: 5,
+    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  });
+    </script>
+</body>
+</html>

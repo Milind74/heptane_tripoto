@@ -1,0 +1,93 @@
+
+*{
+    font-family:helvetica,arial,sans-serif;
+
+}
+
+.travel{
+    width: 95%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(4,auto);
+    margin:auto;
+}
+img{
+    width:280px;
+    height: 180px;
+    border-radius:3% ;
+}
+.box{
+    width:250px ;
+    height:350px;
+    grid-template-columns:20% 20% 20% 20%;
+    /* margin-left: 50px; */
+
+}
+
+
+.small_img{
+    width: 20px;
+    height: 15px;
+    padding: 0.5%;
+  }
+h2{
+        margin-left: 3%;
+}
+a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+
+
+
+   /* *footer*/
+   *{
+    margin: 0;
+    padding: 0;
+  }
+  .footerFirst{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    width: 100%;
+    gap: 10px;
+  
+  }
+  .footerFirst>div{
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 1%;
+    height: 350px;
+    font-family:helvetica,arial,sans-serif;
+  }
+  .footerSecond{
+    width: 98%;
+    margin:0 auto;
+    text-align: center;
+    font-family:helvetica,arial,sans-serif;
+  }
+  .footerFirst>div>a{
+   text-decoration: none;
+   color: black;
+   font-size:smaller;
+  }
+  .footerSecond>p{
+    margin-top: 10px;
+    font-size: smaller;
+  }
+  #logo{
+    width: 180px;
+    font-size: smaller;
+    margin-left:25px;
+  }
+  .GooglePlaystore{
+  margin-left: 5px;
+    margin-top:15px;
+  }
+  .social-icon{
+    margin-top: 5px;
+  }
+  .social-icon>a>img{
+    height: 25px;
+  }

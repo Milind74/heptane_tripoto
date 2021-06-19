@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+      .container{
+     width: 100%;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+    
+     
+      }
+      .container>h1{
+     margin-left:230px;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     margin-bottom:20px;
+     margin-top: 20px;
+
+     
+      }
+      .container>p{
+     margin-left:230px;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     
+     margin-bottom:20px;
+     margin-top: 20px;
+
+     
+      }
+      .TrendingTrips{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+     
+     
+      
+      }
+      .TravelGuides{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:280px;
+        margin:0 auto;
+       
+      }
+      .DiscoverNow{
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:220px;
+        margin:0 auto;
+
+        
+     }
+     .DiscoverNow>a{
+       text-decoration: none;
+
+     }
+
+      .img>img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .button{
+        display: flex;
+        width: 320px;
+      }
+      .discription{
+        width: 320px;
+      }
+      .discription>h4{
+       
+        margin: 0;
+      }
+      .button>button{
+       margin-left:200px;
+       height:20px;
+       margin-top: 5px;
+     }
+     .button>h5{
+       margin-top: 5px;
+     }
+      .discription>p{
+        font-size: smaller;
+        margin-top: 0;
+      }
+      .img1>img{
+        width: 250px;
+        height:170px;
+        margin-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .img2>img{
+        width: 180px;
+        height:250px;
+        margin-top: 5px;
+        border-radius:5px;
+
+      }
+    .slick-arrow{
+        color: black;
+        font-size:0px;
+        margin: 0;
+        padding: 0;
+      }
+   
+    .slick-next {
+    right:0px;
+  
+    }
+    .slick-prev {
+    left: -45px;
+}
+
+
+    .slick-next, .slick-prev {
+      line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    }
+    .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(177, 171, 171);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+      /* <!-------------------------------------- fooooooooooooterrrrrrr style ---------------------------------------------------> */
+
+      *{
+            margin: 0;
+            padding: 0;
+        }
+        .footerFirst{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            width: 98%;
+            gap: 10px;
+         
+        }
+        .footerFirst>div{
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 1%;
+            height: 350px;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerSecond{
+            width: 98%;
+            height: 50px;
+            margin:0 auto;
+            text-align: center;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerFirst>div>a{
+           text-decoration: none;
+           color: black;
+           font-size:smaller;
+        }
+        .footerSecond>p{
+            margin-top: 10px;
+            font-size: smaller;
+        }
+        #logo1{
+            width: 180px;
+            font-size: smaller;
+            margin-left:25px;
+        }
+        .GooglePlaystore{
+       margin-left: 5px;
+            margin-top:15px;
+        }
+        .social-icon{
+            margin-top: 5px;
+        }
+        .social-icon>a>img{
+            height: 25px;
+        }
+        .TrendingTrips>a{
+          text-decoration: none;
+          color: black;
+        }
+        /* <!-- ----------------------------------------------milind ------------------------------------> */
+        *{
+    font-family:helvetica,arial,sans-serif;
+
+}
+    .partners{
+    /* width:75%;
+    height:400px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(8,auto);
+    border: 1px solid red;
+    margin:0 auto; */
+    display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+
+
+    }
+.box{
+    /* width:350px ;
+    height:350px;
+    grid-template-columns:20% 20% 20%;
+    margin-left: 50px; */
+
+        /* display: grid;
+        grid-template-columns: repeat(3,auto); */
+        width: 75%;
+        height:280px;
+        margin:0 auto;
+        border: 1px solid black;
+        margin: 0 auto;
+     
+}
+.box>a>img{
+
+  width: 300px;
+        height: 200px;
+        border-radius: 10px;
+       margin: 15px auto;
+}
+
+
+
+/* img{
+    width:350px;
+    height: 200px;
+    border-radius:3% ;
+} */
+/* a{
+    color: teal;
+    text-decoration: none;
+} */
+.partnertext>p{
+    font-size: 20px;
+    margin: 0 auto;
+}
+/* a{
+    text-decoration: none;
+    color: #f63
+} */
+
+ #next{
+    float: right;
+    margin-top: 80px;
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 40px;
+ }
+
+/* } 
+        .slick-arrow{
+        color: black;
+        font-size:0px;
+        margin-top:-50px;
+        padding: 0;
+      }
+   
+    .slick-next {
+    margin-right:35px;
+    
+  
+    }
+    .slick-prev {
+    left: -45px;
+}
+    .slick-next, .slick-prev {
+      line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    }
+    .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(177, 171, 171);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+.travel{
+    /* width: 95%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(6,auto);
+    margin-left: 3%; */
+    /* width:72%;
+    height:400px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(6,auto);
+    
+    margin:0 auto; */
+
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+
+}
+.language{
+    /* width: 95%;
+    display: grid;
+    height:330px;
+    gap: 10px;
+    grid-template-columns:repeat(3,auto); */
+    width:72%;
+    height:400px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(3,auto);
+    
+    margin:0 auto;
+
+}
+
+.week{
+    /* width: 95%;
+    display: grid;
+    height:330px;
+    gap: 10px;
+    grid-template-columns:repeat(4,auto);
+    margin-left: 3%; */
+    /* width:72%;
+    height:400px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(8,auto);
+    
+    margin:0 auto; */
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+
+
+}
+/* <!-- --------------------------------------------------------------------milind ------------------------------------> */
+    </style>
+</head>
+<body>
+<div class="container">
+  <!----------------------------------From Our Partners------------------------------------------->
+
+  <h1>From Our Partners</h1>
+  <div class="partners">
+      <!--box1-->
+      <!-- <div class="box">
+          <a  href="apollotyres.html">
+            <div class="img"></div>
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1616413083_1616222802_banner_5.jpeg" alt="">
+      <div class="partnertext">
+          <a  href="apollotyres.html">APOLLO TYRES
+          </a>
+           <p>Your Best Travel Moments Can Win 
+              Ultimate Travel Experiences 
+              & Exciting Prizes From Apollo Tyres</p>
+      
+      </div>
+  </a>  
+  </div> -->
+  
+    <div class="slider" >
+      <div class="img">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1616413083_1616222802_banner_5.jpeg" alt="">
+     </div>
+     
+     <div class="discription">
+       <h6>APOLLO TYRES</h6><br>
+       <p>Your Best Travel Moments Can Win 
+        Ultimate Travel Experiences 
+        & Exciting Prizes From Apollo Tyres</p>
+      
+     </div>
+    <div>
+    </div>
+  </div>
+  
+         <!--box2-->
+
+  <!-- <div class="box">
+      <a  href="singapore.html">
+
+
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1789711/Image/1621240515_1618570518_the_apprentice_one_championship_edition_3840x2060logo_date_1536x864.jpg" alt="">        
+      <div class="partnertext">
+          <a  href="singapore.html">VISIT SINGAPORE
+          </a>
+          <p>Love Travel & Business? This Reality 
+              Show Shot in Singapore 
+              Has Both, Plus a US$250,000 Job Offer!
+              <br>
+
+      By <a style="color: skyblue;" href="https://www.tripoto.com/profile/kadambari6484440" title="Kadambari Bhatte (curlytravelmess)">Kadambari Bhatte (curlytravelmess)</a></p>
+          </div>
+      </a>
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1789711/Image/1621240515_1618570518_the_apprentice_one_championship_edition_3840x2060logo_date_1536x864.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+     <h6>VISIT SINGAPORE</h6><br>
+     <p>Love Travel & Business? This Reality 
+      Show Shot in Singapore 
+      Has Both, Plus a US$250,000 Job Offer!
+      <br>
+
+By <a style="color: skyblue;" href="https://www.tripoto.com/profile/kadambari6484440" title="Kadambari Bhatte (curlytravelmess)">Kadambari Bhatte (curlytravelmess)</a></p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+      <!--box3-->
+
+ 
+          <!--box4-->
+  <!-- <div  class="box">
+      <a  href="marriott.html">
+          <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1616651753_1616419531_goa_1.jpeg" alt="">
+
+          <div class="partnertext">
+              <a  href="marriott.html">MARRIOTT INTERNATIONAL
+              </a>
+              <p>Holi Just Got a Lot More Colourful With Extended Breaks at a Marriott International Hotel Near You!</p>
+          </div>
+      </a>
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1616651753_1616419531_goa_1.jpeg" alt="">
+   </div>
+   
+   <div class="discription">
+     <h6>MARRIOTT INTERNATIONAL</h6><br>
+     <p>Holi Just Got a Lot More Colourful With Extended Breaks at a Marriott International Hotel Near You!</p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+      <!--box5-->
+
+  <!-- <div  class="box">
+      <a  href="makemytrip.html">
+          <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1617089778_screenshot_2021_03_30_at_1_05_47_pm.jpg" alt="">
+
+          <div class="partnertext">
+              <a  href="makemytrip.html">MAKE MY TRIP
+              </a>
+              <p>This UNSEEN INDIA travel film by MakeMyTrip will fill your heart with love and pride!</p>
+          </div>
+      </a>
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1617089778_screenshot_2021_03_30_at_1_05_47_pm.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+     <h6>MAKE MY TRIP</h6><br>
+     <p>This UNSEEN INDIA travel film by MakeMyTrip will fill your heart with love and pride!</p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+          <!--box6-->
+          <!-- <div  class="box">
+              <a  href="marriottguide.html">
+<img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1616504720_1616228573_cover.jpg" alt="">        
+                  <div class="partnertext">
+                      <a  href="marriottguide.html">MARRIOTT INTERNATIONAL
+                      </a>
+                      <p>Still Waiting to Travel? Make Mumbai Your Getaway with Staycations by Marriott International Hotels!</p>
+                  </div>
+              </a>
+          </div> -->
+          <div class="slider" >
+            <div class="img">
+              <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1616504720_1616228573_cover.jpg" alt="">
+           </div>
+           
+           <div class="discription">
+             <h6>MARRIOTT INTERNATIONAL</h6><br>
+             <p>Still Waiting to Travel? Make Mumbai Your Getaway with Staycations by Marriott International Hotels!</p>
+            
+           </div>
+          <div>
+          </div>
+        </div>
+
+      <!--box7-->
+      <!-- <div  class="box">
+          <a  href="saudi.html">
+              <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1613386668_1612954230_hegra.jpg" alt="">
+  
+              <div class="partnertext">
+                  <a  href="saudi.html">VISIT SAUDI
+                  </a>
+                  <p>Saudi Through The Lens: A photographer’s Account Witnessing Saudi’s Untouched Beauty</p>
+              </div>
+          </a>
+      </div> -->
+      <div class="slider" >
+        <div class="img">
+          <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1613386668_1612954230_hegra.jpg" alt="">
+       </div>
+       
+       <div class="discription">
+         <h6>VISIT SAUDI</h6><br>
+         <p>Saudi Through The Lens: A photographer’s Account Witnessing Saudi’s Untouched Beauty</p>
+        
+       </div>
+      <div>
+      </div>
+    </div>
+
+      <!--box8-->
+
+      <!-- <div  class="box">
+          <a  href="saudi2.html">
+              <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1613386107_1611910989_summerseasonad_2020_50_2_1_00_00_31_12_still012.jpg" alt="">
+
+              <div class="partnertext">
+                  <a  href="saudi2.html">VISIT SAUDI
+                  </a>
+                  <p>Unravelling The Mysterious Red Sea & 200 km of Saudi’s Untouched Coastline</p>
+              </div>
+          </a>
+      </div> -->
+      <div class="slider" >
+        <div class="img">
+          <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1613386107_1611910989_summerseasonad_2020_50_2_1_00_00_31_12_still012.jpg" alt="">
+       </div>
+       
+       <div class="discription">
+         <h6>VISIT SAUDI</h6><br>
+         <p>Unravelling The Mysterious Red Sea & 200 km of Saudi’s Untouched Coastline</p>
+        
+       </div>
+      <div>
+      </div>
+    </div>
+
+
+      <!--box9-->
+
+      <!-- <div  class="box">
+          <a  href="saudi3.html">
+              <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1613385860_1611843734_summerseasonad_2020_50_2_1_00_00_34_21_still015.jpg" alt="">
+
+              <div class="partnertext">
+                  <a  href="saudi3.html">VISIT SAUDI
+                  </a>
+                  <p>Caffeine Delights: Exploring the best cafes in the country from where coffee travelled to the world!</p>
+              </div>
+          </a>
+      </div> -->
+      <div class="slider" >
+        <div class="img">
+          <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1613385860_1611843734_summerseasonad_2020_50_2_1_00_00_34_21_still015.jpg" alt="">
+       </div>
+       
+       <div class="discription">
+         <h6>VISIT SAUDI</h6><br>
+         <p>Caffeine Delights: Exploring the best cafes in the country from where coffee travelled to the world!</p>
+        
+       </div>
+      <div>
+      </div>
+    </div>
+
+
+</div>
+
+      <!------------------------------travel news-------------------------------------------------->
+      <h1 >Travel News
+      </h1>
+      <p>On a mission to bring you the latest travel news,
+          Tripoto Reporters are always abreast with information
+           and stories from across the world. From inspiring stories<br>
+            to the updated travel guidelines, find out what is happening this week! </p>
+
+      <div class="travel">
+        
+          <!--box1-->
+          <!-- <div class="box1">
+              
+              <a href="domesticguide.html">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1620132316_1619595524_ridham_nagralawala_znfofpig6_g_unsplash.jpg" alt="">
+          </a>
+    <div class="partnertext">
+              <p> Everything You Need To Know About Domestic Guidelines: Curfews, Lockdowns, Travel Permits and RT-PCR
+              </p>
+              <a style="color: #2f9bdb;" href="https://www.tripoto.com/profile/riyankaroy"><p>By Riyanka Roy</p></a> 
+          
+          </div>
+      </a>  
+      </div> -->
+      <div class="slider" >
+        <div class="img">
+          <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1620132316_1619595524_ridham_nagralawala_znfofpig6_g_unsplash.jpg" alt="">
+       </div>
+       
+       <div class="discription">
+        <p> Everything You Need To Know About Domestic Guidelines: Curfews, Lockdowns, Travel Permits and RT-PCR
+        </p><br>
+         <p>By Riyanka Roy</p>
+        
+       </div>
+      <div>
+      </div>
+    </div>
+       <!--box2-->
+
+  <!-- <div class="box1">
+      <a  href="panormichills.html">
+
+
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1358046/TripDocument/1622476065_img_1622276241633_644.jpg" alt="">        
+  </a>
+
+      <div class="partnertext">
+         
+          <p>Enjoy Panoramic Views of Hills & Waterfalls
+               From Your Train Seat With the All New Vistadome Coach!
+          </p>
+
+  <a style="color: #2f9bdb;"  href="https://www.tripoto.com/profile/thewanderjoy">By thewanderjoy</a>
+          </div>
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1358046/TripDocument/1622476065_img_1622276241633_644.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+    <p>Enjoy Panoramic Views of Hills & Waterfalls
+      From Your Train Seat With the All New Vistadome Coach!
+ </p><br>
+     <p>By thewanderjoy</p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+    <!--box3-->
+
+    <!-- <div class="box1">
+      <a  href="uttharakhand.html">
+          
+          <img src="https://static2.tripoto.com/media/filter/tst/img/199728/TripDocument/1622823849_photo_1556388158_158ea5ccacbd.jpg" alt="">        
+      </a>
+
+          <div class="partnertext">
+              <a  href="uttharakhand.html">
+              </a>
+              <p>Uttarakhand to Get First International Airport by 2030!</p>
+              
+              <a style="color: #2f9bdb;"  href="https://www.tripoto.com/profile/shivangijohri">By Shivangi Johri</a>
+
+          </div>
+  </div> -->
+
+  <div class="slider" >
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/199728/TripDocument/1622823849_photo_1556388158_158ea5ccacbd.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+    <p>Uttarakhand to Get First International Airport by 2030!</p><br>
+     <p>By Shivangi Johri</p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+
+          <!-- box4 --> 
+   <!-- <div  class="box1">
+      <a  href="winetourism.html">
+          <img src="https://static2.tripoto.com/media/filter/tst/img/1989889/TripDocument/1622476019_screenshot_20210531_211343_01.jpg" alt="">
+      </a>
+          <div class="partnertext">
+              <p>Wine Tourism to Begin Soon in Himachal! Did We Hear It Right?</p>  
+      <a style="color: #2f9bdb;" href="https://www.tripoto.com/profile/stillwinds">By still.winds</a>
+
+
+          </div>
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1989889/TripDocument/1622476019_screenshot_20210531_211343_01.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+    <p>Wine Tourism to Begin Soon in Himachal! Did We Hear It Right?</p>  <br>
+     <p>By still.winds</p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+      <!-- box5  -->
+
+  <!-- <div  class="box1">
+      <a  href="airindia.html">
+          <img src="https://static2.tripoto.com/media/filter/tst/img/1983524/TripDocument/1622507751_air_india_1024x576.jpg" alt="">
+          </a>
+          <div class="partnertext">
+            
+              <p>Air India Announces Waivers for passengers holding International tickets</p>
+              <a style="color: #2f9bdb;" href="https://www.tripoto.com/profile/explore_with_mohini">By still.winds</a>
+
+          </div> 
+
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1983524/TripDocument/1622507751_air_india_1024x576.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+    <p>Air India Announces Waivers for passengers holding International tickets</p>  <br>
+     <p>By still.winds</p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+          <!-- box6 -->
+          <!-- <div  class="box1">
+              <a  href="heritage.html">
+              <img src="https://static2.tripoto.com/media/filter/tst/img/440811/TripDocument/1621949350_gayathri_sri_voblqr2e3py_unsplash.jpg" alt="">        
+          </a>
+
+              <div class="partnertext">
+                  <p>These Two Indian Destinations Could be the New Unesco World Heritage Sites! Check Them Out.</p>
+                  <a style="color: #2f9bdb;" href="https://www.tripoto.com/profile/explore_with_mohini">By Explore_with_Mohini </a>
+
+                  </div>
+          </div> -->
+          <div class="slider" >
+            <div class="img">
+              <img src="https://static2.tripoto.com/media/filter/tst/img/440811/TripDocument/1621949350_gayathri_sri_voblqr2e3py_unsplash.jpg" alt="">
+           </div>
+           
+           <div class="discription">
+            <p>These Two Indian Destinations Could be the New Unesco World Heritage Sites! Check Them Out.</p> <br>
+             <p>By Explore_with_Mohini </p>
+            
+           </div>
+          <div>
+          </div>
+        </div>
+
+  
+  
+  </div>
+
+
+
+
+
+
+
+      <!----------------------------------Explore Tripoto In Your Own Language--------------------------->
+
+      <!--box1-->
+      <h1 >Explore Tripoto In Your Own Language </h1>
+<div class="language">
+      
+  <div class="box2">
+          <a  href="hindi.html">
+      <img style="height: 270px;" src="https://cdn1.tripoto.com/media/filter/tst/img/1789711/Image/1612341541_hindi.jpg" alt="">
+     
+  </a>  
+  </div>
+          <!-- box2 -->
+
+  <div class="box2">
+      <a  href="bengali.html">
+  <img style="height: 270px;" src="https://cdn1.tripoto.com/media/filter/tst/img/1789711/Image/1612340681_2.jpg" alt="">
+ 
+</a>  
+</div>
+          <!-- box3 -->
+
+
+<div class="box2">
+  <a  href="south.html">
+<img style="height: 270px;" src="https://cdn1.tripoto.com/media/filter/tst/img/1789711/Image/1612340795_3.jpg" alt="">
+
+</a>  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+      <!----------------------------------Editor's Picks For The Week--------------------------->
+
+
+      
+
+      <h1 >Editor's Picks For The Week
+      </h1>
+      
+      <div class="week">
+        
+          <!--box1-->
+          <!-- <div class="box3">
+              
+              <a href="adventurecouple.html">
+    <img src="https://static2.tripoto.com/media/filter/tst/img/38619/TripDocument/1620796102_chasefor_adventure.jpg" alt="">
+          </a>
+    <div class="partnertext">
+              <p>This Adventurous Couple Got Stuck In Thailand During The Pandemic & Gave Birth To A Baby In Krabi
+              </p>
+              <a style="color: #2f9bdb;" href="https://www.tripoto.com/profile/riyankaroy"><p>By Riyanks Roy</p></a> 
+          
+          </div>
+      </a>  
+      </div> -->
+      <div class="slider" >
+        <div class="img">
+          <img src="https://static2.tripoto.com/media/filter/tst/img/38619/TripDocument/1620796102_chasefor_adventure.jpg" alt="">
+       </div>
+       
+       <div class="discription">
+        <p>This Adventurous Couple Got Stuck In Thailand During The Pandemic & Gave Birth To A Baby In Krabi
+        </p><br>
+        <p>By Riyanks Roy</p>
+        
+       </div>
+      <div>
+      </div>
+    </div>
+       <!--box2-->
+
+  <!-- <div class="box3">
+      <a  href="summerdestination.html">
+
+
+<img src="https://static2.tripoto.com/media/filter/tst/img/794607/TripDocument/1561014511_hill_station_cover.jpg" alt="">    
+</a>
+
+      <div class="partnertext">
+         
+          <p>7 Surprisingly Underrated Summer Destinations of India You Must Explore
+          </p>
+
+  <a style="color: #2f9bdb;"  href="https://www.tripoto.com/profile/anshulsharma7432657">By Anshul Sharma</a>
+          </div>
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/794607/TripDocument/1561014511_hill_station_cover.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+    <p>7 Surprisingly Underrated Summer Destinations of India You Must Explore
+    </p><br>
+    <p>By Anshul Sharma</p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+    <!--box3-->
+
+    <!-- <div class="box3">
+      <a  href="gujjuguy.html">
+          
+<img src="https://static2.tripoto.com/media/filter/tst/img/566279/TripDocument/1527852417_seychelles_covershot.jpg" alt="">       
+</a>
+
+          <div class="partnertext">
+             
+              <p>This Gujju Guy Bought An Island In Seychelles And Turned It Into A Paradise For Indians</p>
+              
+              <a style="color: #2f9bdb;"  href="https://www.tripoto.com/trip/this-gujju-guy-bought-an-island-in-seychelles-and-turned-it-into-a-paradise-for-indians-5af3d5d7cd3b4">By Varun Suchday </a>
+              
+          </div>
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/566279/TripDocument/1527852417_seychelles_covershot.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+    <p>This Gujju Guy Bought An Island In Seychelles And Turned It Into A Paradise For Indians</p><br>
+    <p>By Varun Suchday </p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+    
+
+          <!-- box6 -->
+          <!-- <div  class="box3">
+              <a  href="movie.html">
+              <img src="https://static2.tripoto.com/media/filter/tst/img/1011821/TripDocument/1547713820_29bollywoods_college_attendance7.jpg" alt="">
+          </a>
+
+              <div class="partnertext">
+                  <p>These 90s bollywood movies will make you visit their exotic shoot locations</p>
+                  <a style="color: #2f9bdb;" href="https://www.tripoto.com/profile/jeetendraajmera">By Jeetendra Ajmera </a>
+
+                  </div>
+          </div>
+
+
+  
+  
+  </div> -->
+  <div class="slider" >
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1011821/TripDocument/1547713820_29bollywoods_college_attendance7.jpg" alt="">
+   </div>
+   
+   <div class="discription">
+    <p>These 90s bollywood movies will make you visit their exotic shoot locations</p><br>
+    <p>By Jeetendra Ajmera  </p>
+    
+   </div>
+  <div>
+  </div>
+</div>
+</div> 
+ <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+ <h1>Trending Trips</h1>
+ <div class="TrendingTrips">
+ <a style="text-decoration: none; color: black;"href="file:///C:/Users/NOOR/Desktop/project/trending1.html">
+  <div class="slider" >
+    <div class="img">
+      
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1327729/TripDocument/1550815603_1485867480_1485857503_dsc_0361.jpg" alt="loading">
+    
+    </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>भीड़-भाड़ से दूर और नज़ारों से भरपूर है भारत का सबसे ऊँचे रेलवे स्टेशन 'घूम'!</h4>
+     <p>क्या आपको छुट्टियाँ बिताने के लिए किसी शांत और सुन्दर जगह की तलाश है? अगर आपने दार्जिलिंग अपनी छु...</p> 
+     
+     <br>
+     <hr>
+   </div>
+  <div>
+  </div>
+</div>
+</a>
+<a href="" style="text-decoration: none; color: black;">
+  <div class="slider">
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1993513/TripDocument/1606728419_1606728417485.jpg" alt="loading">
+   </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>देश के कुछ ऐसे शानदार इंडियन आर्किटेक्चरल स्ट्रक्चर्स जिन पर पूरी दुनिया को है गर्व</h4>
+     <p>पूरी दुनिया में इंडिया के आर्किटेक्चरल मार्वेल्स की तूती यूं ही नहीं बोलती। इसके पीछे इंडियन इंजी...</p>
+     <br>
+     <hr>
+   </div>
+   <div>
+  </div>
+  
+  </div>
+</a>
+<a href="" style="text-decoration: none; color: black;">
+  <div class="slider">
+    <div class="img">
+      <img src="https://cdn1.tripoto.com/200.2/img/featured-trips/featured-trip-1_135_86.jpg" alt="loading">
+   </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>5 best things to do in Rishikesh | Secret Location</h4>
+     <p> Every now and then I get this query from my friends that what could be the top places that ...</p>
+     <br>
+     <hr>
+   </div>
+   <div>
+  </div>
+  </div>
+</a>
+<a href="" style="text-decoration: none; color: black;">
+  <div class="slider">
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/794607/TripDocument/1571663083_1280px_ridge_shimla.jpg" alt="loading">
+   </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>Love Travelling in Winter? These 8 Destinations Look Gorgeous This Time of the Year</h4>
+     <p>Has it ever occurred to you that a place you just visited didn't look as mind-blowing as it did i...</p>
+     <br>
+     <hr>
+   </div>
+   <div>
+  </div>
+  </div>
+</a>
+<a href="" style="text-decoration: none; color: black;">
+  <div class="slider">
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/816121/TripDocument/1605104789_food_goa.jpg" alt="loading">
+   </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>सराहन: हिमाचल का वो खूबसूरत गाँव जहाँ आकर वक्त भी थम जाता है!</h4>
+     <p>हर किसी का मन करता है कि वो कहीं शांत-सी जगह पर कुछ दिन गुज़ारे। जहाँ मन बावरा होकर कहीं भी चलने ...</p>
+     <br>
+     <hr>
+   </div>
+   <div>
+  </div>
+  </div>
+</a>
+<a href="" style="text-decoration: none; color: black;">
+  <div class="slider">
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1350024/TripDocument/1568915609_sarahan.jpg" alt="loading">
+   </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>Gorgeous Cottages In Nainital That Will Leave You Awestruck</h4>
+     <p>Known for its incredible landscapes, lush green surroundings, scenic views and majestic mountains...</p>
+     <br>
+     <hr>
+   </div>
+   <div>
+  </div>
+  </div>
+</a>
+<a href="" style="text-decoration: none; color: black;">
+  <div class="slider">
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/522191/TripDocument/1550152270_bijoy_sagar_lake.png" alt="loading">
+   </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>There's Another Udaipur In India And We Bet You Didn't Know About It</h4>
+     <p>We all have read and heard about the beautiful city of Udaipur in Rajasthan, but we bet that you ...</p>
+     <br>
+     <hr>
+   </div>
+   <div>
+  </div>
+  </div>
+</a>
+<a href="" style="text-decoration: none; color: black;">
+  <div class="slider">
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/518407/TripDocument/1530982324_the_writers_bungalow_and_its_dining_verandah_0_details_page_1.jpg" alt="loading">
+   </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>Bookmark these 5 Restaurants in North Goa for a great view and lip-smacking food</h4>
+     <p>With Goa now open to tourists and the tourist season just around the corner, I am sure many of yo...</p>
+     <br>
+     <hr>
+   </div>
+   <div>
+  </div>
+  </div>
+</a>
+<a href="" style="text-decoration: none; color: black;">
+  <div class="slider">
+    <div class="img">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/1235940/TripDocument/1545823931_mrk.jpg" alt="loading">
+   </div>
+   <div class="button">
+     <h5>TRIP</h5>
+     <button>hello</button>
+   </div>
+   <div class="discription">
+     <h4>दिल्ली की 15 सस्ती व मज़ेदार चीज़ें जिनके बारे मे आपको कोई नही बता पाएगा</h4>
+     <p>श्रेय : मार्क ऑन फ्लिकरदिल्ली ऐसे ऐसे तॉहफ़ों से भरा है कि आप का मान झूम उठेगा | रोज़मर्रा की उबा...</p>
+     <br>
+     <hr>
+   </div>
+   <div>
+  </div>
+  </div>
+</a>
+  
+  
+</div>
+<h1>Discover Now</h1>
+  <!-------------------------------------- Discover now-------------------------------------------------------------------------->
+  <div class="DiscoverNow">
+    <a href="hillStation.html" style="text-decoration: none; color: black;">
+    <div class="img1">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128872_hill1.png" alt="">
+      <h2>Hill Station</h2>
+    </div>
+  </a>
+    <div class="img1">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128796_beach5.png" alt="">
+      <h2>Beaches</h2>
+    </div>
+    <div class="img1">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587154281_tourist_attraction_4.png" alt="">
+      <h2>Tourist Attractions</h2>
+    </div>
+    <div class="img1">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155459_weekend_getaways.png" alt="">
+      <h2>Weekends Getways</h2>
+    </div>
+   
+      <div class="img1">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155577_adventure_activities.png" alt="">
+        <h2>Adventure Activities</h2>
+      </div>
+      <div class="img1">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155306_road_trip.png" alt="">
+        <h2>Road Trips</h2>
+      </div>
+      <div class="img1">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125064_trekking_route_3.png" alt="">
+        <h2>Trekking Routes</h2>
+      </div>
+      <div class="img1">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125598_family_vacation.png" alt="">
+        <h2>Family Vacations</h2>
+      </div>
+    
+  </div>
+  <h1>Explore Travel Guides</h1>
+  <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+
+  <div class="TravelGuides">
+    <a href="explore.html">
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg" alt="loading">
+    </div>
+  </a>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt="">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216649_andaman.jpg" alt="loading">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732339_1_10.jpg" alt="">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732387_3_7.jpg" alt="loading">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732417_2_10.jpg" alt="">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732456_dubai.jpg" alt="">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt="loading">
+    </div>
+    
+  </div>
+</div>
+
+    <!-------------------------------------- fooooooooooooterrrrrrr --------------------------------------------------->
+    <div id="footer">
+      <hr>
+      <div class="footerFirst">
+       <div id="logo1">
+           <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+           <p>The Global Travel Community</p><br>
+           <hr>
+           <div class="social-icon">
+             <a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" alt="loading"></a>
+             <a href=""><img src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png" alt=""></a>
+             <a href=""><img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+             <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU" alt=""></a>
+             <a href=""><img src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png" alt=""></a>
+             <a href=""><img src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+          </div>
+          <div class="GooglePlaystore">
+              <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+          </div>
+       </div>
+       <div>
+           <p>About Tripoto</p><br>
+           <a href="#">How It Works</a><br><br>
+           <a href="#">FAQ's</a><br><br>
+           <a href="#">Privacy Policy</a><br><br>
+           <a href="#">Terms & Conditions</a><br><br>
+           <a href="#">Careers</a><br><br>
+           <a href="#">Contact Us</a><br><br>
+       </div>
+       <div>
+          <p>Products</p><br>
+          <a href="#">Tour Packages</a><br><br>
+          <a href="#">Travel Guides</a><br><br>
+          <a href="#">Trips & ltineraries</a><br><br>
+          <a href="#">Weekend Getways</a><br><br>
+          <a href="#">Place to Visit</a><br><br>
+          <a href="#">Other Travel Categories</a><br><br>
+          <a href="#">Tripto Fourm</a><br><br>
+          <a href="#">Honeymoon Packages</a><br><br>
+       </div>
+       <div>
+          <p>Important Travel Links</p><br>
+          <a href="#">Goa Tourism</a><br><br>
+          <a href="#">Dubai Tourism</a><br><br>
+          <a href="#">Singapore Tourism</a><br><br>
+          <a href="#">Kerala Tourism</a><br><br>
+          <a href="#">Manali Tourism</a><br><br>
+          <a href="#">Bali Tourism</a><br><br>
+          <a href="#">Sri Lanka Tourism</a><br><br>
+          <a href="#">Honeymoon Destinations inindia</a><br><br>
+       </div>
+       <div>
+          <p>Partner Programs</p><br>
+          <a href="#">Buy Travel Leads</a><br><br>
+          <a href="#">Partner With Us</a><br><br>
+          <a href="#">Earn Credits</a><br><br>
+          <a href="#">Get paid to Travel</a><br><br>
+          <a href="#">Import Blog To ltinerary</a><br><br>
+          <a href="#">Tripto Ai</a><br><br>
+       </div>
+      </div>
+      <div class="footerSecond">
+          <hr>
+          <p>© All rights reserved.</p>
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  $('.TrendingTrips').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed: 2000,
+});
+
+$('.DiscoverNow').slick({
+  slidesToShow: 4,
+  slidesToScroll:1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+});
+
+$('.TravelGuides').slick({
+  slidesToShow: 5,
+  slidesToScroll:1,
+  autoplay: true,
+  autoplaySpeed: 6000,
+});
+//   ---------------------------------------------------------milind-------------------------------------
+$('.partners').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+});
+
+$('.travel').slick({
+  slidesToShow: 3,
+  slidesToScroll:1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+});
+
+$('.week').slick({
+  slidesToShow: 3,
+  slidesToScroll:1,
+  autoplay: false,
+  autoplaySpeed: 3000,
+});
+
+    //   ---------------------------------------------------------milind close-------------------------------------
+  </script>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .blogContainer{
+            width: 100%;
+        }
+        .container_blog{
+         display:flex;
+         margin: 0 250px;
+         width: 80%;
+         gap: 1%;
+        }
+        .blog{
+         width:70%;
+         font-size:larger;
+        
+        }
+        .blog>img{
+            width:100%; 
+        }
+      .form{
+       width:20%;
+       height:580px;
+       border: 1px solid rgba(145,151,163,.2);
+       box-shadow: 0 5px 10px 0 #dddddd80;
+       font-family: helvetica,arial,sans-serif;
+       margin: 0;
+       padding-left:7px;
+
+       
+      }
+      .form>button{
+        width:180px;  
+        background: blue;
+        color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border:1px solid black;
+        height: 30px;
+      }
+      .form>p{
+          font-size:xx-small;
+      }
+      #div{
+         border: 1px solid black;
+         margin: 0 250px;
+         width: 55%;
+         margin-left:250px;
+      }
+      #comment{
+          width: 700px;
+          height: 100px;
+          margin-left:70px;
+          margin-top: 20px;
+      }
+      #btn1{
+    
+          background-color: blue;
+          color: white;
+          margin-left:700px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .container{
+     width: 100%;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     background-color: #fafafa;
+    
+     
+      }
+      .container>h1{
+     margin-left:230px;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     margin-bottom:20px;
+     margin-top: 20px;
+
+     
+      }
+      .TrendingTrips{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+     
+     
+      
+      }
+      .TravelGuides{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:280px;
+        margin:0 auto;
+       
+      }
+      .DiscoverNow{
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:220px;
+        margin:0 auto;
+        
+     }
+      .img>img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .button{
+        display: flex;
+        width: 320px;
+      }
+      .discription{
+        width: 320px;
+      }
+      .discription>h4{
+       
+        margin: 0;
+      }
+      .button>button{
+       margin-left:200px;
+       height:20px;
+       margin-top: 5px;
+     }
+     .button>h5{
+       margin-top: 5px;
+     }
+      .discription>p{
+        font-size: smaller;
+        margin-top: 0;
+      }
+      .img1>img{
+        width: 250px;
+        height:170px;
+        margin-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .img2>img{
+        width: 180px;
+        height:250px;
+        margin-top: 5px;
+        border-radius:5px;
+
+      }
+    .slick-arrow{
+        color: black;
+        font-size:0px;
+        margin: 0;
+        padding: 0;
+      }
+   
+    .slick-next {
+    right:0px;
+  
+    }
+    .slick-prev {
+    left: -45px;
+}
+
+
+    .slick-next, .slick-prev {
+      line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    }
+    .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(177, 171, 171);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+            margin: 0;
+            padding: 0;
+        }
+        .footerFirst{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            width: 98%;
+            gap: 10px;
+         
+        }
+        .footerFirst>div{
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 1%;
+            height: 350px;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerSecond{
+            width: 98%;
+            margin:0 auto;
+            text-align: center;
+            font-family:helvetica,arial,sans-serif;
+            height: 100px;
+        }
+        .footerFirst>div>a{
+           text-decoration: none;
+           color: black;
+           font-size:smaller;
+        }
+        .footerSecond>p{
+            margin-top: 10px;
+            font-size: smaller;
+        }
+        #logo{
+            width: 180px;
+            font-size: smaller;
+            margin-left:25px;
+        }
+        .GooglePlaystore{
+       margin-left: 5px;
+            margin-top:15px;
+        }
+        .social-icon{
+            margin-top: 5px;
+        }
+        .social-icon>a>img{
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blogContainer">
+        <div class="container_blog">
+        <div class="blog">
+            <h1>सराहन: हिमाचल का वो खूबसूरत गाँव जहाँ आकर वक्त भी थम जाता है!</h1>
+            <img src="https://static2.tripoto.com/media/filter/nl/img/1350024/TripDocument/1568915609_sarahan.jpg" alt="loading">
+            <p>हर किसी का मन करता है कि वो कहीं शांत-सी जगह पर कुछ दिन गुज़ारे। जहाँ मन बावरा होकर कहीं भी चलने को आतुर हो। लेकिन इस भाग-दौड़ भरी ज़िंदगी में हर नई जगह कल पुरानी हो जाती है। उसके बाद तो उस जगह पर लोग आने लगते हैं। लोग आते हैं तो उनके साथ गाड़ियों का हुजूम भी साथ रहता है। फिर वहाँ रहने से लेकर कहीं भी जाने के लिए मारामारी करनी पड़ती है। तब आप एक ऐसी जगह की खोज में रहते हैं जो नई हों। जहाँ लोग कम जाते हैं, जहाँ हरियाली भी हो और सुकून भी। अगर आप ऐसी ही कोई सुकून भरी खूबसूरत जगह के बारे में जानना चाहते हैं तो हिमाचल प्रदेश का सराहन गाँव आपको ज़रूर पसंद आएगा।</p>
+            <img src="https://static2.tripoto.com/media/filter/nl/img/1350024/TripDocument/1568915098_sarahan_1.jpg" alt="loading">
+            <h1>आओ चलें सराहन</h1>
+         <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B2ZaOMcn_zx/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B2ZaOMcn_zx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B2ZaOMcn_zx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Sadiq (@sadiqsshah)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+         <p>आओ चलें सराहन
+
+            वैसे तो पहाड़ का हर कोना खूबसूरत होता है। लेकिन जहाँ सुकून हो उससे सुंदर जगह कोई नहीं हो सकती। ऐसा ही है सतलुज नदी के किनारे बसा सराहन गाँव। जो शिमला से 180 कि.मी. दूर है। शिमला से सराहन पहुँचने का रास्ता इतना खूबसूरत है कि आपको यहाँ की खूबसूरती से प्यार हो जाएगा। शिमला से सराहन आते वक्त आपको बीच में नारकंडा भी मिलेगा। रास्ते में एक तरफ ऊँचे-ऊँचे पहाड़ हैं तो दूसरी तरफ गहरी खाई है। ये रास्ता वैसा ही है जैसा अक्सर पहाड़ों में होता है। आपको रास्ते में कई प्रकार के पेड़ भी मिलेंगे। जिसमें आप सेब देखकर खुश भी हो सकते हैं। अगर शाम के समय पहाड़ के रास्ते में हैं तो इससे सुंदर कुछ नहीं हो सकता। जब सूरज की किरणें पहाड़ की चोटियों पर पड़ती है तो वो नज़ारा किसी को भी आकर्षित कर सकता है।
+            
+            रास्ता घुमावदार ज़रूर है लेकिन खतरनाक तो बिल्कुल भी नहीं। रास्ते में खुमानी के बगीचे के बगीचे आपको मिलेंगे। ये पहाड़ों का प्यार है जो हमें रास्ते भर मिलता रहता है। आप यहाँ से खुमानी लेकर अपने सफर को और भी अच्छा बना सकते हैं। सच में ये फल आपको खुश कर देगा। वैसे भी यात्राएँ तो होती हैं एक सहज मुस्कान के लिए। सरहान पहाड़ और नदी से घिरा एक खूबसूरत गाँव है जहाँ आपके लिए पैदल चलने के लिए लंबा रास्ता है। सुकून में बैठने के लिए पहाड़ हैं और ये सतलुज नदी है। सेब, बादाम, नाशपाती के बगीचे, सुंदर लुभावने सीढ़ीदार खेत, जंगली फूल और दूर तलक दिखती श्रीखंड की चोटी पर बर्फ की चादर। ऐसी खूबसूरत और रूमानी वातावरण वाली जगह पर पागल ही होगा। जो नहीं आना चाहेगा।</p>
+            <h1>सराहन की जान है ये मंदिर</h1>
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B2e6w7JFlBA/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B2e6w7JFlBA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B2e6w7JFlBA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Endless Roamer (@endlessroamer)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+            <p>सराहन, हिमाचल प्रदेश की सबसे पुरानी जगहों में से एक है। इस जगह को खूबसूरत सिर्फ यहाँ की हरियाली, पहाड़ और बर्फ नहीं बनाते। इस जगह को और भी खास बनाते हैं यहाँ के प्राचीन मंदिर। इसमें से एक है भीमकाली मंदिर जिसकी बनावठ एक मठ के जैसी है। हिंदू और बौद्ध वास्तुशिल्प वाला यह मंदिर लगभग 2,000 साल पुराना है। पत्थरों और लकड़ी से बना ये मंदिर 51 शक्तिपीठों में से एक है। इसकी बनावट को देखकर आप तन और मन से प्रसन्न हो जाएँगे। ये मंदिर अंदर से इतना खूबसूरत है कि आप एक जगह बैठ ही नहीं पाएँगे। आप पैदल चलकर इस मंदिर की करीने को अच्छी तरह से देखना चाहेंगे। इस मंदिर की बनावट आपके अंदर की जिज्ञासा जगा देगी।
+
+                भीमकाली मंदिर का परिसर खूबसूरत ढंग से सुसज्जित है। मंदिर के दरवाजों पर चाँदी की नक्काशी भी आपको अच्छी लगेगी। इस मंदिर के लिए यहाँ के स्थानीय लोगों की आस्था अनंत है। स्थानीय लोग इस मंदिर की देवी को क्षेत्र का रक्षक मानते हैं। 1984 में हिमाचल प्रदेश की तत्कालीन सरकार ने इस मंदिर का अधिग्रहण कर लिया था। कहा जाता है कि सराहन रियासत बुशहर की राजधानी रही है। यहा आप आस-पास घूमेंगे तो पहाड़ी रहन-सहन देखकर आपको अच्छा लगेगा। दिन ढलते ही सभी मंदिर में पूजा करने के लिए जुटने लगते हैं। अगर आप सराहन आते हैं तो आपको शाम की पूजा को जरुर देखना चाहिए।</p>
+            <h1>ये भी देख सकते हैं</h1>
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B1khwwPBc5u/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B1khwwPBc5u/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B1khwwPBc5u/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Upper Shimla Area USA (@uppershimlaarea)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+            <p>सराहन समुद्र तल से 2,165 मीटर की उँचाई पर स्थित गाँव है। यह जगह अपने सेब के बगीचों, देवदार के जंगलों, गाँव के माहौल और स्लेट की छत वाले घरों के लिए खास फेमस हैं। मंदिर के पास ही एक छोटा-सा बाज़ार है, जहाँ से आप खरीदारी कर सकते हैं। आप जंगल के जीवन को देखना चाहते हैं, तो यहाँ वो भी देख सकते हैं, जहाँ आपको जानवर भी मिलेंगे और पक्षी भी। यहाँ आपको राज्य पक्षी मोनाल भी दिख जाएगा। इसके अलावा थोड़ी ऊँचाई पर जाएँगे तो आपको वो पक्षी मिलेंगे जो हर जगह कम ही दिखाई देते हैं।
+
+                सराहन से कुछ ही दूर कामरू का ऐतहासिक किला है, चितकुल घाटी और बस्पा नदी भी है। जिसे आपको अच्छी तरह से देखना चाहिए। सराहन कई टेकिंग रूट्स के लिए बेस कैंप भी है और किन्नौर की आकर्षक धरती का स्वागत द्वार भी है। सराहन में एक छोटा म्यूजियम भी है, जो देखने लायक है। आपके पास अगर एक और दिन बचता है तो सराहन से 50 कि.मी दूर भाभा वैली है जहाँ आप खूबसूरती भी पाएँगे और खुद को जानने का एक मौका। यहाँ आकर आप जिंदगी का असली मकसद समझ पाते हैं।</p>
+            <h1>कैसे पहुँचें सराहन?</h1>
+            <p>सराहन और उसके आसपास के इलाके में यात्रा करने का सबसे बेस्ट टाइम अप्रैल से जून और सितंबर से नवंबर महीना होता है। यहाँ पहुँचने के लिए सबसे निकटतम एयरपोर्ट शिमला से जबरहहट्टी एयरपोर्ट है। यहाँ से आप बस और प्राइवेट टैक्सी से सराहन जा सकते हैं। निकटतम रेलमार्ग शिमला से 175 कि.मी. दूर है। स्टेशन से हिल स्टेशन तक जाने के लिए टैक्सी या बसें लेनी होंगी। ठहरने के लिए हिमाचल टूरिज़म का होटल, मंदिर परिसर आरामशाला और प्राइवेट आरामगाहें हैं। वैसे यहाँ होम स्टे का मजा कुछ अलग होता है।</p>
+            </div>
+        <div class="form">
+            <H3>Want to book a similar trip?</H3><br><br>
+            <input type="text" placeholder="email"><br><br>
+            <input type="text" placeholder="Full Name"><br><br>
+            <input type="text" placeholder="Contact Number"><br><br>
+            <label for="">Deprature Date</label><br><br>
+            <input type="date" id="myDate" placeholder="Deprature Date"><br><br>
+            <input type="text" placeholder="Deprature City"><br><br>
+            <input type="text" placeholder="Destinations"><br><br>
+            <input type="text" placeholder="Budget Per Person"><br><br>
+            <select name="" id="">
+                <option value="5 star">5 star</option>
+                <option value="5 star">4 star</option>
+                <option value="5 star">3 star</option>
+                <option value="5 star">2 star</option>
+                <option value="5 star">Don't need Hotel</option>
+            </select><br><br>
+            <label for="">Flight Book or not?</label><br><br>
+            <input type="radio" value="yes"> <label for="">YES</label>
+            <input type="radio" value="No">NO<br><br>
+            <button onclick="call()">Request Call Back</button><br><br>
+            <p>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
+        </div>
+    </div>
+    <div id="div">
+        <input type="text" id="comment" ><br> <br>
+        <button  id="btn1" onclick="comment()">POST</button><br> <br>
+
+    </div>
+    
+</div>
+
+<!-- -------------------------------------------------container boxes ---------------------------------------------------->
+<div class="container">
+    <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+    <h1>Trending Trips</h1>
+    <div class="TrendingTrips">
+    
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1327729/TripDocument/1550815603_1485867480_1485857503_dsc_0361.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>भीड़-भाड़ से दूर और नज़ारों से भरपूर है भारत का सबसे ऊँचे रेलवे स्टेशन 'घूम'!</h4>
+        <p>क्या आपको छुट्टियाँ बिताने के लिए किसी शांत और सुन्दर जगह की तलाश है? अगर आपने दार्जिलिंग अपनी छु...</p>
+        <hr>
+      </div>
+   
+      <div>
+   
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1993513/TripDocument/1606728419_1606728417485.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>देश के कुछ ऐसे शानदार इंडियन आर्किटेक्चरल स्ट्रक्चर्स जिन पर पूरी दुनिया को है गर्व</h4>
+        <p>पूरी दुनिया में इंडिया के आर्किटेक्चरल मार्वेल्स की तूती यूं ही नहीं बोलती। इसके पीछे इंडियन इंजी...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://cdn1.tripoto.com/200.2/img/featured-trips/featured-trip-1_135_86.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>5 best things to do in Rishikesh | Secret Location</h4>
+        <p> Every now and then I get this query from my friends that what could be the top places that ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/794607/TripDocument/1571663083_1280px_ridge_shimla.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Love Travelling in Winter? These 8 Destinations Look Gorgeous This Time of the Year</h4>
+        <p>Has it ever occurred to you that a place you just visited didn't look as mind-blowing as it did i...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/816121/TripDocument/1605104789_food_goa.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>सराहन: हिमाचल का वो खूबसूरत गाँव जहाँ आकर वक्त भी थम जाता है!</h4>
+        <p>हर किसी का मन करता है कि वो कहीं शांत-सी जगह पर कुछ दिन गुज़ारे। जहाँ मन बावरा होकर कहीं भी चलने ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1350024/TripDocument/1568915609_sarahan.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Gorgeous Cottages In Nainital That Will Leave You Awestruck</h4>
+        <p>Known for its incredible landscapes, lush green surroundings, scenic views and majestic mountains...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/522191/TripDocument/1550152270_bijoy_sagar_lake.png" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>There's Another Udaipur In India And We Bet You Didn't Know About It</h4>
+        <p>We all have read and heard about the beautiful city of Udaipur in Rajasthan, but we bet that you ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/518407/TripDocument/1530982324_the_writers_bungalow_and_its_dining_verandah_0_details_page_1.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Bookmark these 5 Restaurants in North Goa for a great view and lip-smacking food</h4>
+        <p>With Goa now open to tourists and the tourist season just around the corner, I am sure many of yo...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1235940/TripDocument/1545823931_mrk.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>दिल्ली की 15 सस्ती व मज़ेदार चीज़ें जिनके बारे मे आपको कोई नही बता पाएगा</h4>
+        <p>श्रेय : मार्क ऑन फ्लिकरदिल्ली ऐसे ऐसे तॉहफ़ों से भरा है कि आप का मान झूम उठेगा | रोज़मर्रा की उबा...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     
+     
+   </div>
+   <h1>Discover Now</h1>
+     <!-------------------------------------- Discover now-------------------------------------------------------------------------->
+     <div class="DiscoverNow">
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128872_hill1.png" alt="">
+         <h2>Hill Station</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128796_beach5.png" alt="">
+         <h2>Beaches</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587154281_tourist_attraction_4.png" alt="">
+         <h2>Tourist Attractions</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155459_weekend_getaways.png" alt="">
+         <h2>Weekends Getways</h2>
+       </div>
+      
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155577_adventure_activities.png" alt="">
+           <h2>Adventure Activities</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155306_road_trip.png" alt="">
+           <h2>Road Trips</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125064_trekking_route_3.png" alt="">
+           <h2>Trekking Routes</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125598_family_vacation.png" alt="">
+           <h2>Family Vacations</h2>
+         </div>
+       
+     </div>
+     <h1>Explore Travel Guides</h1>
+     <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+   
+     <div class="TravelGuides">
+       
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216649_andaman.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732339_1_10.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732387_3_7.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732417_2_10.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732456_dubai.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt="loading">
+       </div>
+       
+     </div>
+   </div>
+      <!-------------------------------------- fooooooooooooterrrrrrr --------------------------------------------------->
+      <div id="footer">
+        <hr>
+        <div class="footerFirst">
+         <div id="logo">
+             <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+             <p>The Global Travel Community</p><br>
+             <hr>
+             <div class="social-icon">
+               <a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" alt="loading"></a>
+               <a href=""><img src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png" alt=""></a>
+               <a href=""><img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+               <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU" alt=""></a>
+               <a href=""><img src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png" alt=""></a>
+               <a href=""><img src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+            </div>
+            <div class="GooglePlaystore">
+                <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+            </div>
+         </div>
+         <div>
+             <p>About Tripoto</p><br>
+             <a href="#">How It Works</a><br><br>
+             <a href="#">FAQ's</a><br><br>
+             <a href="#">Privacy Policy</a><br><br>
+             <a href="#">Terms & Conditions</a><br><br>
+             <a href="#">Careers</a><br><br>
+             <a href="#">Contact Us</a><br><br>
+         </div>
+         <div>
+            <p>Products</p><br>
+            <a href="#">Tour Packages</a><br><br>
+            <a href="#">Travel Guides</a><br><br>
+            <a href="#">Trips & ltineraries</a><br><br>
+            <a href="#">Weekend Getways</a><br><br>
+            <a href="#">Place to Visit</a><br><br>
+            <a href="#">Other Travel Categories</a><br><br>
+            <a href="#">Tripto Fourm</a><br><br>
+            <a href="#">Honeymoon Packages</a><br><br>
+         </div>
+         <div>
+            <p>Important Travel Links</p><br>
+            <a href="#">Goa Tourism</a><br><br>
+            <a href="#">Dubai Tourism</a><br><br>
+            <a href="#">Singapore Tourism</a><br><br>
+            <a href="#">Kerala Tourism</a><br><br>
+            <a href="#">Manali Tourism</a><br><br>
+            <a href="#">Bali Tourism</a><br><br>
+            <a href="#">Sri Lanka Tourism</a><br><br>
+            <a href="#">Honeymoon Destinations inindia</a><br><br>
+         </div>
+         <div>
+            <p>Partner Programs</p><br>
+            <a href="#">Buy Travel Leads</a><br><br>
+            <a href="#">Partner With Us</a><br><br>
+            <a href="#">Earn Credits</a><br><br>
+            <a href="#">Get paid to Travel</a><br><br>
+            <a href="#">Import Blog To ltinerary</a><br><br>
+            <a href="#">Tripto Ai</a><br><br>
+         </div>
+        </div>
+        <div class="footerSecond">
+            <hr>
+            <p>© All rights reserved.</p>
+        </div>
+    </div>
+<script>
+
+function call() {
+document.getElementById("myDate").value = "2014-02-09";
+alert("Request Submitted,We will call you soon")
+}
+var comment1=1;
+function comment(){
+   var div=document.getElementById("div");
+   var input=document.getElementById("comment").value;
+   var p=document.createElement("p");
+   p.innerHTML=`${input} ${comment1} `;
+   div.appendChild(p)
+   comment1++;
+}
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.TrendingTrips').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+  
+  $('.DiscoverNow').slick({
+    slidesToShow: 4,
+    slidesToScroll:1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+  });
+  
+  $('.TravelGuides').slick({
+    slidesToShow: 5,
+    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  });
+    </script>
+</body>
+</html>

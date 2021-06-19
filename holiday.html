@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- <link rel="stylesheet" href="hindi.css"> -->
+
+<title>Document</title>
+<style>
+
+  
+*{
+    font-family:helvetica,arial,sans-serif;
+
+}
+.hindi{
+width:95%;
+/* border: 1px solid black; */
+margin: auto;
+}
+.hindi_section2{
+    width: 95%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(6,auto);
+    margin-left: 5%;
+    
+}
+.box{
+    width:350px ;
+    /* height:350px; */
+    grid-template-columns:20% 20% 20%;
+    margin-left: 50px;
+    height: 400px;
+
+}
+img{
+    width:350px;
+    height: 200px;
+    border-radius:3% ;
+}
+.partnertext>p{
+    font-size: 20px;
+}
+
+    .small_img{
+        width: 20px;
+        height: 20px;
+        padding: 0.5%;
+        float: left;
+    }   
+#next{
+float: right;
+margin-top: 80px;
+width: 30px;
+height: 40px;
+border-radius: 50%;
+cursor: pointer;
+margin-right: 40px;
+
+}
+    .slick-arrow{
+    color: black;
+    font-size:0px;
+    margin-top:-50px;
+    padding: 0;
+  }
+
+.slick-next {
+margin-right:40px;
+
+
+}
+.slick-prev {
+left: -45px;
+}
+.slick-next, .slick-prev {
+  line-height: 0;
+position: absolute;
+top: 40%;
+display: block;
+width: 50px;
+height: 20px;
+}
+.slick-next:before, .slick-prev:before {
+font-family: slick;
+font-size: 50px;
+line-height: 1;
+opacity: .75;
+color: rgb(177, 171, 171);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+a{
+color: teal;
+text-decoration: none;
+}
+.hinditext{
+display: grid;
+grid-template-columns: 40% 40%;
+gap: 100px;
+
+}
+.daynight{
+    background-color: teal;
+    color: white;
+    width: 60px;
+    height: 20px;
+    border-radius: 15px;
+    padding: 2%;
+    text-align: center;
+}
+.hinditext1{
+display: grid;
+grid-template-columns: 20% 30% 30%;
+gap: 10px;
+margin-top: 5px;
+height: 25px;
+
+
+}
+.booknowbtn{
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid teal;
+    color: teal;
+    height: 30px;
+    text-align: center;
+    padding: 2%;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+   /* *footer*/
+   /* *{
+     margin: 0;
+     padding: 0;
+   } */
+   .footerFirst{
+     display: grid;
+     grid-template-columns: repeat(5,auto);
+     width: 100%;
+     gap: 10px;
+   
+   }
+   .footerFirst>div{
+     margin-top: 20px;
+     width: 100%;
+     margin-left: 1%;
+     height: 350px;
+     font-family:helvetica,arial,sans-serif;
+   }
+   .footerSecond{
+     width: 98%;
+     margin:0 auto;
+     text-align: center;
+     font-family:helvetica,arial,sans-serif;
+   }
+   .footerFirst>div>a{
+    text-decoration: none;
+    color: black;
+    font-size:smaller;
+   }
+   .footerSecond>p{
+     margin-top: 10px;
+     font-size: smaller;
+   }
+   #logo{
+     width: 180px;
+     font-size: smaller;
+     margin-left:25px;
+   }
+   .GooglePlaystore{
+   margin-left: 5px;
+     margin-top:15px;
+   }
+   .social-icon{
+     margin-top: 5px;
+   }
+   .social-icon>a>img{
+     height:25px;
+   }
+   
+/*impp*/
+
+.container{
+  width: 100%;
+  font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+ 
+  
+   }
+   .container>h1{
+  margin-left:230px;
+  font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom:20px;
+  margin-top: 20px;
+
+  
+   }
+   .TrendingTrips{
+     display: grid;
+     grid-template-columns: repeat(8,auto);
+     width: 72%;
+     height:400px;
+     margin:0 auto;
+  
+  
+   
+   }
+   .TravelGuides{
+     display: grid;
+     grid-template-columns: repeat(8,auto);
+     width: 70%;
+     height:280px;
+     margin:0 auto;
+    
+   }
+   .DiscoverNow{
+   display: grid;
+     grid-template-columns: repeat(8,auto);
+     width: 70%;
+     height:220px;
+     margin:0 auto;
+     
+  }
+   .img>img{
+     width: 350px;
+     height: 250px;
+     border-radius: 10px;
+   }
+   .button{
+     display: flex;
+     width: 320px;
+   }
+   .discription{
+     width: 320px;
+   }
+   .discription>h4{
+    
+     margin: 0;
+   }
+   .button>button{
+    margin-left:200px;
+    height:20px;
+    margin-top: 5px;
+  }
+  .button>h5{
+    margin-top: 5px;
+  }
+   .discription>p{
+     font-size: smaller;
+     margin-top: 0;
+   }
+   .img1>img{
+     width: 250px;
+     height:170px;
+     margin-top: 5px;
+     border-radius: 10px;
+     cursor: pointer;
+   }
+   .img2>img{
+     width: 180px;
+     height:250px;
+     margin-top: 5px;
+     border-radius:5px;
+
+   }
+ .slick-arrow{
+     color: black;
+     font-size:0px;
+     margin: 0;
+     padding: 0;
+   }
+
+ .slick-next {
+ right:0px;
+
+ }
+ .slick-prev {
+ left: -45px;
+}
+
+
+ .slick-next, .slick-prev {
+   line-height: 0;
+ position: absolute;
+ top: 40%;
+ display: block;
+ width: 50px;
+ height: 20px;
+ }
+ .slick-next:before, .slick-prev:before {
+ font-family: slick;
+ font-size: 50px;
+ line-height: 1;
+ opacity: .75;
+ color: rgb(177, 171, 171);
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<div class="hindi">
+<div class="hindisection1">
+    <!-- <div id=head>
+        <div class="part1">
+            <img width="100%"height="350px" src="https://cdn1.tripoto.com/media/filter/tst/img/30751/Image/1526037226_holidaycover.jpeg" alt="">
+        </div>
+        <div class="img2">
+            <img style="margin-left:50px;" width="90%" src="https://cdn1.tripoto.com/media/filter/nxxl/img/1517738/Image/1621496504_jpg.jpeg" alt="">
+
+        </div>
+        <h1>Trending Domestic Packages</h1>
+
+    </div> -->
+   
+    <div style="height: 350px;">
+    <a href="">
+
+        
+    <img style="width: 100%;height: 300px;border-radius:0.1%;" src="https://cdn1.tripoto.com/media/filter/tst/img/30751/Image/1526037226_holidaycover.jpeg" alt="">
+</a>
+</div>
+<a  href="partners.html"><img class="small_img" src="https://cdn1.tripoto.com/assets/2.9/img/logo/mini-logo.png" alt=""></a>Tripoto</p>
+
+<a href="">
+<img style="width: 100%;height: 200px;border-radius:0.1%;" src="https://cdn1.tripoto.com/media/filter/nxxl/img/1517738/Image/1621496504_jpg.jpeg" alt="">
+
+</a>
+
+</div>
+</div>
+
+
+
+
+<!------------------------------टूर पैकेज-------------------------------------------------->
+<h1 style="margin-left:40px;">Trending Domestic Packages
+
+</h1>
+
+<div class="hindi_section2">
+
+<!--box1-->
+<div class="box">
+
+    <a href="curtorim.html">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1565782355_kerala_app.jpg" alt="">
+        PACKAGE
+    </a>
+    <h3>Kerala Packages</h3>
+<div class="hinditext">
+    <a   href="curtorim.html"><img class="small_img" src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e" alt="">Kerala </a>
+    <div class=daynight>4D.3N </div>
+</div>
+
+<div class="hinditext1">
+    
+    <p>12,000</p>
+    <p style="opacity: .5;">onwards</p>
+    <a href="curtorim.html">    <button class="booknowbtn">Get Quotes</button>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+<!--box2-->
+
+<div class="box">
+
+    <a href="manali.html">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567683210_north_east_web.jpg" alt="">
+        PACKAGE
+    </a>
+    <h3>North East India Tour Packages (2021): Book North East Holiday Trip @ Affordable Price</h3>
+<div class="hinditext">
+    <a   href="manali.html"><img class="small_img" src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e" alt="">NorthEast</a>
+    <div class=daynight>3D.2N </div>
+</div>
+
+<div class="hinditext1">
+    <p>12,000</p>
+    <p style="opacity: .5;">onwards</p>
+    <a href="curtorim.html">    <button class="booknowbtn">Get Quotes</button>
+    </a>
+  </div>
+</div>
+
+
+<!--box3-->
+
+<div class="box">
+
+    <a href="naldehra .html">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567063251_kashmir_app.jpg" alt="">
+        PACKAGE
+    </a>
+    <h3>Kashmir Packages</h3>
+<div class="hinditext">
+    <a   href="naldehra .html"><img class="small_img" src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e" alt="">Kashmir </a>
+    <div class=daynight>3D.2N </div>
+</div>
+
+<div class="hinditext1">
+    <p>12,000</p>
+    <p style="opacity: .5;">onwards</p>
+    <a href="curtorim.html">    <button class="booknowbtn">Get Quotes</button>
+    </a>
+</div>
+
+
+</div>
+
+
+<!-- box4 --> 
+
+<div class="box">
+
+    <a href="dharamsala.html">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1565782455_ladakh_app.jpg" alt="">
+        PACKAGE
+    </a>
+    <h3>Leh Ladakah Package</h3>
+<div class="hinditext">
+    <a   href="dharamsala.html"><img class="small_img" src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e" alt="">Ladakah</a>
+    <div class=daynight>3D.2N </div>
+</div>
+
+<div class="hinditext1">
+    <p>12,000</p>
+    <p style="opacity: .5;">onwards</p>
+    <a href="curtorim.html">    <button class="booknowbtn">Get Quotes</button>
+    </a>
+  </div>
+  <p style="text-decoration: line-through;opacity: .5;">12000</p>
+
+
+</div>
+<!---box5-->
+
+<div class="box">
+
+    <a href="dharamsala.html">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567494998_andaman_app.jpg" alt="">
+        PACKAGE
+    </a>
+    <h3>Andaman Package</h3>
+<div class="hinditext">
+    <a   href="dharamsala.html"><img class="small_img" src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e" alt="">Andaman</a>
+    <div class=daynight>3D.2N </div>
+</div>
+
+<div class="hinditext1">
+    <p>12,000</p>
+    <p style="opacity: .5;">onwards</p>
+    <a href="curtorim.html">    <button class="booknowbtn">Get Quotes</button>
+    </a>
+  </div>
+  <p style="text-decoration: line-through;opacity: .5;">12000</p>
+
+
+</div>
+</div>
+
+
+
+
+
+
+<h1 style="padding: 5%;margin-left: 150px;">सबसे बढ़िया जगह</h1>
+
+
+
+<!-------------------------------------- Discover now-------------------------------------------------------------------------->
+<div class="DiscoverNow">
+  <div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128872_hill1.png" alt="">
+    <h2>Hill Station</h2>
+  </div>
+  <div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128796_beach5.png" alt="">
+    <h2>Beaches</h2>
+  </div>
+  <div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587154281_tourist_attraction_4.png" alt="">
+    <h2>Tourist Attractions</h2>
+  </div>
+  <div class="img1">
+    <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155459_weekend_getaways.png" alt="">
+    <h2>Weekends Getways</h2>
+  </div>
+ 
+    <div class="img1">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155577_adventure_activities.png" alt="">
+      <h2>Adventure Activities</h2>
+    </div>
+    <div class="img1">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155306_road_trip.png" alt="">
+      <h2>Road Trips</h2>
+    </div>
+    <div class="img1">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125064_trekking_route_3.png" alt="">
+      <h2>Trekking Routes</h2>
+    </div>
+    <div class="img1">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125598_family_vacation.png" alt="">
+      <h2>Family Vacations</h2>
+    </div>
+  
+</div>
+
+
+ <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+ <h1 style="padding: 5%;margin-left: 150px;">सर्वश्रेष्ठ अनुभव</h1>
+
+ <div class="TravelGuides">
+      
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg" alt="loading">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt="">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216649_andaman.jpg" alt="loading">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732339_1_10.jpg" alt="">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732387_3_7.jpg" alt="loading">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732417_2_10.jpg" alt="">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732456_dubai.jpg" alt="">
+    </div>
+    <div class="img2">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt="loading">
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-------------------------------------- fooooooooooooterrrrrrr --------------------------------------------------->
+<div id="footer">
+    <hr>
+    <div class="footerFirst">
+     <div id="logo">
+         <img style="height: 50px ;width: 80px;" src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+         <p>The Global Travel Community</p><br>
+         <hr>
+         <div class="social-icon">
+           <a href=""><img  style="height: 30px ;width: 50px;"src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" alt="loading"></a>
+           <a href=""><img  style="height: 30px ;width: 50px;" src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png" alt=""></a>
+           <a href=""><img  style="height: 30px ;width: 50px;" src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+           <a href=""><img  style="height: 30px ;width: 50px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU" alt=""></a>
+           <a href=""><img style="height: 30px ;width: 50px;" src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png" alt=""></a>
+           <a href=""><img style="height: 30px ;width: 50px;" src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+        </div>
+        <div class="GooglePlaystore">
+            <img  style="height: 50px ;width: 80px;"src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+        </div>
+     </div>
+     <div>
+         <p>About Tripoto</p><br>
+         <a href="#">How It Works</a><br><br>
+         <a href="#">FAQ's</a><br><br>
+         <a href="#">Privacy Policy</a><br><br>
+         <a href="#">Terms & Conditions</a><br><br>
+         <a href="#">Careers</a><br><br>
+         <a href="#">Contact Us</a><br><br>
+     </div>
+     <div>
+        <p>Products</p><br>
+        <a href="#">Tour Packages</a><br><br>
+        <a href="#">Travel Guides</a><br><br>
+        <a href="#">Trips & ltineraries</a><br><br>
+        <a href="#">Weekend Getways</a><br><br>
+        <a href="#">Place to Visit</a><br><br>
+        <a href="#">Other Travel Categories</a><br><br>
+        <a href="#">Tripto Fourm</a><br><br>
+        <a href="#">Honeymoon Packages</a><br><br>
+     </div>
+     <div>
+        <p>Important Travel Links</p><br>
+        <a href="#">Goa Tourism</a><br><br>
+        <a href="#">Dubai Tourism</a><br><br>
+        <a href="#">Singapore Tourism</a><br><br>
+        <a href="#">Kerala Tourism</a><br><br>
+        <a href="#">Manali Tourism</a><br><br>
+        <a href="#">Bali Tourism</a><br><br>
+        <a href="#">Sri Lanka Tourism</a><br><br>
+        <a href="#">Honeymoon Destinations inindia</a><br><br>
+     </div>
+     <div>
+        <p>Partner Programs</p><br>
+        <a href="#">Buy Travel Leads</a><br><br>
+        <a href="#">Partner With Us</a><br><br>
+        <a href="#">Earn Credits</a><br><br>
+        <a href="#">Get paid to Travel</a><br><br>
+        <a href="#">Import Blog To ltinerary</a><br><br>
+        <a href="#">Tripto Ai</a><br><br>
+     </div>
+    </div>
+    <div class="footerSecond">
+        <hr>
+        <p>© All rights reserved.</p>
+    </div>
+  </div>
+  
+  
+  
+        
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$('.hindi_section2').slick({
+slidesToShow: 3,
+slidesToScroll: 1,
+autoplay: false,
+autoplaySpeed: 2000,
+});
+
+$('.TrendingTrips').slick({
+slidesToShow: 3,
+slidesToScroll: 1,
+autoplay: true,
+autoplaySpeed: 2000,
+});
+
+$('.DiscoverNow').slick({
+slidesToShow: 4,
+slidesToScroll:1,
+autoplay: true,
+autoplaySpeed: 4000,
+});
+
+$('.TravelGuides').slick({
+slidesToShow: 5,
+slidesToScroll:1,
+autoplay: true,
+autoplaySpeed: 6000,
+});
+</script>
+
+</html> 
+
+  
+      

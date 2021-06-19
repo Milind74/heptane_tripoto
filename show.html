@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* #data{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+    } */
+*{
+    font-family: helvetica,arial,sans-serif;
+}
+    .name{
+        opacity: 0.5;
+        border: 1px solid black;
+        height: 40px;
+        width: 300px;
+        font-size: 20px;
+        text-align: center;
+        
+        
+    }
+
+    input{
+        width: 200px;
+        height: 40px;
+        border-radius: 4%;
+        border: 1px solid black;
+        margin: auto;
+    }
+    button{
+        width: 200px;
+        height: 40px;
+        border-radius: 3%;
+        margin-bottom: 15%;
+        cursor: pointer;
+        background-color: #2f9bdb;
+        color: white;
+        
+
+    }
+    .pa{
+        font-size: 30px;
+    }
+   #promo{
+       float: right;
+   }
+#input{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+}
+#promo{
+            padding: 15%;
+            border: 1px solid black;
+            width: 400px;
+            height: 500px;
+            grid-template-columns: 20%;
+            margin: auto;
+            
+}
+</style>
+<body>
+    <div id=input>
+    <div id="data"></div>
+    <div id="promo">
+        <h2>Price details</h2>
+        <p> Total Amount</p>
+        <h2 style="font-size: 16px">Redemption</h2>
+        <h3 id="dprice"></h3>
+
+
+        <input
+        required
+        id="input1"
+        type="text"
+       
+        placeholder="example : PROMO10"
+
+      />
+      <br>
+      <br>
+      <button id="promobtn">Apply CODE</button> <br>
+
+      <label for="">Claim GST</label>
+<br>
+      <input style="width: 10px; height:10px" type="radio" value="yes"> <label for="">Add your GST number for tax claim purposes(option)</label>
+<br>
+      <input style="width: 10px; height:10px" type="radio" value="yes"> <label for="">I accept Tripoto's <a href="Terms and Conditions"></a></label>
+<br> <br>
+       <a href="payment.html"> <button  >proceed to pay ₹ 9,600</button></a>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+     let data=localStorage.getItem("product")
+        data=JSON.parse(data)
+        console.log(data)
+
+        let parent = document.getElementById("data");
+        parent.innerHTML = null;
+        data.forEach(function (el) {
+       
+        let div = document.createElement("div");
+        let p=document.createElement('p')
+        p.setAttribute('class','pa')
+        p.textContent="details provided"
+    
+
+     
+        let name=document.createElement('p')
+        name.setAttribute('class','name')
+        name.innerHTML=`Full Name:${el.name}`
+        
+        let email = document.createElement("p");
+        email.setAttribute('class','name')
+        email.innerHTML = `Email: ${el.email}`;
+
+        
+        let contact = document.createElement("p");
+        contact.setAttribute('class','name')
+        contact.innerHTML = `Contact: ${el.contact}`;
+
+        
+        let des = document.createElement("p");
+        des.setAttribute('class','name')
+        des.innerHTML = `Destination: ${el.des}`;
+
+        
+        let city = document.createElement("p");
+        city.setAttribute('class','name')
+        city.innerHTML = `City: ${el.city}`;
+        
+        let quant = document.createElement("p");
+        quant.setAttribute('class','name')
+        quant.innerHTML = `quant: ${el.quant}`;
+
+        let duration = document.createElement("p");
+        duration.setAttribute('class','name')
+        duration.innerHTML = `duration: ${el.dur}`;
+
+        let amount = document.createElement("p");
+        amount.setAttribute('class','name')
+        amount.innerHTML = "Amount: 9,600"
+        
+     
+
+      div.append( p,name,email,city,contact,des,quant,duration,amount);
+      parent.append(div)
+
+
+
+        
+    })
+
+
+
+
+
+
+
+
+
+    var btn = document.getElementById("promobtn")
+    btn.addEventListener("click", applyCoupon);
+
+//applycoupan
+
+var total=9600;
+function applyCoupon() {
+    var input = document.getElementById("input1").value;
+    console.log(input)
+    
+    if( input.length == 7){
+
+var num = input.slice(5,7);
+console.log(num)
+var discount = Math.round(total- (total *(num) / 100) )
+// calculating discount
+console.log(discount);
+var dprice = document.getElementById("dprice");
+ dprice.innerHTML="total price"+discount
+
+ dprice.innerHTML = `congratulations you got ${num}% discount,
+  your final cart value is ${discount} ₹`;
+
+    }
+ else {
+    console.log("error")
+     alert("apply correct promo code")
+
+ }
+
+}
+</script>

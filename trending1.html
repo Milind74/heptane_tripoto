@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .blogContainer{
+            width: 100%;
+        }
+        .container_blog{
+         display:flex;
+         margin: 0 250px;
+         width: 80%;
+         gap: 1%;
+        }
+        .blog{
+         width:70%;
+         font-size:larger;
+        
+        }
+        .blog>img{
+            width:100%; 
+        }
+      .form{
+       width:20%;
+       height:580px;
+       border: 1px solid rgba(145,151,163,.2);
+       box-shadow: 0 5px 10px 0 #dddddd80;
+       font-family: helvetica,arial,sans-serif;
+       margin: 0;
+       padding-left:7px;
+
+       
+      }
+      .form>button{
+        width:180px;  
+        background: blue;
+        color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border:1px solid black;
+        height: 30px;
+      }
+      .form>p{
+          font-size:xx-small;
+      }
+      #div{
+         border: 1px solid black;
+         margin: 0 250px;
+         width: 55%;
+         margin-left:250px;
+      }
+      #comment{
+          width: 700px;
+          height: 100px;
+          margin-left:70px;
+          margin-top: 20px;
+      }
+      #btn1{
+    
+          background-color: blue;
+          color: white;
+          margin-left:700px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .container{
+     width: 100%;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     background-color: #fafafa;
+    
+     
+      }
+      .container>h1{
+     margin-left:230px;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     margin-bottom:20px;
+     margin-top: 20px;
+
+     
+      }
+      .TrendingTrips{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+     
+     
+      
+      }
+      .TravelGuides{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:280px;
+        margin:0 auto;
+       
+      }
+      .DiscoverNow{
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:220px;
+        margin:0 auto;
+        
+     }
+      .img>img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .button{
+        display: flex;
+        width: 320px;
+      }
+      .discription{
+        width: 320px;
+      }
+      .discription>h4{
+       
+        margin: 0;
+      }
+      .button>button{
+       margin-left:200px;
+       height:20px;
+       margin-top: 5px;
+     }
+     .button>h5{
+       margin-top: 5px;
+     }
+      .discription>p{
+        font-size: smaller;
+        margin-top: 0;
+      }
+      .img1>img{
+        width: 250px;
+        height:170px;
+        margin-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .img2>img{
+        width: 180px;
+        height:250px;
+        margin-top: 5px;
+        border-radius:5px;
+
+      }
+    .slick-arrow{
+        color: black;
+        font-size:0px;
+        margin: 0;
+        padding: 0;
+      }
+   
+    .slick-next {
+    right:0px;
+  
+    }
+    .slick-prev {
+    left: -45px;
+}
+
+
+    .slick-next, .slick-prev {
+      line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    }
+    .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(177, 171, 171);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+            margin: 0;
+            padding: 0;
+        }
+        .footerFirst{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            width: 98%;
+            gap: 10px;
+         
+        }
+        .footerFirst>div{
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 1%;
+            height: 350px;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerSecond{
+            width: 98%;
+            margin:0 auto;
+            text-align: center;
+            font-family:helvetica,arial,sans-serif;
+            height: 100px;
+        }
+        .footerFirst>div>a{
+           text-decoration: none;
+           color: black;
+           font-size:smaller;
+        }
+        .footerSecond>p{
+            margin-top: 10px;
+            font-size: smaller;
+        }
+        #logo{
+            width: 180px;
+            font-size: smaller;
+            margin-left:25px;
+        }
+        .GooglePlaystore{
+       margin-left: 5px;
+            margin-top:15px;
+        }
+        .social-icon{
+            margin-top: 5px;
+        }
+        .social-icon>a>img{
+            height: 25px;
+        }
+        .author{
+        display: grid;
+        grid-template-columns: repeat(6,auto);
+        width:100%;
+        height:50px;
+        background-color:rgb(217, 243, 255);
+        margin-bottom: 10px;
+        margin: 10 auto;
+        }
+        .author>div>img{
+            border-radius:50%;
+            height: 35px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .name{
+            margin-top:10px;
+            margin-left:-90px;
+        }
+        .no{
+            margin-top:10px;  
+        }
+        .views{
+            margin-top:10px;  
+            text-align: right;
+        }
+        .facebook{
+            text-align: right;
+            margin-right: -90px;
+            
+
+            
+        }
+        .facebook>img{
+            height: 20px;
+        }
+        .heart{
+            text-align: right;
+            margin-right: -140px;
+        }
+        .no{
+            text-align: right;
+            margin-right: -190px;
+        }
+        .swis{
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            
+        }
+        .swis>img{
+            width:48%;
+            margin-left: 1%;
+        }
+        #btn1{
+        width: 75px;
+        height: 30px;
+        }
+        #countComment{
+          margin-top: 10px;
+          margin-left: 20px;
+        }
+        #div>p{
+          margin-left:20px;
+          margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blogContainer">
+        <div class="container_blog">
+        <div class="blog">
+         <h1>भीड़-भाड़ से दूर और नज़ारों से भरपूर है भारत का सबसे ऊँचे रेलवे स्टेशन 'घूम'!</h1>
+         <p>क्या आपको छुट्टियाँ बिताने के लिए किसी शांत और सुन्दर जगह की तलाश है? अगर आपने दार्जिलिंग अपनी छुट्टियों के लिए चुना है तो फिर सोच लीजिए। दार्जीलिंग के पास स्तिथ घूम वो जगह हो सकती है जहाँ आप अपनी छुट्टियाँ शान्ति से बिता सकते हैं। अक्सर देखा गया है कि पिछले कुछ सालों में दार्जीलिंग में पर्यटकों की बढ़ती भीड़ के कारण लोग दार्जिलिंग से दूर घूम में अपनी छुट्टियाँ बिताना ज्यादा पसंद करते हैं।
+
+            घूम
+            घूम के बारे लोग इसलिए भी जानते हैं क्योंकि 7407 फ़ीट पर स्तिथ यह भारत का सबसे ऊँचा रेलवे स्टेशन है। विश्व प्रसिद्ध 'द दार्जीलिंग हिमालयन रेलवे' की स्थापना 1879 में रखी गई जब इस पहाड़ी इलाके में पहली बार ट्रैन की पटरियां बिछी। यह रेलगाड़ी 1881 तक घूम स्टेशन पहुँच गयी थी। अगर आप आज भी सिलीगुड़ी या दार्जीलिंग से घूम की यह ट्रेन लेंगे तो आपको वर्षों पुराना असाधारण तकनीकी कौशल का नमूना देखने को मिल सकता है।
+            
+            दार्जिलिंग से 7 कि.मी. दूर इस छोटे से शहर घूम में सोचा जाए तो दार्जिलिंग और इस पूरे इलाके का इतिहास बसा है। भारत के इतिहास में दार्जिलिंग ने अहम पन्ने लिखे हैं। यहाँ आने वाले लोगों को बस भारत के इतिहास के बारे में ही नहीं, पर प्रकृति की असीम सुंदरता के बारे में भी बताता है घूम। दार्जिलिंग से घूम जाने वाली रोड को वर्षों पहले हिल कार्ट रोड का नाम दिया गया था। इस रोड से आज भी दार्जिलिंग, घूम और सिलीगुड़ी जुड़े हुए हैं और आज भी यह छोटी से रेल लाइन स्थानीय लोगों के संपर्क के लिए उतनी ही ज़रूरी है जितनी वर्षों पहले थी।</p>
+            <img src="https://static2.tripoto.com/media/filter/nl/img/1327729/TripDocument/1550815603_1485867480_1485857503_dsc_0361.jpg" alt="loading">
+           <h1>घूम में होटल्स और होमस्टे के विकल्प</h1>
+           <p>पूरे सिक्किम और दार्जिलिंग में आपको होमस्टेस की भरमार मिलेगी। यहाँ के स्थानीय लोगों को यहाँ आए यात्रियों का सत्कार करना सच में बहुत पसंद है शायद इसी कारण यहाँ इतने सारे होमस्टेस उभर कर आए हैं। रहने के लिए आपको घूम मोनेस्ट्री में भी जगह मिल जाएगी पर इसके बारे में आप मोनेस्ट्री पहुँचने के बाद ही पूछ-ताछ कर सकते हैं। घूम में भी काफी ऐसे होमस्टे हैं जहाँ आप ठहर सकते हैं। कुछ नाम है: कंचन कन्या होमस्टे, समबोंग टी एस्टेट और नेस्ले होमस्टे। अगर आपको इंटरनेट में होटल्स की अच्छी डील्स ना मिलें तो आप घूम पहुँच कर भी इन होमस्टेस को देख सकते हैं जो की काफी सस्ते में आपको मिल सकते हैं।</p>
+        <img src="https://static2.tripoto.com/media/filter/nl/img/1327729/TripDocument/1550815638_1485867741_1485857571_dsc_0345.jpg" alt="loading">
+      <h1>क्या देखें घूम में?</h1>
+        <p>अगर आप दार्जिलिंग से घूम तक दार्जिलिंग हिमालयन रेलवे में सफर करते हैं तो आपको रास्ते में बतासिया लूप दिखेगा। बतासिया लूप असल में ट्रेन की पटरियों का एक सुन्दर घुमावदार मोड़ है जहाँ से आपको सामने की हिमालय की बर्फ से भरी चोटियाँ साफ़ साफ़ दिखेंगी। पहाड़ों की सीधी चढ़ाई से बचने के लिए इन घुमावदार पटरियों का निर्माण 1919 में किया और इस लूप को आज भी तकनीकी कौशल का एक अभूतपूर्व नमूना मानते हैं। आज के समय में यहाँ पर गोरखा रेजिमेंट का एक मेमोरियल भी है। यह मेमोरियल उन सभी गोरखा जवानों को समर्पित है जिन्होंने आज़ादी की लड़ाई में अपनी जान गवाई।</p>    
+    <img src="https://static2.tripoto.com/media/filter/nl/img/1414073/SpotDocument/1561372390_1550815664_1485867538_1485858259_dsc_0319.jpg" alt="loading">
+    <p>यहाँ आने वाले ज्यादातर लोग इस मोनेस्ट्री को घूम मोनेस्ट्री के नाम से जानते हैं पर इस मोनेस्ट्री का असली नाम है योगा चोलिंग गोम्पा। यह मोनेस्ट्री घूम रेलवे स्टेशन से बस 700 मीटर की दूरी पर है। घूम मोनेस्ट्री का निर्माण 1875 में लामा शराब ग्यात्सो ने करवाया और यहाँ पर दूर-दूर से लोग यहाँ स्तिथ मैत्रेय बुद्धा की प्रतिमा देखने आते हैं। घूम में स्तिथ 4 मोनस्ट्रीज़ में से यह सबसे बड़ी मोनेस्ट्री है। बाकी 3 मोनेस्ट्री हैं समतेन चोलिंग, सक्या चोलिंग और फिन।</p>
+<img src="https://static2.tripoto.com/media/filter/nl/img/1414073/SpotDocument/1561373266_1550815704_1485867557_1485857645_dsc_0349.jpg" alt="loading">
+<p>Ghoom Railway Museum
+    यह अनोखा म्यूज़ियम घूम रेलवे स्टेशन के साथ ही है। अपनी तरह का यह पहला म्यूज़ियम पिछले 200 सालों में घूम रेलवे स्टेशन के इतिहास के बारे में बताता है। यहाँ आपको 1883 के रेलवे टिकट्स भी देखने को मिलेंगे। इनमें से कुछ टिकट ऐसे भी हैं जिनका मूल्य Rs 0.66 है। साथ ही वो सबसे पुरानी मशीनें भी देखने को मिलेंगी जो इस पहाड़ी इलाके तक स्टीम इंजन पहुँचाने में मददगार रही। आपको पुरानी फोटोग्राफ्स भी देखने को मिल सकती है जो दर्शाती हैं की किस प्रकार पिछले 200 सालों में इस जगह का इतिहास बदला।
+    
+    घूम से करीब 1100फ़ीट और ऊपर स्तिथ है टाइगर हिल। टाइगर हिल जाना जाता है इस चोटी से दिखने वाले घाटी के सुन्दर नज़ारों के लिए। दार्जिलिंग की सैर के साथ-साथ टाइगर हिल से आपको कंचनजंगा पर्वत के भी दर्शन हो जाएँगे। सच पूछें तो जह दिन साफ़ हो तो यहाँ से माउंट एवेरेस्ट भी देखा जा सकता है। पर घूम में साफ़ मौसम कम ही देखने को मिलता है। यहाँ ज्यादातर घने बदल छाए रहते हैं और यही दार्जिलिंग के पास स्तिथ इस छोटे से शहर की खूबसूरती है।</p>
+    <p>सेंचल झील एक कृत्रिम जलाशय है जो की दार्जिलिंग की एक पुरानी वाइल्डलाइफ सैंक्चुरी में स्तिथ है। यह सैंक्चुरी घूम से लगभग 3 कि.मी. की दूरी पर है। आप यहाँ पहुँचने के लिए ओल्ड मिलिट्री रोड ले सकते हैं जो की घूम और जोरेबंगलो को जोड़ती है। झील में सैर करने के लिए आपको एक टिकट भी लेना होगा। यह टिकट जोरेबंगलो स्तिथ रेंजर ऑफिस से लिया जा सकता है। बरसात के मौसम में ज्यादातर यह सैंक्चुअरी बंद रहती है और 15 सितम्बर के बाद खुलती है। अगर आपका इस झील और सैंक्चुरी घूमने का प्लान हो तो आप इस सैंक्चुरी के अंदर स्तिथ फॉरेस्ट रेस्ट हाउस में भी ठहर सकते हैं। यात्रियों के रहने के लिए यह एक बढ़िया जगह है। अगर यहाँ कमरे उपलब्ध हों तो आपको ₹1000 प्रतिदिन में मिल सकते हैं। यहाँ रूम्स बुक करने के लिए आप वाइल्डलाइफ डिवीज़न ऑफ़ दार्जीलिंग को भी संपर्क कर सकते हैं। फ़ोन नंबर:(0354) 2257314</p>
+    <img src="https://static2.tripoto.com/media/filter/nl/img/1414073/SpotDocument/1561373265_1550815828_1485867685_1485858390_dsc_0334.jpg" alt="loading">
+<h1>घूम में खाने की जगहें</h1>
+<p>घूम अपने स्ट्रीट फ़ूड के लिए काफी मशहूर है। यहाँ ज्यादातर खाने की जगहें स्थानीय लोगों द्वारा चलाई जाने वाली छोटी दुकानें हैं। यहाँ कुछ प्रसिद्ध रेस्टोरेंट्स भी हैं जिन्हें पिछले कुछ सालों में यात्रियों के बीच काफी ख्याति मिली है। इनमें से कुछ हैं: कैपिटल रेस्टोरेंट (घूम मोनेस्ट्री से 30मीटर दूर) गले'स रेस्टोरेंट (घूम मोनेस्ट्री से 600 मीटर दूर) और घराना (घूम मोनेस्ट्री से 700 मीटर दूर)। घूम से 7 किलोमीटर दूर दार्जिलिंग में आपको अच्छे रेस्टोरेंट्स के और भी विकल्प मिल जाएँगे। दार्जिलिंग के कुछ प्रसिद्ध रेस्टोरेंट्स के नाम इस प्रकार से हैं: ग्लेनरीस, टॉम एंड जेरीस, फ्रैंक रॉड कैफ़े, हिमालयन जावा कॉफ़ी शॉप और शांगरी-ला।</p>
+<img src="https://static2.tripoto.com/media/filter/nl/img/1327729/TripDocument/1550815872_1485867741_1485858525_dsc_0330.jpg" alt="loading">
+<p>अगर आप अपनी अगली छुट्टियों के लिए दार्जिलिंग जाने की योजना बना रहे हैं तो ध्यान रहे की दार्जिलिंग से कुछ ही दूरी पर यह छोटी सी जगह आपका इंतज़ार कर रही है। घूम में आपको एक अनोखी पहाड़ों की शान्ति मिलेगी। घूम आज भी दार्जिलिंग के विकास में ऐतिहासिक और सांस्कृतिक महत्त्व रखता है।
+
+    अगर आपने घूम में छुट्टियाँ बिताई हैं तो आप अपने सफर की कहानियाँ Tripoto पर साझा करें और अन्य यात्रियों की मदद करें।
+    सभी तस्वीरें अखिल वर्मा द्वारा ली गई हैं।
+    
+    ये आर्टिकल अनुवादित है। ओरिजनल आर्टिकल पढ़ने के लिए यहाँ क्लिक करें।
+    
+    Frequent Searches Leading To This Page:-
+    darjeeling himalayan railway booking, india via the darjeeling himalayan railway, ghoom railway station ghoom west bengal, world's highest railway station ghoom, ghoom railway station darjeeling
+    
+    </p>
+    <br>
+    <br>
+  </div>
+        <div class="form">
+            <H3>Want to book a similar trip?</H3><br><br>
+            <input type="text" placeholder="email"><br><br>
+            <input type="text" placeholder="Full Name"><br><br>
+            <input type="text" placeholder="Contact Number"><br><br>
+            <label for="">Deprature Date</label><br><br>
+            <input type="date" id="myDate" placeholder="Deprature Date"><br><br>
+            <input type="text" placeholder="Deprature City"><br><br>
+            <input type="text" placeholder="Destinations"><br><br>
+            <input type="text" placeholder="Budget Per Person"><br><br>
+            <select name="" id="">
+                <option value="5 star">5 star</option>
+                <option value="5 star">4 star</option>
+                <option value="5 star">3 star</option>
+                <option value="5 star">2 star</option>
+                <option value="5 star">Don't need Hotel</option>
+            </select><br><br>
+            <label for="">Flight Book or not?</label><br><br>
+            <input type="radio" value="yes"> <label for="">YES</label>
+            <input type="radio" value="No">NO<br><br>
+            <button onclick="call()">Request Call Back</button><br><br>
+            <p>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
+        </div>
+    </div>
+    <div id="div">
+      <div id="countComment">Comment:0</div>
+      <input type="text" id="comment" ><br> <br>
+      <button  id="btn1" onclick="comment()">POST</button><br> <br>
+
+  </div>
+    
+</div>
+
+<!-- -------------------------------------------------container boxes ---------------------------------------------------->
+<div class="container">
+    <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+    <h1>Trending Trips</h1>
+    <div class="TrendingTrips">
+    
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1327729/TripDocument/1550815603_1485867480_1485857503_dsc_0361.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>भीड़-भाड़ से दूर और नज़ारों से भरपूर है भारत का सबसे ऊँचे रेलवे स्टेशन 'घूम'!</h4>
+        <p>क्या आपको छुट्टियाँ बिताने के लिए किसी शांत और सुन्दर जगह की तलाश है? अगर आपने दार्जिलिंग अपनी छु...</p>
+        <hr>
+      </div>
+   
+      <div>
+   
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1993513/TripDocument/1606728419_1606728417485.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>देश के कुछ ऐसे शानदार इंडियन आर्किटेक्चरल स्ट्रक्चर्स जिन पर पूरी दुनिया को है गर्व</h4>
+        <p>पूरी दुनिया में इंडिया के आर्किटेक्चरल मार्वेल्स की तूती यूं ही नहीं बोलती। इसके पीछे इंडियन इंजी...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://cdn1.tripoto.com/200.2/img/featured-trips/featured-trip-1_135_86.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>5 best things to do in Rishikesh | Secret Location</h4>
+        <p> Every now and then I get this query from my friends that what could be the top places that ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/794607/TripDocument/1571663083_1280px_ridge_shimla.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Love Travelling in Winter? These 8 Destinations Look Gorgeous This Time of the Year</h4>
+        <p>Has it ever occurred to you that a place you just visited didn't look as mind-blowing as it did i...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/816121/TripDocument/1605104789_food_goa.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>सराहन: हिमाचल का वो खूबसूरत गाँव जहाँ आकर वक्त भी थम जाता है!</h4>
+        <p>हर किसी का मन करता है कि वो कहीं शांत-सी जगह पर कुछ दिन गुज़ारे। जहाँ मन बावरा होकर कहीं भी चलने ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1350024/TripDocument/1568915609_sarahan.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Gorgeous Cottages In Nainital That Will Leave You Awestruck</h4>
+        <p>Known for its incredible landscapes, lush green surroundings, scenic views and majestic mountains...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/522191/TripDocument/1550152270_bijoy_sagar_lake.png" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>There's Another Udaipur In India And We Bet You Didn't Know About It</h4>
+        <p>We all have read and heard about the beautiful city of Udaipur in Rajasthan, but we bet that you ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/518407/TripDocument/1530982324_the_writers_bungalow_and_its_dining_verandah_0_details_page_1.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Bookmark these 5 Restaurants in North Goa for a great view and lip-smacking food</h4>
+        <p>With Goa now open to tourists and the tourist season just around the corner, I am sure many of yo...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1235940/TripDocument/1545823931_mrk.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>दिल्ली की 15 सस्ती व मज़ेदार चीज़ें जिनके बारे मे आपको कोई नही बता पाएगा</h4>
+        <p>श्रेय : मार्क ऑन फ्लिकरदिल्ली ऐसे ऐसे तॉहफ़ों से भरा है कि आप का मान झूम उठेगा | रोज़मर्रा की उबा...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     
+     
+   </div>
+   <h1>Discover Now</h1>
+     <!-------------------------------------- Discover now-------------------------------------------------------------------------->
+     <div class="DiscoverNow">
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128872_hill1.png" alt="">
+         <h2>Hill Station</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128796_beach5.png" alt="">
+         <h2>Beaches</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587154281_tourist_attraction_4.png" alt="">
+         <h2>Tourist Attractions</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155459_weekend_getaways.png" alt="">
+         <h2>Weekends Getways</h2>
+       </div>
+      
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155577_adventure_activities.png" alt="">
+           <h2>Adventure Activities</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155306_road_trip.png" alt="">
+           <h2>Road Trips</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125064_trekking_route_3.png" alt="">
+           <h2>Trekking Routes</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125598_family_vacation.png" alt="">
+           <h2>Family Vacations</h2>
+         </div>
+       
+     </div>
+     <h1>Explore Travel Guides</h1>
+     <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+   
+     <div class="TravelGuides">
+       
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216649_andaman.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732339_1_10.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732387_3_7.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732417_2_10.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732456_dubai.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt="loading">
+       </div>
+       
+     </div>
+   </div>
+      <!-------------------------------------- fooooooooooooterrrrrrr --------------------------------------------------->
+      <div id="footer">
+        <hr>
+        <div class="footerFirst">
+         <div id="logo">
+             <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+             <p>The Global Travel Community</p><br>
+             <hr>
+             <div class="social-icon">
+               <a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" alt="loading"></a>
+               <a href=""><img src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png" alt=""></a>
+               <a href=""><img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+               <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU" alt=""></a>
+               <a href=""><img src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png" alt=""></a>
+               <a href=""><img src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+            </div>
+            <div class="GooglePlaystore">
+                <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+            </div>
+         </div>
+         <div>
+             <p>About Tripoto</p><br>
+             <a href="#">How It Works</a><br><br>
+             <a href="#">FAQ's</a><br><br>
+             <a href="#">Privacy Policy</a><br><br>
+             <a href="#">Terms & Conditions</a><br><br>
+             <a href="#">Careers</a><br><br>
+             <a href="#">Contact Us</a><br><br>
+         </div>
+         <div>
+            <p>Products</p><br>
+            <a href="#">Tour Packages</a><br><br>
+            <a href="#">Travel Guides</a><br><br>
+            <a href="#">Trips & ltineraries</a><br><br>
+            <a href="#">Weekend Getways</a><br><br>
+            <a href="#">Place to Visit</a><br><br>
+            <a href="#">Other Travel Categories</a><br><br>
+            <a href="#">Tripto Fourm</a><br><br>
+            <a href="#">Honeymoon Packages</a><br><br>
+         </div>
+         <div>
+            <p>Important Travel Links</p><br>
+            <a href="#">Goa Tourism</a><br><br>
+            <a href="#">Dubai Tourism</a><br><br>
+            <a href="#">Singapore Tourism</a><br><br>
+            <a href="#">Kerala Tourism</a><br><br>
+            <a href="#">Manali Tourism</a><br><br>
+            <a href="#">Bali Tourism</a><br><br>
+            <a href="#">Sri Lanka Tourism</a><br><br>
+            <a href="#">Honeymoon Destinations inindia</a><br><br>
+         </div>
+         <div>
+            <p>Partner Programs</p><br>
+            <a href="#">Buy Travel Leads</a><br><br>
+            <a href="#">Partner With Us</a><br><br>
+            <a href="#">Earn Credits</a><br><br>
+            <a href="#">Get paid to Travel</a><br><br>
+            <a href="#">Import Blog To ltinerary</a><br><br>
+            <a href="#">Tripto Ai</a><br><br>
+         </div>
+        </div>
+        <div class="footerSecond">
+            <hr>
+            <p>© All rights reserved.</p>
+        </div>
+    </div>
+<script>
+
+function call() {
+document.getElementById("myDate").value = "2014-02-09";
+alert("Request Submitted,We will call you soon")
+window.location="index.html"
+}
+var comment1=1;
+function comment(){
+   var div=document.getElementById("div");
+   var input=document.getElementById("comment").value;
+   var p=document.createElement("p");
+   p.innerHTML=`USER   <img height="25px" src="https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png" alt="loading"> ${input}`;
+   div.appendChild(p)
+   var count=document.getElementById("countComment");
+    count.innerHTML=`COMMENT: ${comment1++}`
+   
+}
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.TrendingTrips').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+  
+  $('.DiscoverNow').slick({
+    slidesToShow: 4,
+    slidesToScroll:1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+  });
+  
+  $('.TravelGuides').slick({
+    slidesToShow: 5,
+    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  });
+    </script>
+</body>
+</html>

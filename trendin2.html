@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .blogContainer{
+            width: 100%;
+        }
+        .container_blog{
+         display:flex;
+         margin: 0 250px;
+         width: 80%;
+         gap: 1%;
+        }
+        .blog{
+         width:70%;
+         font-size:larger;
+        
+        }
+        .blog>img{
+            width:100%; 
+        }
+      .form{
+       width:20%;
+       height:580px;
+       border: 1px solid rgba(145,151,163,.2);
+       box-shadow: 0 5px 10px 0 #dddddd80;
+       font-family: helvetica,arial,sans-serif;
+       margin: 0;
+       padding-left:7px;
+
+       
+      }
+      .form>button{
+        width:180px;  
+        background: blue;
+        color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border:1px solid black;
+        height: 30px;
+      }
+      .form>p{
+          font-size:xx-small;
+      }
+      #div{
+         border: 1px solid black;
+         margin: 0 250px;
+         width: 55%;
+         margin-left:250px;
+      }
+      #comment{
+          width: 700px;
+          height: 100px;
+          margin-left:70px;
+          margin-top: 20px;
+      }
+      #btn1{
+    
+          background-color: blue;
+          color: white;
+          margin-left:700px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .container{
+     width: 100%;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     background-color: #fafafa;
+    
+     
+      }
+      .container>h1{
+     margin-left:230px;
+     font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     margin-bottom:20px;
+     margin-top: 20px;
+
+     
+      }
+      .TrendingTrips{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 72%;
+        height:400px;
+        margin:0 auto;
+     
+     
+      
+      }
+      .TravelGuides{
+        display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:280px;
+        margin:0 auto;
+       
+      }
+      .DiscoverNow{
+      display: grid;
+        grid-template-columns: repeat(8,auto);
+        width: 70%;
+        height:220px;
+        margin:0 auto;
+        
+     }
+      .img>img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .button{
+        display: flex;
+        width: 320px;
+      }
+      .discription{
+        width: 320px;
+      }
+      .discription>h4{
+       
+        margin: 0;
+      }
+      .button>button{
+       margin-left:200px;
+       height:20px;
+       margin-top: 5px;
+     }
+     .button>h5{
+       margin-top: 5px;
+     }
+      .discription>p{
+        font-size: smaller;
+        margin-top: 0;
+      }
+      .img1>img{
+        width: 250px;
+        height:170px;
+        margin-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .img2>img{
+        width: 180px;
+        height:250px;
+        margin-top: 5px;
+        border-radius:5px;
+
+      }
+    .slick-arrow{
+        color: black;
+        font-size:0px;
+        margin: 0;
+        padding: 0;
+      }
+   
+    .slick-next {
+    right:0px;
+  
+    }
+    .slick-prev {
+    left: -45px;
+}
+
+
+    .slick-next, .slick-prev {
+      line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    }
+    .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(177, 171, 171);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+            margin: 0;
+            padding: 0;
+        }
+        .footerFirst{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            width: 98%;
+            gap: 10px;
+         
+        }
+        .footerFirst>div{
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 1%;
+            height: 350px;
+            font-family:helvetica,arial,sans-serif;
+        }
+        .footerSecond{
+            width: 98%;
+            margin:0 auto;
+            text-align: center;
+            font-family:helvetica,arial,sans-serif;
+            height: 100px;
+        }
+        .footerFirst>div>a{
+           text-decoration: none;
+           color: black;
+           font-size:smaller;
+        }
+        .footerSecond>p{
+            margin-top: 10px;
+            font-size: smaller;
+        }
+        #logo{
+            width: 180px;
+            font-size: smaller;
+            margin-left:25px;
+        }
+        .GooglePlaystore{
+       margin-left: 5px;
+            margin-top:15px;
+        }
+        .social-icon{
+            margin-top: 5px;
+        }
+        .social-icon>a>img{
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blogContainer">
+        <div class="container_blog">
+        <div class="blog">
+         <h1>देश के कुछ ऐसे शानदार इंडियन आर्किटेक्चरल स्ट्रक्चर्स जिन पर पूरी दुनिया को है गर्व</h1>
+         <img src="https://static2.tripoto.com/media/filter/nl/img/1993513/TripDocument/1606728419_1606728417485.jpg" alt="loading">
+         <p>पूरी दुनिया में इंडिया के आर्किटेक्चरल मार्वेल्स की तूती यूं ही नहीं बोलती। इसके पीछे इंडियन इंजीनियर्स की कुशलता और अथक परिश्रम अहम वजह है। आज मैं आपको ऐसे ही कुछ शानदार इंडियन आर्किटेक्चरल स्ट्रक्चर्स के बारे में बताऊंगी जिन पर न केवल इंडिया बल्कि पूरी दुनिया गर्व करती है। इन शानदार इंडियन आर्किटेक्चरल स्ट्रक्चर्स के बारे में, आपको जानकर हैरानी और आश्चर्य भी होगा। और आप इन बेहतरीन जगहों को देखने से खुद को नहीं रोक पाएंगे। तो आइए जानते हैं।</p>
+       <h1>1. स्टैच्यू ऑफ यूनिटी</h1>
+       <img src="https://static2.tripoto.com/media/filter/nl/img/1993513/SpotDocument/1606555939_1606555938444.jpg" alt="loading">
+       <p>गुजरात के नर्मदा जिले में नर्मदा वैली में सरदार सरोवर बांध के विपरीत बने सरदार वल्लभ भाई पटेल की इस विशालकाय मूर्ति को फिलहाल दुनिया की सबसे ऊंची मूर्ति माना जाता है।
+
+        यह 182 मीटर ऊंची और इसके बनने में 27 अरब रुपए से ज्यादा की लागत आई।
+        
+        इसके कॉन्सेप्च्युलाइजर, फॉर्म्यूलेटर इंडियन ही थे मगर विदेशों की भी मदद ली गई।
+        
+        तो जब भी आप गुजरात जाएं स्टैच्यू ऑफ यूनिटी जरूर जाएं।</p>
+        <h1>2. पनवल नदी वायडक्ट</h1>
+        <img src="https://static2.tripoto.com/media/filter/nl/img/1993513/SpotDocument/1606557060_1606557059065.jpg" alt="loading">
+        <p>महाराष्ट्र के रत्नागिरी जिले में स्थित 424 मीटर लंबा सुपर स्ट्रक्चर्स पनवल नदी पर बना हुआ है।
+
+            कोंकण रेलवे से ट्रैवल करते वक्त आपका ये इंजीनियरिंग मार्वेल देखने को मिल सकता है।
+            
+            ये वायडक्ट एशिया में तीसरा सबसे ऊंचा वायडक्ट है। ये स्लिप इन टेक्नॉलोजी के ऊपर बना हुआ वायडक्ट है जो कि इंडिया में पहली बार यूज किया गया है।
+            
+            तो जब कभी आप महाराष्ट्र के रत्नागिरी के लिए यात्रा करेंगे तो आपको इस अनोखे स्ट्रक्चर्स के दर्शन जरूर होंगे।</p>
+            <h1>3. पंबन ब्रिज, तमिलनाडु</h1>
+            <img src="https://static2.tripoto.com/media/filter/nl/img/1993513/SpotDocument/1606557509_1606557507475.jpg" alt="loading">
+            <p>तमिलनाडु मेनलैंड से रामेश्वरम को जोड़ने वाले इस ब्रिज की सबसे खास बात है कि यह कैंटीलेवर ब्रिज है, यानि कि समुद्र के ऊपर बने इस ब्रिज को शिप्स के गुजरने के लिए ऊपर उठाने की सुविधा है।
+                ऐसा करते वक्त ब्रिज के दोनों भाग आसमान की ओर उठ जाते हैं।
+
+                143 पियर्स के ऊपर टिके इस ब्रिज की कुल लंबाई 2 किलोमीटर है और ये इंडिया का दूसरा सबसे लंबा पुल है।
+                
+                तो आप जब भी तमिलनाडु मेनलैंड से रामेश्वरम की यात्रा करेंगे आपको इस अनोखे ब्रिज के दर्शन जरूर होंगे।</p>
+                <h1>4. पीर पंजाल-रेलवे टनल</h1>
+                <img src="https://static2.tripoto.com/media/filter/nl/img/1993513/SpotDocument/1606557929_1606557927560.jpg" alt="loading">
+                <p>जम्मू-कश्मीर स्थित पीर पंजाल टनल भी करिश्मे से कम नहीं है।
+
+                    बनिहाल से काजीगुंड के बीच बनी घाटी की रेलवे लाइन पर बना ये टनल पीर पंजाल माउंटेन रेंज को चीरकर बना है।
+                    
+                    इस ट्रांसपोर्टेशन पैकेज को इंडिया में सबसे लंबा ट्रांसपोर्टेशन पैसेज माना जाता है जबकि एशिया में दूसरे नंबर पर यह सबसे बड़ा है। इसकी कुल लंबाई 11 किलोमीटर है।
+                    
+                    तो जब भी आप जम्मू-कश्मीर की यात्रा करेंगे तो आपको जम्मू कश्मीर स्थित अदभुत पीर पंजाल टनल के दर्शन जरूर होंगे।</p>
+                    <h1>5. बांद्रा-वर्ली सी लिंक</h1>
+                    <img src="https://static2.tripoto.com/media/filter/nl/img/1993513/SpotDocument/1606558340_1606558338461.jpg" alt="loading">
+                    <p>ये 8 लेन का ब्रिज अरब सागर के ऊपर बना हुआ है और मुंबई के दो सबर्बन इलाकों बांद्रा और वर्ली को जोड़ता है।
+
+                        ये विशाल है, मैजेस्टिक है। ये पहली बार है जब केबल स्टे ब्रिज को ओपन सी में इंडिया में अटेंप्ट किया और अब ये टूरिस्ट अट्रैक्शन भी बन गया है।
+                        
+                        मैं भी जब मुंबई गई थी तो बांद्रा-वर्ली सी लिंक देख कर काफी हैरान हुई थी। बांद्रा-वर्ली सी लिंक ब्रिज काफी बड़ा
+                        
+                        है।
+                        
+                        मैंने भी पहली बार इतना बड़ा ब्रिज देखा था तो काफी हैरानी हुई। इसकी सुंदरता देखने योग्य है। आप भी जब मुंबई जाए तो इस ब्रिज के अदभुत स्ट्रक्चर्स के दर्शन जरूर करें।</p>
+                        <h1>6. भूपेन हजारिका सेतु</h1>
+                        <img src="https://static2.tripoto.com/media/filter/nl/img/1993513/SpotDocument/1606558837_1606558836421.jpg" alt="loading">
+                        <p>धोला-सादिया ब्रिज (जिसे भूपेन हजारिका सेतु भी कहा जाता है) ये बीम बेस्ड ब्रिज है जो असम को अरुणाचल प्रदेश से कनेक्ट करता है।
+
+                            ये देश का सबसे लंबा ब्रिज है और इसकी कुल लंबाई 9.15 किलोमीटर है। ये 60 टन के बैटल टैंक का भार सह सकता है।
+                            
+                            इस ब्रिज के दर्शन आपको असम से अरुणाचल प्रदेश की यात्रा के दौरान जरूर होंगे।</p>
+                            <h1>7. आईफ्लेक्स सॉल्यूशंस, बंगलुरू</h1>
+                            <img src="https://static2.tripoto.com/media/filter/nl/img/1993513/SpotDocument/1606559189_1606559187717.jpg" alt="loading">
+                            <p>आईफ्लेक्स सॉल्यूशंस बिल्डिंग की ख्याति पूरी दुनिया में इसके खास डिज़ाइन के कारण है।
+
+                                ये बिल्डिंग्स सुपर्ब स्टेट ऑफ आर्ट आर्किटेक्चर के लिए जानी जाती है और इसका इंफ्रास्ट्रक्चर किसी भी साधारण बिल्डिंग की अपेक्षा काफी अलहदा है।
+                                
+                                तो आप जब भी बंगलुरू जाए इस सुपर्ब स्टेट ऑफ आर्ट आर्किटेक्चर के दर्शन जरूर करें।
+                                
+                                ये होंगे बेजोड़ उदाहरण
+                                
+                                श्रीराम की मूर्ति
+                                
+                                प्रभु श्री राम की कांस्य प्रतिमा यूपी के अयोध्या में लगाई जाएगी और ये सरकार का मौजूदा प्रोजेक्ट है जिस पर काम शुरू हो गया है। ये दुनिया की सबसे ऊंची कांस्य प्रतिमा होगी जिसकी कुल लंबाई 251 मीटर होगी।
+                                
+                                अंडरवॉटर टनल
+                                
+                                ये देश का पहला ऐसा रेलवे टनल होगा जो कि हुगली नदी के अंदर आधा किलोमीटर तक का डिस्टेंस ट्रैवल करेगा। ये देश का पहला अंडरवॉटर रेलवे टनल भी होगा।
+                                
+                                चिनाब ब्रिज
+                                
+                                ये 427 मीटर लंबा आर्क ब्रिज होगा जिसे इंडियन रेलवे बना रहा है। ये दुनिया का अब तक का सबसे ऊंचा ब्रिज होगा जो कि जम्मू-कश्मीर में चिनाब नदी के ऊपर बक्कल और कौड़ी इलाकों को आपस में जोड़ेगा।
+                                
+                                क्या आपने भारत के शानदार आर्किटेक्चरल स्ट्रक्चर्स की यात्रा की है? अपने अनुभव को शेयर करने के लिए यहाँ क्लिक करें।
+                                
+                                रोज़ाना वॉट्सऐप पर यात्रा की प्रेरणा के लिए 9319591229 पर HI लिखकर भेजें या यहाँ क्लिक करें।</p>
+        </div>
+        <div class="form">
+            <H3>Want to book a similar trip?</H3><br><br>
+            <input type="text" placeholder="email"><br><br>
+            <input type="text" placeholder="Full Name"><br><br>
+            <input type="text" placeholder="Contact Number"><br><br>
+            <label for="">Deprature Date</label><br><br>
+            <input type="date" id="myDate" placeholder="Deprature Date"><br><br>
+            <input type="text" placeholder="Deprature City"><br><br>
+            <input type="text" placeholder="Destinations"><br><br>
+            <input type="text" placeholder="Budget Per Person"><br><br>
+            <select name="" id="">
+                <option value="5 star">5 star</option>
+                <option value="5 star">4 star</option>
+                <option value="5 star">3 star</option>
+                <option value="5 star">2 star</option>
+                <option value="5 star">Don't need Hotel</option>
+            </select><br><br>
+            <label for="">Flight Book or not?</label><br><br>
+            <input type="radio" value="yes"> <label for="">YES</label>
+            <input type="radio" value="No">NO<br><br>
+            <button onclick="call()">Request Call Back</button><br><br>
+            <p>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
+        </div>
+    </div>
+    <div id="div">
+        <input type="text" id="comment" ><br> <br>
+        <button  id="btn1" onclick="comment()">POST</button><br> <br>
+
+    </div>
+    
+</div>
+
+<!-- -------------------------------------------------container boxes ---------------------------------------------------->
+<div class="container">
+    <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+    <h1>Trending Trips</h1>
+    <div class="TrendingTrips">
+    
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1327729/TripDocument/1550815603_1485867480_1485857503_dsc_0361.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>भीड़-भाड़ से दूर और नज़ारों से भरपूर है भारत का सबसे ऊँचे रेलवे स्टेशन 'घूम'!</h4>
+        <p>क्या आपको छुट्टियाँ बिताने के लिए किसी शांत और सुन्दर जगह की तलाश है? अगर आपने दार्जिलिंग अपनी छु...</p>
+        <hr>
+      </div>
+   
+      <div>
+   
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1993513/TripDocument/1606728419_1606728417485.jpg" alt="loading">
+         <p>ये 8 लेन का ब्रिज अरब सागर के ऊपर बना हुआ है और मुंबई के दो सबर्बन इलाकों बांद्रा और वर्ली को जोड़ता है।
+
+            ये विशाल है, मैजेस्टिक है। ये पहली बार है जब केबल स्टे ब्रिज को ओपन सी में इंडिया में अटेंप्ट किया और अब ये टूरिस्ट अट्रैक्शन भी बन गया है।
+            
+            मैं भी जब मुंबई गई थी तो बांद्रा-वर्ली सी लिंक देख कर काफी हैरान हुई थी। बांद्रा-वर्ली सी लिंक ब्रिज काफी बड़ा
+            
+            है।
+            
+            मैंने भी पहली बार इतना बड़ा ब्रिज देखा था तो काफी हैरानी हुई। इसकी सुंदरता देखने योग्य है। आप भी जब मुंबई जाए तो इस ब्रिज के अदभुत स्ट्रक्चर्स के दर्शन जरूर करें।</p>
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>देश के कुछ ऐसे शानदार इंडियन आर्किटेक्चरल स्ट्रक्चर्स जिन पर पूरी दुनिया को है गर्व</h4>
+        <p>पूरी दुनिया में इंडिया के आर्किटेक्चरल मार्वेल्स की तूती यूं ही नहीं बोलती। इसके पीछे इंडियन इंजी...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://cdn1.tripoto.com/200.2/img/featured-trips/featured-trip-1_135_86.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>5 best things to do in Rishikesh | Secret Location</h4>
+        <p> Every now and then I get this query from my friends that what could be the top places that ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/794607/TripDocument/1571663083_1280px_ridge_shimla.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Love Travelling in Winter? These 8 Destinations Look Gorgeous This Time of the Year</h4>
+        <p>Has it ever occurred to you that a place you just visited didn't look as mind-blowing as it did i...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/816121/TripDocument/1605104789_food_goa.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>सराहन: हिमाचल का वो खूबसूरत गाँव जहाँ आकर वक्त भी थम जाता है!</h4>
+        <p>हर किसी का मन करता है कि वो कहीं शांत-सी जगह पर कुछ दिन गुज़ारे। जहाँ मन बावरा होकर कहीं भी चलने ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1350024/TripDocument/1568915609_sarahan.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Gorgeous Cottages In Nainital That Will Leave You Awestruck</h4>
+        <p>Known for its incredible landscapes, lush green surroundings, scenic views and majestic mountains...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/522191/TripDocument/1550152270_bijoy_sagar_lake.png" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>There's Another Udaipur In India And We Bet You Didn't Know About It</h4>
+        <p>We all have read and heard about the beautiful city of Udaipur in Rajasthan, but we bet that you ...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/518407/TripDocument/1530982324_the_writers_bungalow_and_its_dining_verandah_0_details_page_1.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>Bookmark these 5 Restaurants in North Goa for a great view and lip-smacking food</h4>
+        <p>With Goa now open to tourists and the tourist season just around the corner, I am sure many of yo...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     <div class="slider">
+       <div class="img">
+         <img src="https://static2.tripoto.com/media/filter/tst/img/1235940/TripDocument/1545823931_mrk.jpg" alt="loading">
+      </div>
+      <div class="button">
+        <h5>TRIP</h5>
+        <button>hello</button>
+      </div>
+      <div class="discription">
+        <h4>दिल्ली की 15 सस्ती व मज़ेदार चीज़ें जिनके बारे मे आपको कोई नही बता पाएगा</h4>
+        <p>श्रेय : मार्क ऑन फ्लिकरदिल्ली ऐसे ऐसे तॉहफ़ों से भरा है कि आप का मान झूम उठेगा | रोज़मर्रा की उबा...</p>
+        <hr>
+      </div>
+      <div>
+     </div>
+     </div>
+   
+     
+     
+   </div>
+   <h1>Discover Now</h1>
+     <!-------------------------------------- Discover now-------------------------------------------------------------------------->
+     <div class="DiscoverNow">
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128872_hill1.png" alt="">
+         <h2>Hill Station</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587128796_beach5.png" alt="">
+         <h2>Beaches</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587154281_tourist_attraction_4.png" alt="">
+         <h2>Tourist Attractions</h2>
+       </div>
+       <div class="img1">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155459_weekend_getaways.png" alt="">
+         <h2>Weekends Getways</h2>
+       </div>
+      
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155577_adventure_activities.png" alt="">
+           <h2>Adventure Activities</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587155306_road_trip.png" alt="">
+           <h2>Road Trips</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125064_trekking_route_3.png" alt="">
+           <h2>Trekking Routes</h2>
+         </div>
+         <div class="img1">
+           <img src="https://cdn1.tripoto.com/media/filter/tst/img/837823/Image/1587125598_family_vacation.png" alt="">
+           <h2>Family Vacations</h2>
+         </div>
+       
+     </div>
+     <h1>Explore Travel Guides</h1>
+     <!-----------------------------------------------Trending Trips------------------------------------------------------------- -->
+   
+     <div class="TravelGuides">
+       
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216649_andaman.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732339_1_10.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732387_3_7.jpg" alt="loading">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732417_2_10.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732456_dubai.jpg" alt="">
+       </div>
+       <div class="img2">
+         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt="loading">
+       </div>
+       
+     </div>
+   </div>
+      <!-------------------------------------- fooooooooooooterrrrrrr --------------------------------------------------->
+      <div id="footer">
+        <hr>
+        <div class="footerFirst">
+         <div id="logo">
+             <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+             <p>The Global Travel Community</p><br>
+             <hr>
+             <div class="social-icon">
+               <a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" alt="loading"></a>
+               <a href=""><img src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png" alt=""></a>
+               <a href=""><img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+               <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU" alt=""></a>
+               <a href=""><img src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png" alt=""></a>
+               <a href=""><img src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+            </div>
+            <div class="GooglePlaystore">
+                <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+            </div>
+         </div>
+         <div>
+             <p>About Tripoto</p><br>
+             <a href="#">How It Works</a><br><br>
+             <a href="#">FAQ's</a><br><br>
+             <a href="#">Privacy Policy</a><br><br>
+             <a href="#">Terms & Conditions</a><br><br>
+             <a href="#">Careers</a><br><br>
+             <a href="#">Contact Us</a><br><br>
+         </div>
+         <div>
+            <p>Products</p><br>
+            <a href="#">Tour Packages</a><br><br>
+            <a href="#">Travel Guides</a><br><br>
+            <a href="#">Trips & ltineraries</a><br><br>
+            <a href="#">Weekend Getways</a><br><br>
+            <a href="#">Place to Visit</a><br><br>
+            <a href="#">Other Travel Categories</a><br><br>
+            <a href="#">Tripto Fourm</a><br><br>
+            <a href="#">Honeymoon Packages</a><br><br>
+         </div>
+         <div>
+            <p>Important Travel Links</p><br>
+            <a href="#">Goa Tourism</a><br><br>
+            <a href="#">Dubai Tourism</a><br><br>
+            <a href="#">Singapore Tourism</a><br><br>
+            <a href="#">Kerala Tourism</a><br><br>
+            <a href="#">Manali Tourism</a><br><br>
+            <a href="#">Bali Tourism</a><br><br>
+            <a href="#">Sri Lanka Tourism</a><br><br>
+            <a href="#">Honeymoon Destinations inindia</a><br><br>
+         </div>
+         <div>
+            <p>Partner Programs</p><br>
+            <a href="#">Buy Travel Leads</a><br><br>
+            <a href="#">Partner With Us</a><br><br>
+            <a href="#">Earn Credits</a><br><br>
+            <a href="#">Get paid to Travel</a><br><br>
+            <a href="#">Import Blog To ltinerary</a><br><br>
+            <a href="#">Tripto Ai</a><br><br>
+         </div>
+        </div>
+        <div class="footerSecond">
+            <hr>
+            <p>© All rights reserved.</p>
+        </div>
+    </div>
+<script>
+
+function call() {
+document.getElementById("myDate").value = "2014-02-09";
+alert("Request Submitted,We will call you soon")
+}
+var comment1=1;
+function comment(){
+   var div=document.getElementById("div");
+   var input=document.getElementById("comment").value;
+   var p=document.createElement("p");
+   p.innerHTML=`${input} ${comment1} `;
+   div.appendChild(p)
+   comment1++;
+}
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.TrendingTrips').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+  
+  $('.DiscoverNow').slick({
+    slidesToShow: 4,
+    slidesToScroll:1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+  });
+  
+  $('.TravelGuides').slick({
+    slidesToShow: 5,
+    slidesToScroll:1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  });
+    </script>
+</body>
+</html>

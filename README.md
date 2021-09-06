@@ -41,25 +41,33 @@ We have focused mainly on:
 1.Landing Page
 
 <h4>This is our landing page </h4>
-<img src="public/Screenshot (867).png" width="400"/>
+<img src="tripot/landingpage.PNG" width="400"/>
 
-2.Job searching page 
+2.Login Signup Page
 
+<h4>Users Login page  </h4>
+<img src="tripot/login.PNG" width="400"/>
+
+3. From Our Partners Page
+
+<img src="tripot/partner.PNG" width="400"/>
+
+4.Travel News Page
+<h4> Travel News page </h4>
+<img src="tripot/travel.PNG" width="400"/>
+
+5. Explore Tripoto In Your Own Language Page
+ <img src="tripot/lang.PNG" width="400"/>
+6. Trending Trips Page
+<img src="tripot/trending.PNG" width="400"/>
+7. Discover Now Explore Page
+<img src="tripot/discover.PNG" width="400"/>
+8.Explore Travel Guides Page
+<img src="tripot/rajasthan.PNG" width="400"/>
+9. Search page
 <h4>Here user can search and filter the data as per their requirement:- </h4>
-<img src="public/Screenshot (869).png" width="400"/>
+<img src="tripot/landingpage.PNG" width="400"/>
 
-3. Jobseeker Login & Signup Page
-<h4> Users Login page </h4>
-<img src="public/Screenshot (870).png" width="400"/>
-
-4.Company Description page
-<h4> Description page </h4>
-<img src="public/Screenshot (871).png" width="400"/>
-
-5. RecruiterLogin & Signup Page 
- <img src="public/Screenshot (872).png" width="400"/>
-6. Recruiter job posting page 
-<img src="public/Screenshot (874).png" width="400"/>
 
 
 
